@@ -1,0 +1,3 @@
+[submodule "extensions/field_metakeys"]
+	path = extensions/field_metakeys
+	url = git://github.com/brendo/field_metakeys.git

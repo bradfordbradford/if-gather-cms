@@ -1,0 +1,30 @@
+============================================
+Log Created: 2013-08-20T14:01:06-05:00
+============================================
+Symphony Log
+Opened:  2013-08-20T14:01:06-05:00
+Version: 2.3.3
+Domain:  ifgather-cms.tc
+--------------------------------------------
+
+============================================
+INSTALLATION PROCESS STARTED (2013-08-20T14:01:47-05:00)
+============================================
+08/20/2013 2:01 pm > Notice: MYSQL: Establishing Connection
+08/20/2013 2:01 pm > Notice: MYSQL: Importing Table Schema
+08/20/2013 2:01 pm > Notice: MYSQL: Creating Default Author
+08/20/2013 2:01 pm > Notice: WRITING: Creating ‘manifest’ folder (/manifest)
+08/20/2013 2:01 pm > Notice: WRITING: Creating ‘logs’ folder (/manifest/logs)
+08/20/2013 2:01 pm > Notice: WRITING: Creating ‘cache’ folder (/manifest/cache)
+08/20/2013 2:01 pm > Notice: WRITING: Creating ‘tmp’ folder (/manifest/tmp)
+08/20/2013 2:01 pm > Notice: WRITING: Configuration File
+08/20/2013 2:01 pm > Notice: CONFIGURING: Frontend
+08/20/2013 2:01 pm > Notice: An existing ‘workspace’ directory was found at this location. Symphony will use this workspace.
+08/20/2013 2:01 pm > Notice: MYSQL: Importing Workspace Data...
+08/20/2013 2:01 pm > Notice: CONFIGURING: Installing existing extensions
+============================================
+INSTALLATION COMPLETED: Execution Time - 2 sec (20.08.13 14:01:49)
+============================================
+
+
+
