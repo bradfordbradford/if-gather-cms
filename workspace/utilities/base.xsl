@@ -16,7 +16,9 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
 omit-xml-declaration="yes"
 encoding="UTF-8"
-indent="yes" />
+indent="yes"
+
+/>
 
 <xsl:template match="/">
 
@@ -28,10 +30,13 @@ indent="yes" />
 
         <xsl:call-template name="head"/>
 
-        <body class="page-{$page-title}">
-            <div class="site-wrap">
+        <body class="{$current-page}">
 
-                <xsl:apply-templates select="data/navigation"/>
+            <xsl:apply-templates select="data/navigation" mode="pushy-nav"/>
+
+            <div id="site-wrap">
+
+                <xsl:apply-templates select="data/navigation" mode="main-nav"/>
 
                 <div class="content-wrap">
                     <xsl:apply-templates/>

@@ -5,18 +5,18 @@
 	Class datasourcepost_tags extends SectionSchemaDatasource {
 
 		public $dsParamROOTELEMENT = 'post-tags';
-		public $dsParamSECTION = 'posts';
-		public $dsParamFIELDS = array('tags');
+		public $dsParamSECTION = 'equip-stories';
+		public $dsParamFIELDS = array('tags','tags');
 
 		public function about(){
 			return array(
 				'name' => 'Post Tags',
 				'author' => array(
 					'name' => 'Lindsey Bradford',
-					'website' => 'http://sites.tc/Ensembles/Publishing-Platform',
+					'website' => 'http://ifgather-cms.tc',
 					'email' => 'lindseyb@wearetelegraph.com'),
 				'version' => 'Symphony 2.3.3',
-				'release-date' => '2013-08-17T04:06:00+00:00'
+				'release-date' => '2013-08-28T16:34:34+00:00'
 			);
 		}
 

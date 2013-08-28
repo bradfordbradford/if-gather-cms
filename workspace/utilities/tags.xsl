@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="item" mode="tags-commas">
     <span>
-        <a href="{$root}/archive/{@handle}">
+        <a href="{$root}/equip/{@handle}">
             <xsl:value-of select="."/>
         </a>
     </span>
@@ -15,7 +15,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="option" mode="tags-list">
     <li>
-        <a href="{$root}/archive/{@handle}">
+        <a href="{$root}/equip/{@handle}">
             <xsl:value-of select="."/> (<xsl:value-of select="@count"/>)
         </a>
     </li>

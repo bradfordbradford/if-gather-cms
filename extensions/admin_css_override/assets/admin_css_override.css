@@ -12,17 +12,17 @@
 
 /* -------------- Header -------------- */
 #header {
-    border-top: 4px solid #6A4E4E;
+    border-top: 4px solid #C9E4D9;
 }
 
 #header h1 {
     background: white;
     text-shadow: none;
-    padding: 32px 24px ;
+    /*padding: 32px 24px ;*/
     text-transform: uppercase;
 }
 
-#header h1 a {
+body #wrapper #header h1 a {
     color: #4D4441;
     font-size: 20px;
     font-family: "Open Sans";
@@ -31,16 +31,11 @@
     letter-spacing: .12em;
     text-indent: 20px;
     display: block;
-}
-#header h1 a:before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left:0px;
-    background: url(../images/icons/telegraphcreative-gold-asterism+.png) no-repeat;
+    background: url(http://ifgather-cms.tc/image/2/0/70/5/assets/images/icons/ifgather-logo-drk-large+@2x.png) no-repeat;
+    text-indent: -1000px;
+    width: 230px;
     background-size: 100%;
-    height: 14px;
-    width: 14px;
+    margin: 20px 30px;
 }
 
 #header h1 a:hover {
@@ -62,7 +57,7 @@
 
 #nav > ul > li:hover, #nav > ul > li.active, #nav > ul > li:hover, #nav > ul > li.active:hover {
     color: #fff;
-    background: #BFC78F;
+    background: #C9E4D9;
 }
 
 #nav > ul > li.dontdrop.active a:hover, #nav > ul > li.dontdrop a:hover {
@@ -70,7 +65,7 @@
 }
 
 #nav ul a:hover {
-    background: #BFC78F;
+    background: #C9E4D9;
     text-shadow:none;
     -moz-text-shadow:0 !important;
     -webkit-text-shadow:0 !important;
@@ -80,7 +75,7 @@
 
 /* -------------- Session -------------- */
 #session {
-    margin:-48px 0 0;
+    margin:-48px 20px 0;
 }
 
 #session a {
@@ -88,7 +83,7 @@
 }
 
 #session a:hover {
-    color: #BFC78F;
+    color: #C9E4D9;
 }
 
 
@@ -99,7 +94,7 @@
 #contents {
     box-shadow:none;
     -webkit-box-shadow:none;
-    border-bottom: 8px solid #6A4E4E;
+    border-bottom: 8px solid #C9E4D9;
 }
 
 
@@ -109,7 +104,7 @@
     max-width: 118px;
     height: 3px;
     color: #fff;
-    background: #BFC78F;
+    background: #C9E4D9;
     position: absolute;
     bottom: 0;
     left: -1px;

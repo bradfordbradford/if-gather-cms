@@ -39,11 +39,15 @@ CREATE TABLE`tbl_fields_checkbox` (
   `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_checkbox` ***
-INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (14, 37, 'on', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (30, 37, 'on', NULL);
 INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (9, 47, 'off', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (18, 58, 'off', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (19, 59, 'off', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (20, 60, 'off', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (29, 72, 'on', NULL);
 
 -- *** STRUCTURE:`tbl_fields_date` ***
 DROP TABLE IF EXISTS`tbl_fields_date`;
@@ -68,10 +72,11 @@ CREATE TABLE`tbl_fields_datetime` (
   `range` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_datetime` ***
-INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (12, 38, 1, 0, 0, 0);
+INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (22, 38, 1, 0, 0, 0);
+INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (21, 70, 1, 0, 0, 0);
 
 -- *** STRUCTURE:`tbl_fields_html_panel` ***
 DROP TABLE IF EXISTS`tbl_fields_html_panel`;
@@ -81,7 +86,7 @@ CREATE TABLE`tbl_fields_html_panel` (
   `url_expression` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_fields_html_panel` ***
 
@@ -93,7 +98,7 @@ CREATE TABLE`tbl_fields_input` (
   `validator` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=211 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=251 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_input` ***
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (132, 1, NULL);
@@ -110,17 +115,23 @@ INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (128, 16, N
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (129, 17, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (134, 20, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (135, 21, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (204, 22, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (205, 26, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (244, 22, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (245, 26, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (210, 28, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (81, 30, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (82, 31, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (83, 32, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (84, 33, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (217, 30, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (218, 31, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (219, 32, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (139, 40, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (150, 43, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (151, 44, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (152, 45, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (220, 62, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (238, 63, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (239, 64, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (243, 75, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (247, 76, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (249, 79, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (250, 84, NULL);
 
 -- *** STRUCTURE:`tbl_fields_memberemail` ***
 DROP TABLE IF EXISTS`tbl_fields_memberemail`;
@@ -176,6 +187,37 @@ CREATE TABLE`tbl_fields_memberusername` (
 -- *** DATA:`tbl_fields_memberusername` ***
 INSERT INTO`tbl_fields_memberusername` (`id`, `field_id`, `validator`) VALUES (3, 54, NULL);
 
+-- *** STRUCTURE:`tbl_fields_metakeys` ***
+DROP TABLE IF EXISTS`tbl_fields_metakeys`;
+CREATE TABLE`tbl_fields_metakeys` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `field_id` int(11) unsigned NOT NULL,
+  `validator` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `default_keys` text COLLATE utf8_unicode_ci,
+  `delete_empty_keys` int(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `field_id` (`field_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_fields_metakeys` ***
+
+-- *** STRUCTURE:`tbl_fields_oembed` ***
+DROP TABLE IF EXISTS`tbl_fields_oembed`;
+CREATE TABLE`tbl_fields_oembed` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `field_id` int(11) unsigned NOT NULL,
+  `refresh` int(11) unsigned DEFAULT NULL,
+  `driver` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `unique` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  `thumbs` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  `query_params` varchar(1024) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `force_ssl` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  KEY `field_id` (`field_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_fields_oembed` ***
+
 -- *** STRUCTURE:`tbl_fields_order_entries` ***
 DROP TABLE IF EXISTS`tbl_fields_order_entries`;
 CREATE TABLE`tbl_fields_order_entries` (
@@ -185,10 +227,9 @@ CREATE TABLE`tbl_fields_order_entries` (
   `hide` enum('yes','no') DEFAULT 'no',
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_fields_order_entries` ***
-INSERT INTO`tbl_fields_order_entries` (`id`, `field_id`, `force_sort`, `hide`) VALUES (19, 24, NULL, 'no');
 
 -- *** STRUCTURE:`tbl_fields_publish_tabs` ***
 DROP TABLE IF EXISTS`tbl_fields_publish_tabs`;
@@ -196,13 +237,15 @@ CREATE TABLE`tbl_fields_publish_tabs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `field_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_fields_publish_tabs` ***
 INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (30, 4);
 INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (31, 19);
 INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (32, 7);
 INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (33, 12);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (36, 80);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (37, 82);
 
 -- *** STRUCTURE:`tbl_fields_publishnotes` ***
 DROP TABLE IF EXISTS`tbl_fields_publishnotes`;
@@ -217,6 +260,18 @@ CREATE TABLE`tbl_fields_publishnotes` (
 
 -- *** DATA:`tbl_fields_publishnotes` ***
 
+-- *** STRUCTURE:`tbl_fields_repeating_date` ***
+DROP TABLE IF EXISTS`tbl_fields_repeating_date`;
+CREATE TABLE`tbl_fields_repeating_date` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `field_id` int(11) unsigned NOT NULL,
+  `pre_populate` enum('yes','no') NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  KEY `field_id` (`field_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- *** DATA:`tbl_fields_repeating_date` ***
+
 -- *** STRUCTURE:`tbl_fields_search_index` ***
 DROP TABLE IF EXISTS`tbl_fields_search_index`;
 CREATE TABLE`tbl_fields_search_index` (
@@ -224,10 +279,11 @@ CREATE TABLE`tbl_fields_search_index` (
   `field_id` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- *** DATA:`tbl_fields_search_index` ***
-INSERT INTO`tbl_fields_search_index` (`id`, `field_id`) VALUES (7, 42);
+INSERT INTO`tbl_fields_search_index` (`id`, `field_id`) VALUES (17, 42);
+INSERT INTO`tbl_fields_search_index` (`id`, `field_id`) VALUES (16, 73);
 
 -- *** STRUCTURE:`tbl_fields_select` ***
 DROP TABLE IF EXISTS`tbl_fields_select`;
@@ -282,11 +338,12 @@ CREATE TABLE`tbl_fields_subsectionmanager` (
   `recursion_levels` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_subsectionmanager` ***
-INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (29, 35, 3, NULL, '{$title-caption}', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
-INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (30, 36, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (44, 77, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 0, 1, 0, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (42, 69, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (46, 81, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
 
 -- *** STRUCTURE:`tbl_fields_taglist` ***
 DROP TABLE IF EXISTS`tbl_fields_taglist`;
@@ -298,10 +355,11 @@ CREATE TABLE`tbl_fields_taglist` (
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`),
   KEY `pre_populate_source` (`pre_populate_source`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_taglist` ***
-INSERT INTO`tbl_fields_taglist` (`id`, `field_id`, `validator`, `pre_populate_source`) VALUES (19, 25, NULL, 'existing');
+INSERT INTO`tbl_fields_taglist` (`id`, `field_id`, `validator`, `pre_populate_source`) VALUES (29, 25, NULL, 'existing');
+INSERT INTO`tbl_fields_taglist` (`id`, `field_id`, `validator`, `pre_populate_source`) VALUES (28, 66, NULL, 'existing');
 
 -- *** STRUCTURE:`tbl_fields_textarea` ***
 DROP TABLE IF EXISTS`tbl_fields_textarea`;
@@ -312,12 +370,14 @@ CREATE TABLE`tbl_fields_textarea` (
   `size` int(3) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_textarea` ***
 INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (27, 5, 'markdown_extra_with_smartypants', 15);
-INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (37, 23, 'markdown_extra_with_smartypants', 15);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (49, 23, 'markdown_extra_with_smartypants', 15);
 INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (32, 46, 'markdown_extra_with_smartypants', 15);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (39, 61, 'markdown_extra_with_smartypants', 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (48, 65, 'markdown_extra_with_smartypants', 15);
 
 -- *** STRUCTURE:`tbl_fields_uniqueupload` ***
 DROP TABLE IF EXISTS`tbl_fields_uniqueupload`;
@@ -328,13 +388,15 @@ CREATE TABLE`tbl_fields_uniqueupload` (
   `validator` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_uniqueupload` ***
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (22, 27, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (32, 74, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
 INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (24, 57, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (3, 34, '/workspace/assets/images/content', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (27, 34, '/workspace/assets/images/content', '/\\.(?:bmp|gif|jpe?g|png)$/i');
 INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (13, 39, '/workspace/assets/images/icons', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (36, 67, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (38, 78, '/workspace/assets/uploads', NULL);
 
 -- *** STRUCTURE:`tbl_fields_upload` ***
 DROP TABLE IF EXISTS`tbl_fields_upload`;
@@ -577,15 +639,16 @@ CREATE TABLE`tbl_entries_data_22` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_22` ***
 INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 1, 'tegan-and-sara', 'Tegan & Sara');
 INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 5, 'junip', 'Junip');
 INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 7, 'phantogram', 'Phantogram');
-INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (48, 8, 'sleigh-bells', 'Sleigh Bells');
+INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 8, 'sleigh-bells', 'Sleigh Bells');
 INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (51, 9, 'department-of-eagles', 'Department of Eagles');
 INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 10, 'the-national', 'The National');
+INSERT INTO`tbl_entries_data_22` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 19, 'phosphorescent', 'Phosphorescent');
 
 -- *** STRUCTURE:`tbl_entries_data_23` ***
 DROP TABLE IF EXISTS`tbl_entries_data_23`;
@@ -597,34 +660,16 @@ CREATE TABLE`tbl_entries_data_23` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_23` ***
 INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (57, 1, 'Folk-rock duo Tegan and Sara first burst onto the Canadian music scene in 1998, when they earned the highest score in history at Calgary\'s \"Garage Warz\" competition; their quick rise didn\'t stop, for their melodic acoustics and charming stage personas led to a slew of dates with Sarah McLachlan\'s Lilith Fair that same year and a record deal with Neil Young\'s Vapor Records in April 2000. Natives of Calgary, these twin sisters derived their music interests from their parents. Tegan and Sara began playing piano at age eight, and in their teens they were skanking around in their own punk bands. This Business of Art, which was produced by singer/songwriter Hawksley Workman, marked their debut in mid-2000, and a summer tour with Neil Young and the Pretenders followed in July. Two years later, Tegan and Sara released If It Was You, followed in 2004 by their commercial breakthrough, So Jealous. In 2005, the White Stripes released a popular cover of If It Was You\'s \"Walking with a Ghost.\" That same year saw the duo touring the U.S. with the Killers and landing seven songs in the popular medical TV drama Grey\'s Anatomy. In 2007, Tegan sang backup on a song on new Sire labelmate Against Me!\'s album New Wave, and the twins, who had by then moved far from the singer/songwriter mold and were more interested in exploring pop, punk, and indie rock, came out with The Con, produced by Christopher Walla of Death Cab for Cutie. Working with Walla went well, and Tegan and Sara also utilized his production skills on their next album, 2009\'s Sainthood. 2009 also found the duo collaborating with Tiësto on the song \"Feel It in My Bones\" for his album Kaleidoscope and with comedian Margaret Cho on the track \"Intervention\" from her Cho Dependent release. 2011\'s live CD/DVD Get Along was paired with three short behind-the-scenes films called States, India, and For the Most Part. On their seventh studio album, the duo turned to producer Greg Kurstin (Lily Allen, Kelly Clarkson, Ke$ha) for help in making an album that reflected the modern pop sound. The very slick, yet still emotionally powerful Heartthob was released in early 2013. ~ MacKenzie Wilson', '<p>Folk-rock duo Tegan and Sara first burst onto the Canadian music scene in 1998, when they earned the highest score in history at Calgary&#8217;s &#8220;Garage Warz&#8221; competition; their quick rise didn&#8217;t stop, for their melodic acoustics and charming stage personas led to a slew of dates with Sarah McLachlan&#8217;s Lilith Fair that same year and a record deal with Neil Young&#8217;s Vapor Records in April 2000. Natives of Calgary, these twin sisters derived their music interests from their parents. Tegan and Sara began playing piano at age eight, and in their teens they were skanking around in their own punk bands. This Business of Art, which was produced by singer/songwriter Hawksley Workman, marked their debut in mid-2000, and a summer tour with Neil Young and the Pretenders followed in July. Two years later, Tegan and Sara released If It Was You, followed in 2004 by their commercial breakthrough, So Jealous. In 2005, the White Stripes released a popular cover of If It Was You&#8217;s &#8220;Walking with a Ghost.&#8221; That same year saw the duo touring the U.S. with the Killers and landing seven songs in the popular medical TV drama Grey&#8217;s Anatomy. In 2007, Tegan sang backup on a song on new Sire labelmate Against Me!&#8217;s album New Wave, and the twins, who had by then moved far from the singer/songwriter mold and were more interested in exploring pop, punk, and indie rock, came out with The Con, produced by Christopher Walla of Death Cab for Cutie. Working with Walla went well, and Tegan and Sara also utilized his production skills on their next album, 2009&#8217;s Sainthood. 2009 also found the duo collaborating with Tiësto on the song &#8220;Feel It in My Bones&#8221; for his album Kaleidoscope and with comedian Margaret Cho on the track &#8220;Intervention&#8221; from her Cho Dependent release. 2011&#8217;s live CD/DVD Get Along was paired with three short behind-the-scenes films called States, India, and For the Most Part. On their seventh studio album, the duo turned to producer Greg Kurstin (Lily Allen, Kelly Clarkson, Ke$ha) for help in making an album that reflected the modern pop sound. The very slick, yet still emotionally powerful Heartthob was released in early 2013. ~ MacKenzie Wilson</p>\n');
 INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (58, 5, 'Gothenburg, Sweden-based indie rock outfit Junip was formed in late \'90s by singer/songwriter Jose Gonzalez. The trio, which consists of Gonzalez on guitar and vocals, drummer Elias Araya, and keyboard player Tobia Winterkorn, crafts dark, moody, indie folk in the vein of their founder. Junip released their debut 7\" in 2000 on their own Kakafoni imprint. Araya then spent nearly five years studying art in Norway and Finland, while Winterkorn worked as a teacher and Gonzalez launched a successful solo career. The trio regrouped for the Black Refuge EP in 2006 and began writing and recording in earnest after Gonzalez finished promoting his album In Our Nature in 2007. The full-length result, Fields, arrived in 2010 on Mute Records. For 2013\'s more polished and more experimental self-titled second album, the trio recorded in their practice space with help from co-producer Don Alsterberg. ~ James Christopher Monger', '<p>Gothenburg, Sweden-based indie rock outfit Junip was formed in late &#8217;90s by singer/songwriter Jose Gonzalez. The trio, which consists of Gonzalez on guitar and vocals, drummer Elias Araya, and keyboard player Tobia Winterkorn, crafts dark, moody, indie folk in the vein of their founder. Junip released their debut 7&#8221; in 2000 on their own Kakafoni imprint. Araya then spent nearly five years studying art in Norway and Finland, while Winterkorn worked as a teacher and Gonzalez launched a successful solo career. The trio regrouped for the Black Refuge EP in 2006 and began writing and recording in earnest after Gonzalez finished promoting his album In Our Nature in 2007. The full-length result, Fields, arrived in 2010 on Mute Records. For 2013&#8217;s more polished and more experimental self-titled second album, the trio recorded in their practice space with help from co-producer Don Alsterberg. ~ James Christopher Monger</p>\n');
 INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (60, 7, 'Killers and landing seven songs in the popular medical TV drama Grey’s Anatomy. In 2007, Tegan sang backup on a song on new Sire labelmate Against Me!’s album New Wave, and the twins, who had by then moved far from the singer/songwriter mold and were more interested in exploring pop, punk, and indie rock, came out with The Con, produced by Christopher Walla of Death Cab for Cutie. Working with Walla went well, and Tegan and Sara also utilized his production skills on their next album, 2009’s Sainthood. 2009 also found the duo collaborating with Tiësto on the song “Feel It in My Bones” for his album Kaleidoscope and with comedian Margaret Cho on the track “Intervention” from her Cho Dependent release.', '<p>Killers and landing seven songs in the popular medical TV drama Grey’s Anatomy. In 2007, Tegan sang backup on a song on new Sire labelmate Against Me!’s album New Wave, and the twins, who had by then moved far from the singer/songwriter mold and were more interested in exploring pop, punk, and indie rock, came out with The Con, produced by Christopher Walla of Death Cab for Cutie. Working with Walla went well, and Tegan and Sara also utilized his production skills on their next album, 2009’s Sainthood. 2009 also found the duo collaborating with Tiësto on the song “Feel It in My Bones” for his album Kaleidoscope and with comedian Margaret Cho on the track “Intervention” from her Cho Dependent release.</p>\n');
-INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (48, 8, 'Songwriter/producer Derek Miller and vocalist Alexis Krauss comprise Sleigh Bells, an experimental pop duo that began earning its first fans after a breakout performance at the 2009 CMJ Festival. The musicians formed the group in New York, where Miller (a Florida native and onetime member of hardcore act Poison ...', '<p>Songwriter/producer Derek Miller and vocalist Alexis Krauss comprise Sleigh Bells, an experimental pop duo that began earning its first fans after a breakout performance at the 2009 CMJ Festival. The musicians formed the group in New York, where Miller (a Florida native and onetime member of hardcore act Poison &#8230;</p>\n');
+INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (64, 8, 'Songwriter/producer Derek Miller and vocalist Alexis Krauss comprise Sleigh Bells, an experimental pop duo that began earning its first fans after a breakout performance at the 2009 CMJ Festival. The musicians formed the group in New York, where Miller (a Florida native and onetime member of hardcore act Poison ...', '<p>Songwriter/producer Derek Miller and vocalist Alexis Krauss comprise Sleigh Bells, an experimental pop duo that began earning its first fans after a breakout performance at the 2009 CMJ Festival. The musicians formed the group in New York, where Miller (a Florida native and onetime member of hardcore act Poison &#8230;</p>\n');
 INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (51, 9, 'Originally known as the Whitey on the Moon UK, Department of Eagles blossomed from the recording project of two college roommates into purveyors of ambitious yet intimate music inspired by Van Dyke Parks and Paul McCartney. Fred Nicolaus and Daniel Rossen met in 2000, when they were assigned as each ...', '<p>Originally known as the Whitey on the Moon UK, Department of Eagles blossomed from the recording project of two college roommates into purveyors of ambitious yet intimate music inspired by Van Dyke Parks and Paul McCartney. Fred Nicolaus and Daniel Rossen met in 2000, when they were assigned as each &#8230;</p>\n');
 INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (56, 10, 'Although formed during the post-punk revival of the late \'90s, the National took inspiration from a wider set of influences, including country-rock, Americana, indie rock, and Brit-pop. The lineup began taking shape in Ohio and officially cemented itself in New York, with baritone vocalist Matt Berninger joining forces with two ...', '<p>Although formed during the post-punk revival of the late &#8217;90s, the National took inspiration from a wider set of influences, including country-rock, Americana, indie rock, and Brit-pop. The lineup began taking shape in Ohio and officially cemented itself in New York, with baritone vocalist Matt Berninger joining forces with two &#8230;</p>\n');
-
--- *** STRUCTURE:`tbl_entries_data_24` ***
-DROP TABLE IF EXISTS`tbl_entries_data_24`;
-CREATE TABLE`tbl_entries_data_24` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `value` double DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `entry_id` (`entry_id`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
-
--- *** DATA:`tbl_entries_data_24` ***
-INSERT INTO`tbl_entries_data_24` (`id`, `entry_id`, `value`) VALUES (57, 1, 1);
-INSERT INTO`tbl_entries_data_24` (`id`, `entry_id`, `value`) VALUES (58, 5, 2);
-INSERT INTO`tbl_entries_data_24` (`id`, `entry_id`, `value`) VALUES (60, 7, 3);
-INSERT INTO`tbl_entries_data_24` (`id`, `entry_id`, `value`) VALUES (48, 8, 2);
-INSERT INTO`tbl_entries_data_24` (`id`, `entry_id`, `value`) VALUES (51, 9, 2);
-INSERT INTO`tbl_entries_data_24` (`id`, `entry_id`, `value`) VALUES (56, 10, 2);
+INSERT INTO`tbl_entries_data_23` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (63, 19, 'Gothenburg, Sweden-based indie rock outfit Junip was formed in late \'90s by singer/songwriter Jose Gonzalez. The trio, which consists of Gonzalez on guitar and vocals, drummer Elias Araya, and keyboard player Tobia Winterkorn, crafts dark, moody, indie folk in the vein of their founder. Junip released their debut 7\" in 2000 on their own Kakafoni imprint. Araya then spent nearly five years studying art in Norway and Finland, while Winterkorn worked as a teacher and Gonzalez launched a successful solo career. The trio regrouped for the Black Refuge EP in 2006 and began writing and recording in earnest after Gonzalez finished promoting his album In Our Nature in 2007. The full-length result, Fields, arrived in 2010 on Mute Records. For 2013\'s more polished and more experimental self-titled second album, the trio recorded in their practice space with help from co-producer Don Alsterberg. ~ James Christopher Monger', '<p>Gothenburg, Sweden-based indie rock outfit Junip was formed in late &#8217;90s by singer/songwriter Jose Gonzalez. The trio, which consists of Gonzalez on guitar and vocals, drummer Elias Araya, and keyboard player Tobia Winterkorn, crafts dark, moody, indie folk in the vein of their founder. Junip released their debut 7&#8221; in 2000 on their own Kakafoni imprint. Araya then spent nearly five years studying art in Norway and Finland, while Winterkorn worked as a teacher and Gonzalez launched a successful solo career. The trio regrouped for the Black Refuge EP in 2006 and began writing and recording in earnest after Gonzalez finished promoting his album In Our Nature in 2007. The full-length result, Fields, arrived in 2010 on Mute Records. For 2013&#8217;s more polished and more experimental self-titled second album, the trio recorded in their practice space with help from co-producer Don Alsterberg. ~ James Christopher Monger</p>\n');
 
 -- *** STRUCTURE:`tbl_entries_data_25` ***
 DROP TABLE IF EXISTS`tbl_entries_data_25`;
@@ -637,18 +682,18 @@ CREATE TABLE`tbl_entries_data_25` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=148 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=163 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_25` ***
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (141, 1, 'moody', 'Moody');
-INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (119, 8, 'moody', 'Moody');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (162, 8, 'lo-fi', 'Lo-Fi');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (145, 5, 'moody', 'Moody');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (144, 5, 'lo-fi', 'Lo-Fi');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (140, 1, 'indie-rock', 'Indie-Rock');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (147, 7, 'indie-electric', 'Indie-Electric');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (143, 5, 'indie-folk', 'Indie-Folk');
-INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (118, 8, 'indie-rock', 'Indie-Rock');
-INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (117, 8, 'dark', 'Dark');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (161, 8, 'indie-rock', 'Indie-Rock');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (160, 8, 'dark', 'Dark');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (125, 9, 'dark', 'Dark');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (139, 10, 'moody', 'Moody');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (138, 10, 'indie-rock', 'Indie-Rock');
@@ -656,6 +701,10 @@ INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (1
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (142, 5, 'dark', 'Dark');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (137, 10, 'dark', 'Dark');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (127, 9, 'moody', 'Moody');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (159, 19, 'moody', 'Moody');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (158, 19, 'lo-fi', 'Lo-Fi');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (157, 19, 'indie-folk', 'Indie-Folk');
+INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (156, 19, 'dark', 'Dark');
 
 -- *** STRUCTURE:`tbl_entries_data_26` ***
 DROP TABLE IF EXISTS`tbl_entries_data_26`;
@@ -668,36 +717,16 @@ CREATE TABLE`tbl_entries_data_26` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_26` ***
 INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 1, 'canadians-do-it-better', '\"Canadians Do It Better\"');
 INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 5, 'mute-records-turns-it-up', 'Mute Records Turns It Up');
 INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 7, 'eyelid-movements', 'Eyelid Movements');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (48, 8, 'mute-records-turns-it-up', 'Mute Records Turns It Up');
+INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 8, 'mute-records-turns-it-up', 'Mute Records Turns It Up');
 INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (51, 9, 'high-places', 'High Places');
 INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 10, 'britain-joins-forces', 'Britain Joins Forces');
-
--- *** STRUCTURE:`tbl_entries_data_27` ***
-DROP TABLE IF EXISTS`tbl_entries_data_27`;
-CREATE TABLE`tbl_entries_data_27` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `file` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `size` int(11) unsigned DEFAULT NULL,
-  `mimetype` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `meta` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `file` (`file`),
-  KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_27` ***
-INSERT INTO`tbl_entries_data_27` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (21, 1, NULL, NULL, NULL, NULL);
-INSERT INTO`tbl_entries_data_27` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (20, 10, NULL, NULL, NULL, NULL);
-INSERT INTO`tbl_entries_data_27` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (22, 5, NULL, NULL, NULL, NULL);
-INSERT INTO`tbl_entries_data_27` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (24, 7, NULL, NULL, NULL, NULL);
+INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 19, 'in-dallas', 'In Dallas');
 
 -- *** STRUCTURE:`tbl_entries_data_28` ***
 DROP TABLE IF EXISTS`tbl_entries_data_28`;
@@ -747,10 +776,12 @@ CREATE TABLE`tbl_entries_data_30` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_30` ***
-INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 2, 'amelia-scott', 'Amelia Scott');
+INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 2, 'jennie-allen', 'JENNIE ALLEN');
+INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 20, 'lauren-chandler', 'lauren chandler');
+INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 21, 'christine-caine', 'christine caine');
 
 -- *** STRUCTURE:`tbl_entries_data_31` ***
 DROP TABLE IF EXISTS`tbl_entries_data_31`;
@@ -763,10 +794,10 @@ CREATE TABLE`tbl_entries_data_31` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_31` ***
-INSERT INTO`tbl_entries_data_31` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 2, 'partner', 'Partner');
+INSERT INTO`tbl_entries_data_31` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 2, 'founder-and-visionary', 'Founder & Visionary');
 
 -- *** STRUCTURE:`tbl_entries_data_32` ***
 DROP TABLE IF EXISTS`tbl_entries_data_32`;
@@ -779,26 +810,12 @@ CREATE TABLE`tbl_entries_data_32` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_32` ***
-INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 2, 'amelias-telegraphco', 'amelias@telegraph.co');
-
--- *** STRUCTURE:`tbl_entries_data_33` ***
-DROP TABLE IF EXISTS`tbl_entries_data_33`;
-CREATE TABLE`tbl_entries_data_33` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `handle` (`handle`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_33` ***
-INSERT INTO`tbl_entries_data_33` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 2, '689-288-6488', '689-288-6488');
+INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 2, 'http-jennieallencom-blog-its-time-a-new-movement-for-our-generation', 'http://jennieallen.com/blog/its-time-a-new-movement-for-our-generation/');
+INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 20, 'http-laurenchandlercom-2013-06-ifgathering', 'http://laurenchandler.com/2013/06/ifgathering/');
+INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 21, 'http-christinecainecom', 'http://christinecaine.com/');
 
 -- *** STRUCTURE:`tbl_entries_data_34` ***
 DROP TABLE IF EXISTS`tbl_entries_data_34`;
@@ -813,48 +830,12 @@ CREATE TABLE`tbl_entries_data_34` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `file` (`file`),
   KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_34` ***
-INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 2, 'avignon-521374a2d1c2c.jpg', 228381, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-20T08:52:34-05:00\";s:5:\"width\";i:1536;s:6:\"height\";i:1536;}');
-
--- *** STRUCTURE:`tbl_entries_data_35` ***
-DROP TABLE IF EXISTS`tbl_entries_data_35`;
-CREATE TABLE`tbl_entries_data_35` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `relation_id` int(11) unsigned DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `entry_id` (`entry_id`),
-  KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_35` ***
-INSERT INTO`tbl_entries_data_35` (`id`, `entry_id`, `relation_id`) VALUES (57, 5, 15);
-INSERT INTO`tbl_entries_data_35` (`id`, `entry_id`, `relation_id`) VALUES (56, 1, 13);
-INSERT INTO`tbl_entries_data_35` (`id`, `entry_id`, `relation_id`) VALUES (59, 7, 17);
-INSERT INTO`tbl_entries_data_35` (`id`, `entry_id`, `relation_id`) VALUES (47, 8, 14);
-INSERT INTO`tbl_entries_data_35` (`id`, `entry_id`, `relation_id`) VALUES (50, 9, 18);
-INSERT INTO`tbl_entries_data_35` (`id`, `entry_id`, `relation_id`) VALUES (55, 10, 16);
-
--- *** STRUCTURE:`tbl_entries_data_36` ***
-DROP TABLE IF EXISTS`tbl_entries_data_36`;
-CREATE TABLE`tbl_entries_data_36` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `relation_id` int(11) unsigned DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `entry_id` (`entry_id`),
-  KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_36` ***
-INSERT INTO`tbl_entries_data_36` (`id`, `entry_id`, `relation_id`) VALUES (57, 5, NULL);
-INSERT INTO`tbl_entries_data_36` (`id`, `entry_id`, `relation_id`) VALUES (56, 1, NULL);
-INSERT INTO`tbl_entries_data_36` (`id`, `entry_id`, `relation_id`) VALUES (59, 7, NULL);
-INSERT INTO`tbl_entries_data_36` (`id`, `entry_id`, `relation_id`) VALUES (47, 8, NULL);
-INSERT INTO`tbl_entries_data_36` (`id`, `entry_id`, `relation_id`) VALUES (50, 9, NULL);
-INSERT INTO`tbl_entries_data_36` (`id`, `entry_id`, `relation_id`) VALUES (55, 10, NULL);
+INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (3, 2, 'bio_jennie-521cfc63f0c83.jpg', 11962, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-27T14:22:11-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
+INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (4, 20, 'bio_lauren-521cfc939e157.jpg', 10816, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-27T14:22:59-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
+INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (5, 21, 'bio_christine-521cfccb4f3f9.jpg', 10481, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-27T14:23:55-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
 
 -- *** STRUCTURE:`tbl_entries_data_37` ***
 DROP TABLE IF EXISTS`tbl_entries_data_37`;
@@ -865,15 +846,16 @@ CREATE TABLE`tbl_entries_data_37` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_37` ***
 INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (57, 5, 'no');
 INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (56, 1, 'no');
 INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (59, 7, 'yes');
-INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (47, 8, 'yes');
+INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (63, 8, 'yes');
 INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (50, 9, 'yes');
 INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (55, 10, 'yes');
+INSERT INTO`tbl_entries_data_37` (`id`, `entry_id`, `value`) VALUES (62, 19, 'yes');
 
 -- *** STRUCTURE:`tbl_entries_data_38` ***
 DROP TABLE IF EXISTS`tbl_entries_data_38`;
@@ -884,15 +866,16 @@ CREATE TABLE`tbl_entries_data_38` (
   `end` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_38` ***
 INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (55, 5, '2013-06-05 22:10:47', '2013-06-05 22:10:47');
 INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (54, 1, '2012-10-17 22:13:19', '2012-10-17 22:13:19');
 INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (57, 7, '2013-08-18 22:10:37', '2013-08-18 22:10:37');
-INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (45, 8, '2013-06-11 22:10:18', '2013-06-11 22:10:18');
+INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (61, 8, '2013-06-11 14:11:06', '2013-06-11 14:11:06');
 INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (48, 9, '2013-07-12 22:11:33', '2013-07-12 22:11:33');
 INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (53, 10, '2013-06-21 22:11:47', '2013-06-21 22:11:47');
+INSERT INTO`tbl_entries_data_38` (`id`, `entry_id`, `start`, `end`) VALUES (60, 19, '2013-06-05 14:09:02', '2013-06-05 14:09:02');
 
 -- *** STRUCTURE:`tbl_entries_data_39` ***
 DROP TABLE IF EXISTS`tbl_entries_data_39`;
@@ -965,15 +948,16 @@ CREATE TABLE`tbl_entries_data_42` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_42` ***
 INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (39, 10, NULL);
 INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (40, 1, NULL);
-INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (31, 8, NULL);
+INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (47, 8, NULL);
 INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (43, 7, NULL);
 INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (41, 5, NULL);
 INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (34, 9, NULL);
+INSERT INTO`tbl_entries_data_42` (`id`, `entry_id`, `value`) VALUES (46, 19, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_43` ***
 DROP TABLE IF EXISTS`tbl_entries_data_43`;
@@ -1151,6 +1135,38 @@ INSERT INTO`tbl_entries_data_57` (`id`, `entry_id`, `file`, `size`, `mimetype`, 
 INSERT INTO`tbl_entries_data_57` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 18, 'square-600-4-5212eb226e928.jpg', 167806, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-19T23:05:54-05:00\";s:5:\"width\";i:600;s:6:\"height\";i:600;}');
 INSERT INTO`tbl_entries_data_57` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (3, 14, 'square-600-1-5212ec0874a3c.jpg', 109982, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-19T23:09:44-05:00\";s:5:\"width\";i:600;s:6:\"height\";i:600;}');
 
+-- *** STRUCTURE:`tbl_entries_data_58` ***
+DROP TABLE IF EXISTS`tbl_entries_data_58`;
+CREATE TABLE`tbl_entries_data_58` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_58` ***
+INSERT INTO`tbl_entries_data_58` (`id`, `entry_id`, `value`) VALUES (2, 2, 'no');
+INSERT INTO`tbl_entries_data_58` (`id`, `entry_id`, `value`) VALUES (3, 20, 'yes');
+INSERT INTO`tbl_entries_data_58` (`id`, `entry_id`, `value`) VALUES (4, 21, 'no');
+
+-- *** STRUCTURE:`tbl_entries_data_59` ***
+DROP TABLE IF EXISTS`tbl_entries_data_59`;
+CREATE TABLE`tbl_entries_data_59` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_59` ***
+INSERT INTO`tbl_entries_data_59` (`id`, `entry_id`, `value`) VALUES (2, 2, 'no');
+INSERT INTO`tbl_entries_data_59` (`id`, `entry_id`, `value`) VALUES (3, 20, 'no');
+INSERT INTO`tbl_entries_data_59` (`id`, `entry_id`, `value`) VALUES (4, 21, 'yes');
+
 -- *** STRUCTURE:`tbl_entries_data_6` ***
 DROP TABLE IF EXISTS`tbl_entries_data_6`;
 CREATE TABLE`tbl_entries_data_6` (
@@ -1166,6 +1182,149 @@ CREATE TABLE`tbl_entries_data_6` (
 
 -- *** DATA:`tbl_entries_data_6` ***
 
+-- *** STRUCTURE:`tbl_entries_data_60` ***
+DROP TABLE IF EXISTS`tbl_entries_data_60`;
+CREATE TABLE`tbl_entries_data_60` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_60` ***
+INSERT INTO`tbl_entries_data_60` (`id`, `entry_id`, `value`) VALUES (2, 2, 'yes');
+INSERT INTO`tbl_entries_data_60` (`id`, `entry_id`, `value`) VALUES (3, 20, 'no');
+INSERT INTO`tbl_entries_data_60` (`id`, `entry_id`, `value`) VALUES (4, 21, 'no');
+
+-- *** STRUCTURE:`tbl_entries_data_61` ***
+DROP TABLE IF EXISTS`tbl_entries_data_61`;
+CREATE TABLE`tbl_entries_data_61` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_61` ***
+INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 2, 'Jennie is a passionate leader following God’s call on her life to catalyze a generation of women to live what they believe. She currently has two studies, one book in publication and speaks nationally. Jennie is married to her best friend, Zac, and they have been blessed with 4 children, the youngest of whom was adopted from Rwanda.', '<p>Jennie is a passionate leader following God’s call on her life to catalyze a generation of women to live what they believe. She currently has two studies, one book in publication and speaks nationally. Jennie is married to her best friend, Zac, and they have been blessed with 4 children, the youngest of whom was adopted from Rwanda.</p>\n');
+INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 20, NULL, NULL);
+INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 21, NULL, NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_62` ***
+DROP TABLE IF EXISTS`tbl_entries_data_62`;
+CREATE TABLE`tbl_entries_data_62` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_62` ***
+
+-- *** STRUCTURE:`tbl_entries_data_63` ***
+DROP TABLE IF EXISTS`tbl_entries_data_63`;
+CREATE TABLE`tbl_entries_data_63` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_63` ***
+INSERT INTO`tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 22, 'a-particularly-long-title-that-needs-a-lot-of-room', 'A PARTICULARLY LONG TITLE THAT NEEDS A LOT OF ROOM');
+
+-- *** STRUCTURE:`tbl_entries_data_64` ***
+DROP TABLE IF EXISTS`tbl_entries_data_64`;
+CREATE TABLE`tbl_entries_data_64` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_64` ***
+INSERT INTO`tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 22, 'jennie-allen', 'Jennie Allen');
+
+-- *** STRUCTURE:`tbl_entries_data_65` ***
+DROP TABLE IF EXISTS`tbl_entries_data_65`;
+CREATE TABLE`tbl_entries_data_65` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_65` ***
+INSERT INTO`tbl_entries_data_65` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 22, 'Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.\r\n\r\nEsse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.\r\n\r\nFlannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.\r\n\r\nRaw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.\r\n\r\nBushwick you probably haven\'t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven\'t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven\'t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.', '<p>Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.</p>\n\n<p>Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.</p>\n\n<p>Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.</p>\n\n<p>Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.</p>\n\n<p>Bushwick you probably haven&#8217;t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven&#8217;t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven&#8217;t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.</p>\n');
+
+-- *** STRUCTURE:`tbl_entries_data_66` ***
+DROP TABLE IF EXISTS`tbl_entries_data_66`;
+CREATE TABLE`tbl_entries_data_66` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_66` ***
+INSERT INTO`tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 22, 'leadership', 'Leadership');
+INSERT INTO`tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 22, 'bespoke', 'Bespoke');
+
+-- *** STRUCTURE:`tbl_entries_data_67` ***
+DROP TABLE IF EXISTS`tbl_entries_data_67`;
+CREATE TABLE`tbl_entries_data_67` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `file` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `size` int(11) unsigned DEFAULT NULL,
+  `mimetype` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `meta` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `file` (`file`),
+  KEY `mimetype` (`mimetype`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_67` ***
+
+-- *** STRUCTURE:`tbl_entries_data_69` ***
+DROP TABLE IF EXISTS`tbl_entries_data_69`;
+CREATE TABLE`tbl_entries_data_69` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `relation_id` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `relation_id` (`relation_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_69` ***
+INSERT INTO`tbl_entries_data_69` (`id`, `entry_id`, `relation_id`) VALUES (2, 22, 21);
+
 -- *** STRUCTURE:`tbl_entries_data_7` ***
 DROP TABLE IF EXISTS`tbl_entries_data_7`;
 CREATE TABLE`tbl_entries_data_7` (
@@ -1179,6 +1338,141 @@ CREATE TABLE`tbl_entries_data_7` (
 
 -- *** DATA:`tbl_entries_data_7` ***
 INSERT INTO`tbl_entries_data_7` (`id`, `entry_id`, `value`) VALUES (5, 4, NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_70` ***
+DROP TABLE IF EXISTS`tbl_entries_data_70`;
+CREATE TABLE`tbl_entries_data_70` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_70` ***
+INSERT INTO`tbl_entries_data_70` (`id`, `entry_id`, `start`, `end`) VALUES (2, 22, '2013-09-14 14:35:41', '2013-09-14 14:35:41');
+
+-- *** STRUCTURE:`tbl_entries_data_72` ***
+DROP TABLE IF EXISTS`tbl_entries_data_72`;
+CREATE TABLE`tbl_entries_data_72` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_72` ***
+INSERT INTO`tbl_entries_data_72` (`id`, `entry_id`, `value`) VALUES (2, 22, 'yes');
+
+-- *** STRUCTURE:`tbl_entries_data_73` ***
+DROP TABLE IF EXISTS`tbl_entries_data_73`;
+CREATE TABLE`tbl_entries_data_73` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+-- *** DATA:`tbl_entries_data_73` ***
+INSERT INTO`tbl_entries_data_73` (`id`, `entry_id`, `value`) VALUES (2, 22, NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_74` ***
+DROP TABLE IF EXISTS`tbl_entries_data_74`;
+CREATE TABLE`tbl_entries_data_74` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `file` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `size` int(11) unsigned DEFAULT NULL,
+  `mimetype` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `meta` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `file` (`file`),
+  KEY `mimetype` (`mimetype`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_74` ***
+
+-- *** STRUCTURE:`tbl_entries_data_75` ***
+DROP TABLE IF EXISTS`tbl_entries_data_75`;
+CREATE TABLE`tbl_entries_data_75` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_75` ***
+
+-- *** STRUCTURE:`tbl_entries_data_76` ***
+DROP TABLE IF EXISTS`tbl_entries_data_76`;
+CREATE TABLE`tbl_entries_data_76` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_76` ***
+
+-- *** STRUCTURE:`tbl_entries_data_77` ***
+DROP TABLE IF EXISTS`tbl_entries_data_77`;
+CREATE TABLE`tbl_entries_data_77` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `relation_id` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `relation_id` (`relation_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_77` ***
+INSERT INTO`tbl_entries_data_77` (`id`, `entry_id`, `relation_id`) VALUES (1, 23, 21);
+
+-- *** STRUCTURE:`tbl_entries_data_78` ***
+DROP TABLE IF EXISTS`tbl_entries_data_78`;
+CREATE TABLE`tbl_entries_data_78` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `file` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `size` int(11) unsigned DEFAULT NULL,
+  `mimetype` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `meta` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `file` (`file`),
+  KEY `mimetype` (`mimetype`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_78` ***
+
+-- *** STRUCTURE:`tbl_entries_data_79` ***
+DROP TABLE IF EXISTS`tbl_entries_data_79`;
+CREATE TABLE`tbl_entries_data_79` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_79` ***
 
 -- *** STRUCTURE:`tbl_entries_data_8` ***
 DROP TABLE IF EXISTS`tbl_entries_data_8`;
@@ -1195,6 +1489,65 @@ CREATE TABLE`tbl_entries_data_8` (
 
 -- *** DATA:`tbl_entries_data_8` ***
 INSERT INTO`tbl_entries_data_8` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 4, 'ua-0000000-xx', 'UA-0000000-XX');
+
+-- *** STRUCTURE:`tbl_entries_data_80` ***
+DROP TABLE IF EXISTS`tbl_entries_data_80`;
+CREATE TABLE`tbl_entries_data_80` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+-- *** DATA:`tbl_entries_data_80` ***
+INSERT INTO`tbl_entries_data_80` (`id`, `entry_id`, `value`) VALUES (1, 24, NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_81` ***
+DROP TABLE IF EXISTS`tbl_entries_data_81`;
+CREATE TABLE`tbl_entries_data_81` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `relation_id` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `relation_id` (`relation_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_81` ***
+INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (1, 24, 21);
+INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (2, 24, 2);
+INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (3, 24, 20);
+
+-- *** STRUCTURE:`tbl_entries_data_82` ***
+DROP TABLE IF EXISTS`tbl_entries_data_82`;
+CREATE TABLE`tbl_entries_data_82` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+-- *** DATA:`tbl_entries_data_82` ***
+INSERT INTO`tbl_entries_data_82` (`id`, `entry_id`, `value`) VALUES (1, 24, NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_84` ***
+DROP TABLE IF EXISTS`tbl_entries_data_84`;
+CREATE TABLE`tbl_entries_data_84` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_84` ***
 
 -- *** STRUCTURE:`tbl_entries_data_9` ***
 DROP TABLE IF EXISTS`tbl_entries_data_9`;
@@ -1231,13 +1584,13 @@ INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`
 
 -- *** DATA:`tbl_entries` ***
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (1, 2, 1, '2013-08-15 18:43:54', '2013-08-15 23:43:54', '2013-08-19 22:14:46', '2013-08-20 03:14:46');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (2, 4, 1, '2013-08-15 18:51:25', '2013-08-15 23:51:25', '2013-08-20 08:52:34', '2013-08-20 13:52:34');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (2, 4, 1, '2013-08-15 18:51:25', '2013-08-15 23:51:25', '2013-08-27 14:22:12', '2013-08-27 19:22:12');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (3, 3, 1, '2013-08-15 18:51:57', '2013-08-15 23:51:57', '2013-08-19 22:58:43', '2013-08-20 03:58:43');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (4, 1, 1, '2013-08-15 19:12:54', '2013-08-16 00:12:54', '2013-08-15 22:17:27', '2013-08-16 03:17:27');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (5, 2, 1, '2013-08-15 19:31:56', '2013-08-16 00:31:56', '2013-08-19 22:14:46', '2013-08-20 03:14:46');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (6, 5, 1, '2013-08-15 19:33:28', '2013-08-16 00:33:28', '2013-08-15 19:33:28', '2013-08-16 00:33:28');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (7, 2, 1, '2013-08-16 11:06:13', '2013-08-16 16:06:13', '2013-08-19 22:35:33', '2013-08-20 03:35:33');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (8, 2, 1, '2013-08-16 12:27:49', '2013-08-16 17:27:49', '2013-08-19 22:10:18', '2013-08-20 03:10:18');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (8, 2, 1, '2013-08-16 12:27:49', '2013-08-16 17:27:49', '2013-08-20 14:11:06', '2013-08-20 19:11:06');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (9, 2, 1, '2013-08-16 12:28:53', '2013-08-16 17:28:53', '2013-08-19 22:11:33', '2013-08-20 03:11:33');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (10, 2, 1, '2013-08-16 14:12:05', '2013-08-16 19:12:05', '2013-08-19 22:14:35', '2013-08-20 03:14:35');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (11, 7, 1, '2013-08-17 11:00:35', '2013-08-17 16:00:35', '2013-08-17 11:21:00', '2013-08-17 16:21:00');
@@ -1248,6 +1601,12 @@ INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `cre
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (16, 3, 1, '2013-08-19 22:10:13', '2013-08-20 03:10:13', '2013-08-19 22:10:13', '2013-08-20 03:10:13');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (17, 3, 1, '2013-08-19 22:10:34', '2013-08-20 03:10:34', '2013-08-19 22:10:34', '2013-08-20 03:10:34');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (18, 3, 1, '2013-08-19 22:11:32', '2013-08-20 03:11:32', '2013-08-19 23:05:54', '2013-08-20 04:05:54');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (19, 2, 1, '2013-08-20 14:08:45', '2013-08-20 19:08:45', '2013-08-20 14:09:02', '2013-08-20 19:09:02');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (20, 4, 1, '2013-08-27 14:22:59', '2013-08-27 19:22:59', '2013-08-27 14:22:59', '2013-08-27 19:22:59');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (21, 4, 1, '2013-08-27 14:23:55', '2013-08-27 19:23:55', '2013-08-27 14:23:55', '2013-08-27 19:23:55');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (22, 8, 1, '2013-08-27 14:33:30', '2013-08-27 19:33:30', '2013-08-27 14:35:41', '2013-08-27 19:35:41');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (23, 12, 1, '2013-08-27 14:41:48', '2013-08-27 19:41:48', '2013-08-27 14:41:48', '2013-08-27 19:41:48');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (24, 13, 1, '2013-08-27 14:48:20', '2013-08-27 19:48:20', '2013-08-27 14:48:20', '2013-08-27 19:48:20');
 
 -- *** DATA:`tbl_extensions` ***
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'admin_css_override', 'enabled', 1.4);
@@ -1282,81 +1641,90 @@ INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (29, 'mem
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (30, 'author_roles', 'enabled', 1.2);
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (31, 'html_panel', 'enabled', '1.4.1');
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (33, 'unpublishedfilter', 'enabled', 1.4);
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (35, 'oembed_field', 'enabled', 1.6);
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (36, 'repeating_date_field', 'disabled', 1.1);
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (37, 'client_logo', 'enabled', 1.2);
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (38, 'field_metakeys', 'enabled', 1.2);
 
 -- *** DATA:`tbl_extensions_delegates` ***
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (1, 1, '/backend/', 'InitaliseAdminPageHead', 'appendAssets');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (2, 2, '/blueprints/events/new/', 'AppendEventFilter', 'appendEventFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (3, 2, '/blueprints/events/edit/', 'AppendEventFilter', 'appendEventFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (4, 2, '/frontend/', 'EventPreSaveFilter', 'eventPreSaveFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (5, 3, '/frontend/', 'FrontendDevKitResolve', 'frontendDevKitResolve');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (6, 3, '/frontend/', 'ManipulateDevKitNavigation', 'manipulateDevKitNavigation');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (7, 4, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (8, 5, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (9, 5, '/system/preferences/', 'Save', '__SavePreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (10, 6, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (11, 6, '/system/preferences/', 'Save', '__SavePreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (12, 6, '/system/preferences/', 'CustomActions', '__toggleMaintenanceMode');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (13, 6, '/backend/', 'AppendPageAlert', '__appendAlert');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (14, 6, '/blueprints/pages/', 'AppendPageContent', '__appendType');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (15, 6, '/frontend/', 'FrontendPrePageResolve', '__checkForMaintenanceMode');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (16, 6, '/frontend/', 'FrontendParamsResolve', '__addParam');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (17, 8, '/frontend/', 'FrontendDevKitResolve', 'frontendDevKitResolve');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (18, 8, '/frontend/', 'ManipulateDevKitNavigation', 'manipulateDevKitNavigation');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (19, 9, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (20, 11, '/backend/', 'InitaliseAdminPageHead', 'appendScriptToHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (21, 12, '/frontend/', 'FrontendOutputPostGenerate', 'parse_html');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (22, 12, '/frontend/', 'FrontendPageResolved', 'setRenderTrigger');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (23, 12, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (85, 34, '/backend/', 'InitaliseAdminPageHead', 'InitaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (25, 14, '/backend/', 'InitaliseAdminPageHead', 'dInitaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (26, 14, '/backend/', 'AppendPageAlert', 'dAppendPageAlert');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (27, 14, '/backend/', 'AdminPagePreGenerate', 'dAdminPagePreGenerate');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (28, 14, '/blueprints/sections/', 'AddSectionElements', 'dAddSectionElements');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (29, 14, '/blueprints/sections/', 'SectionPreCreate', 'dSaveSectionSettings');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (30, 14, '/blueprints/sections/', 'SectionPreEdit', 'dSaveSectionSettings');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (31, 15, '/backend/', 'InitaliseAdminPageHead', 'appendScriptToHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (32, 16, '/backend/', 'InitaliseAdminPageHead', 'initializeAdmin');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (33, 17, '/backend/', 'AdminPagePreGenerate', '__appendAssets');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (34, 17, '/blueprints/datasources/', 'DatasourcePostCreate', '__clearSubsectionCache');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (35, 17, '/blueprints/datasources/', 'DatasourcePostEdit', '__clearSubsectionCache');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (36, 17, '/blueprints/datasources/', 'DatasourcePreDelete', '__clearSubsectionCache');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (37, 17, '/frontend/', 'DataSourceEntriesBuilt', '__prepareSubsection');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (38, 18, '/backend/', 'InitaliseAdminPageHead', 'addScriptToHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (39, 21, '/system/preferences/', 'AddCustomPreferenceFieldsets', '__addPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (40, 21, '/system/preferences/', 'Save', '__savePreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (41, 22, '/backend/', 'AdminPagePreGenerate', '__action');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (42, 23, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (43, 24, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (44, 25, '/backend/', 'InitaliseAdminPageHead', 'dInitaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (45, 25, '/backend/', 'AdminPagePreGenerate', 'dAdminPagePreGenerate');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (46, 26, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'addCustomPreferenceFieldsets');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (47, 26, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (48, 26, '/system/preferences/', 'Save', 'save');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (49, 27, '/publish/new/', 'EntryPostCreate', 'indexEntry');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (50, 27, '/publish/edit/', 'EntryPostEdit', 'indexEntry');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (51, 27, '/publish/', 'EntryPostDelete', 'deleteEntryIndex');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (52, 27, '/frontend/', 'EventPostSaveFilter', 'indexEntry');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (53, 27, '/backend/', 'DashboardPanelRender', 'renderPanel');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (54, 27, '/backend/', 'DashboardPanelTypes', 'dashboardPanelTypes');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (72, 29, '/system/preferences/', 'Save', 'savePreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (71, 29, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (70, 29, '/backend/', 'AdminPagePreGenerate', 'appendAssets');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (69, 29, '/frontend/', 'EventPostSaveFilter', 'processPostSaveFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (68, 29, '/frontend/', 'EventPreSaveFilter', 'checkEventPermissions');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (67, 29, '/frontend/', 'FrontendProcessEvents', 'appendLoginStatusToEventXML');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (66, 29, '/frontend/', 'FrontendParamsResolve', 'addMemberDetailsToPageParams');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (65, 29, '/frontend/', 'FrontendPageResolved', 'checkFrontendPagePermissions');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (73, 29, '/blueprints/events/new/', 'AppendEventFilter', 'appendFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (74, 29, '/blueprints/events/edit/', 'AppendEventFilter', 'appendFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (75, 30, '/backend/', 'NavigationPreRender', 'extendNavigation');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (76, 30, '/system/authors/', 'AuthorPreDelete', 'deleteAuthorRole');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (77, 30, '/system/authors/', 'AuthorPostCreate', 'saveAuthorRole');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (78, 30, '/system/authors/', 'AuthorPostEdit', 'saveAuthorRole');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (79, 30, '/system/authors/', 'AddElementstoAuthorForm', 'addRolePicker');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (80, 30, '/backend/', 'AdminPagePreGenerate', 'checkCallback');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (81, 30, '/backend/', 'InitaliseAdminPageHead', 'makePreAdjustements');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (82, 30, '/system/authors/', 'AddDefaultAuthorAreas', 'modifyAreas');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (84, 33, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (86, 1, '/backend/', 'InitaliseAdminPageHead', 'appendAssets');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (159, 2, '/blueprints/events/edit/', 'AppendEventFilter', 'appendEventFilter');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (158, 2, '/blueprints/events/new/', 'AppendEventFilter', 'appendEventFilter');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (98, 3, '/frontend/', 'ManipulateDevKitNavigation', 'manipulateDevKitNavigation');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (97, 3, '/frontend/', 'FrontendDevKitResolve', 'frontendDevKitResolve');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (104, 4, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (109, 5, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (121, 6, '/blueprints/pages/', 'AppendPageContent', '__appendType');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (120, 6, '/backend/', 'AppendPageAlert', '__appendAlert');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (119, 6, '/system/preferences/', 'CustomActions', '__toggleMaintenanceMode');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (118, 6, '/system/preferences/', 'Save', '__SavePreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (117, 6, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (139, 8, '/frontend/', 'ManipulateDevKitNavigation', 'manipulateDevKitNavigation');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (138, 8, '/frontend/', 'FrontendDevKitResolve', 'frontendDevKitResolve');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (144, 9, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (99, 11, '/backend/', 'InitaliseAdminPageHead', 'appendScriptToHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (107, 12, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (106, 12, '/frontend/', 'FrontendPageResolved', 'setRenderTrigger');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (105, 12, '/frontend/', 'FrontendOutputPostGenerate', 'parse_html');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (108, 34, '/backend/', 'InitaliseAdminPageHead', 'InitaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (115, 14, '/blueprints/sections/', 'SectionPreCreate', 'dSaveSectionSettings');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (114, 14, '/blueprints/sections/', 'AddSectionElements', 'dAddSectionElements');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (113, 14, '/backend/', 'AdminPagePreGenerate', 'dAdminPagePreGenerate');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (112, 14, '/backend/', 'AppendPageAlert', 'dAppendPageAlert');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (111, 14, '/backend/', 'InitaliseAdminPageHead', 'dInitaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (137, 15, '/backend/', 'InitaliseAdminPageHead', 'appendScriptToHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (143, 16, '/backend/', 'InitaliseAdminPageHead', 'initializeAdmin');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (154, 17, '/blueprints/datasources/', 'DatasourcePreDelete', '__clearSubsectionCache');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (153, 17, '/blueprints/datasources/', 'DatasourcePostEdit', '__clearSubsectionCache');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (152, 17, '/blueprints/datasources/', 'DatasourcePostCreate', '__clearSubsectionCache');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (151, 17, '/backend/', 'AdminPagePreGenerate', '__appendAssets');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (156, 18, '/backend/', 'InitaliseAdminPageHead', 'addScriptToHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (95, 21, '/system/preferences/', 'AddCustomPreferenceFieldsets', '__addPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (101, 22, '/backend/', 'AdminPagePreGenerate', '__action');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (124, 23, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (100, 24, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (103, 25, '/backend/', 'AdminPagePreGenerate', 'dAdminPagePreGenerate');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (102, 25, '/backend/', 'InitaliseAdminPageHead', 'dInitaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (141, 26, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (140, 26, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'addCustomPreferenceFieldsets');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (149, 27, '/backend/', 'DashboardPanelRender', 'renderPanel');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (148, 27, '/frontend/', 'EventPostSaveFilter', 'indexEntry');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (147, 27, '/publish/', 'EntryPostDelete', 'deleteEntryIndex');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (146, 27, '/publish/edit/', 'EntryPostEdit', 'indexEntry');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (145, 27, '/publish/new/', 'EntryPostCreate', 'indexEntry');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (132, 29, '/system/preferences/', 'Save', 'savePreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (131, 29, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (130, 29, '/backend/', 'AdminPagePreGenerate', 'appendAssets');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (129, 29, '/frontend/', 'EventPostSaveFilter', 'processPostSaveFilter');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (128, 29, '/frontend/', 'EventPreSaveFilter', 'checkEventPermissions');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (127, 29, '/frontend/', 'FrontendProcessEvents', 'appendLoginStatusToEventXML');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (126, 29, '/frontend/', 'FrontendParamsResolve', 'addMemberDetailsToPageParams');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (125, 29, '/frontend/', 'FrontendPageResolved', 'checkFrontendPagePermissions');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (92, 30, '/backend/', 'AdminPagePreGenerate', 'checkCallback');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (91, 30, '/system/authors/', 'AddElementstoAuthorForm', 'addRolePicker');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (90, 30, '/system/authors/', 'AuthorPostEdit', 'saveAuthorRole');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (89, 30, '/system/authors/', 'AuthorPostCreate', 'saveAuthorRole');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (88, 30, '/system/authors/', 'AuthorPreDelete', 'deleteAuthorRole');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (87, 30, '/backend/', 'NavigationPreRender', 'extendNavigation');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (157, 33, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (93, 30, '/backend/', 'InitaliseAdminPageHead', 'makePreAdjustements');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (94, 30, '/system/authors/', 'AddDefaultAuthorAreas', 'modifyAreas');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (96, 21, '/system/preferences/', 'Save', '__savePreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (110, 5, '/system/preferences/', 'Save', '__SavePreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (116, 14, '/blueprints/sections/', 'SectionPreEdit', 'dSaveSectionSettings');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (122, 6, '/frontend/', 'FrontendPrePageResolve', '__checkForMaintenanceMode');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (123, 6, '/frontend/', 'FrontendParamsResolve', '__addParam');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (133, 29, '/blueprints/events/new/', 'AppendEventFilter', 'appendFilter');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (134, 29, '/blueprints/events/edit/', 'AppendEventFilter', 'appendFilter');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (135, 35, '/backend/', 'InitaliseAdminPageHead', 'appendJS');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (136, 35, '*', 'AppendContentType', 'appendContentType');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (142, 26, '/system/preferences/', 'Save', 'save');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (150, 27, '/backend/', 'DashboardPanelTypes', 'dashboardPanelTypes');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (155, 17, '/frontend/', 'DataSourceEntriesBuilt', '__prepareSubsection');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (160, 2, '/frontend/', 'EventPreSaveFilter', 'eventPreSaveFilter');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (161, 37, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (162, 37, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (163, 37, '/system/preferences/', 'Save', 'savePreferences');
 
 -- *** DATA:`tbl_fields` ***
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (1, 'Twitter', 'twitter', 'input', 1, 'no', 9, 'main', 'yes');
@@ -1382,24 +1750,22 @@ INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (21, 'Flickr', 'flickr', 'input', 1, 'no', 12, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (22, 'Header', 'header', 'input', 2, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (23, 'Article', 'article', 'textarea', 2, 'no', 2, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (24, 'Entry Order', 'entry-order', 'order_entries', 2, 'no', 8, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (77, 'People', 'people', 'subsectionmanager', 12, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (25, 'Tags', 'tags', 'taglist', 2, 'no', 3, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (26, 'Sub-Header', 'sub-header', 'input', 2, 'no', 1, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (27, 'Main Image', 'main-image', 'uniqueupload', 2, 'no', 4, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (28, 'Title/Caption', 'title-caption', 'input', 3, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (57, 'Image', 'image', 'uniqueupload', 3, 'no', 1, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (30, 'Name', 'name', 'input', 4, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (31, 'Title/Position', 'title-position', 'input', 4, 'no', 1, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (32, 'Email', 'email', 'input', 4, 'no', 2, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (33, 'Phone', 'phone', 'input', 4, 'no', 3, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (32, 'Website', 'email-website', 'input', 4, 'no', 2, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (34, 'Profile Image', 'profile-image', 'uniqueupload', 4, 'no', 4, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (35, 'Secondary Images', 'secondary-images', 'subsectionmanager', 2, 'no', 5, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (36, 'People', 'people', 'subsectionmanager', 2, 'no', 6, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (37, 'Published', 'publish', 'checkbox', 2, 'no', 9, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (38, 'Date ', 'date', 'datetime', 2, 'yes', 7, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (76, 'What If? Description', 'what-if-description', 'input', 11, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (74, 'Feature Image', 'feature-image', 'uniqueupload', 9, 'no', 0, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (37, 'Published', 'publish', 'checkbox', 2, 'no', 5, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (38, 'Date ', 'date', 'datetime', 2, 'yes', 4, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (39, 'Bookmark/Favicon', 'bookmark', 'uniqueupload', 1, 'no', 18, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (41, 'Feature Article', 'feature-article', 'selectbox_link', 5, 'yes', 0, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (42, 'Search Posts', 'search-posts', 'search_index', 2, 'no', 10, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (42, 'Search Posts', 'search-posts', 'search_index', 2, 'no', 6, 'main', 'no');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (43, 'First Name', 'first-name', 'input', 6, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (44, 'Last Name', 'last-name', 'input', 6, 'no', 1, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (45, 'Email', 'email', 'input', 6, 'no', 2, 'main', 'yes');
@@ -1409,6 +1775,27 @@ INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (54, 'Username', 'username', 'memberusername', 7, 'yes', 2, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (53, 'Email', 'email', 'memberemail', 7, 'yes', 1, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (52, 'Role', 'role', 'memberrole', 7, 'yes', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (58, 'Leader', 'leader', 'checkbox', 4, 'no', 5, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (59, 'Advisor', 'advisor', 'checkbox', 4, 'no', 6, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (60, 'Core Member', 'core-member', 'checkbox', 4, 'no', 7, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (61, 'About', 'about', 'textarea', 4, 'no', 8, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (62, 'Email', 'email', 'input', 4, 'no', 3, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (63, 'Header', 'header', 'input', 8, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (64, 'Author', 'Author', 'input', 8, 'no', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (65, 'Article', 'article', 'textarea', 8, 'no', 2, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (66, 'Tags', 'tags', 'taglist', 8, 'no', 3, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (67, 'Banner Image', 'banner-image', 'uniqueupload', 8, 'no', 4, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (69, 'People', 'people', 'subsectionmanager', 8, 'no', 5, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (70, 'Date ', 'date', 'datetime', 8, 'yes', 6, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (75, 'Unleash Description', 'unleash-description', 'input', 10, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (72, 'Published', 'publish', 'checkbox', 8, 'no', 7, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (73, 'Search Posts', 'search-posts', 'search_index', 8, 'no', 8, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (78, 'Audio ', 'audio', 'uniqueupload', 12, 'no', 1, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (79, 'Description', 'description', 'input', 13, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (80, 'Who We Are', 'who-we-are', 'publish_tabs', 13, 'no', 1, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (81, 'People', 'people', 'subsectionmanager', 13, 'no', 2, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (82, 'Values', 'values', 'publish_tabs', 13, 'no', 3, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (84, 'Value', 'value', 'input', 13, 'no', 4, 'main', 'yes');
 
 -- *** DATA:`tbl_members_roles` ***
 INSERT INTO`tbl_members_roles` (`id`, `name`, `handle`) VALUES (1, 'Public', 'public');
@@ -1437,10 +1824,10 @@ INSERT INTO`tbl_members_roles_forbidden_pages` (`id`, `role_id`, `page_id`) VALU
 
 -- *** DATA:`tbl_pages` ***
 INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (1, NULL, 'Post', 'post', NULL, 'header', 'logged_in_author,navigation,posts,profile', NULL, 2);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (2, NULL, 'Archive', 'archive', NULL, 'filter', 'logged_in_author,navigation,posts,profile,filter_posts_by_date,post_tags', NULL, 3);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (2, NULL, 'Archive', 'archive', NULL, 'filter', 'filter_posts_by_date,logged_in_author,navigation,post_tags,posts_no_pagination,profile', NULL, 3);
 INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (4, NULL, 'Posts', 'posts', NULL, 'url-p', 'logged_in_author,navigation,posts,profile', NULL, 4);
 INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (5, NULL, 'Drafts', 'drafts', NULL, 'url-p', 'drafts,logged_in_author,navigation,profile', NULL, 5);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (6, NULL, 'Search', 'search', NULL, '$url-keywords', 'logged_in_author,navigation,profile,search,search_suggestions,search_post_results', NULL, 6);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (6, NULL, 'Search', 'search', NULL, 'url-keywords', 'logged_in_author,navigation,profile,search,search_suggestions,search_post_results', NULL, 6);
 INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (7, NULL, 'Draft', 'draft', NULL, 'header', 'drafts,logged_in_author,navigation,profile', NULL, 7);
 INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (8, NULL, 'Sign In', 'sign-in', NULL, NULL, 'logged_in_author,members,navigation,profile', 'members_activate_account,members_generate_recovery_code,members_regenerate_activation_code,members_reset_password', 8);
 INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (9, NULL, 'Private Portfolio', 'private-portfolio', NULL, NULL, 'drafts,logged_in_author,members,navigation,posts,profile', NULL, 9);
@@ -1456,16 +1843,17 @@ INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (29, 5, 'hidden');
 INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (27, 7, 'admin');
 
 -- *** DATA:`tbl_publish_shortcuts` ***
-INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (9, 'View Drafts', '{$root}/drafts', 2, 0);
-INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (10, 'View Posts', '{$root}/posts', 2, 1);
+INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (11, 'View Drafts', '{$root}/drafts', 2, 0);
+INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (12, 'View Posts', '{$root}/posts', 2, 1);
 
 -- *** DATA:`tbl_search_index` ***
 INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (39, 9, 2, 'Department of Eagles High Places Originally known as the Whitey on the Moon UK, Department of Eagles blossomed from the recording project of two college roommates into purveyors of ambitious yet intimate music inspired by Van Dyke Parks and Paul McCartney. Fred Nicolaus and Daniel Rossen met in 2000, when they were assigned as each ... Dark Indie-Rock Moody');
-INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (36, 8, 2, 'Sleigh Bells Mute Records Turns It Up Songwriter/producer Derek Miller and vocalist Alexis Krauss comprise Sleigh Bells, an experimental pop duo that began earning its first fans after a breakout performance at the 2009 CMJ Festival. The musicians formed the group in New York, where Miller (a Florida native and onetime member of hardcore act Poison ... Dark Indie-Rock Moody');
+INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (52, 8, 2, 'Sleigh Bells Mute Records Turns It Up Songwriter/producer Derek Miller and vocalist Alexis Krauss comprise Sleigh Bells, an experimental pop duo that began earning its first fans after a breakout performance at the 2009 CMJ Festival. The musicians formed the group in New York, where Miller (a Florida native and onetime member of hardcore act Poison ... Dark Indie-Rock Lo-Fi');
 INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (48, 7, 2, 'Phantogram Eyelid Movements Killers and landing seven songs in the popular medical TV drama Grey’s Anatomy. In 2007, Tegan sang backup on a song on new Sire labelmate Against Me!’s album New Wave, and the twins, who had by then moved far from the singer/songwriter mold and were more interested in exploring pop, punk, and indie rock, came out with The Con, produced by Christopher Walla of Death Cab for Cutie. Working with Walla went well, and Tegan and Sara also utilized his production skills on their next album, 2009’s Sainthood. 2009 also found the duo collaborating with Tiësto on the song “Feel It in My Bones” for his album Kaleidoscope and with comedian Margaret Cho on the track “Intervention” from her Cho Dependent release. Indie-Electric');
 INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (46, 5, 2, 'Junip Mute Records Turns It Up Gothenburg, Sweden-based indie rock outfit Junip was formed in late \'90s by singer/songwriter Jose Gonzalez. The trio, which consists of Gonzalez on guitar and vocals, drummer Elias Araya, and keyboard player Tobia Winterkorn, crafts dark, moody, indie folk in the vein of their founder. Junip released their debut 7\" in 2000 on their own Kakafoni imprint. Araya then spent nearly five years studying art in Norway and Finland, while Winterkorn worked as a teacher and Gonzalez launched a successful solo career. The trio regrouped for the Black Refuge EP in 2006 and began writing and recording in earnest after Gonzalez finished promoting his album In Our Nature in 2007. The full-length result, Fields, arrived in 2010 on Mute Records. For 2013\'s more polished and more experimental self-titled second album, the trio recorded in their practice space with help from co-producer Don Alsterberg. ~ James Christopher Monger Dark Indie-Folk Lo-Fi Moody');
 INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (45, 1, 2, 'Tegan & Sara \"Canadians Do It Better\" Folk-rock duo Tegan and Sara first burst onto the Canadian music scene in 1998, when they earned the highest score in history at Calgary\'s \"Garage Warz\" competition; their quick rise didn\'t stop, for their melodic acoustics and charming stage personas led to a slew of dates with Sarah McLachlan\'s Lilith Fair that same year and a record deal with Neil Young\'s Vapor Records in April 2000. Natives of Calgary, these twin sisters derived their music interests from their parents. Tegan and Sara began playing piano at age eight, and in their teens they were skanking around in their own punk bands. This Business of Art, which was produced by singer/songwriter Hawksley Workman, marked their debut in mid-2000, and a summer tour with Neil Young and the Pretenders followed in July. Two years later, Tegan and Sara released If It Was You, followed in 2004 by their commercial breakthrough, So Jealous. In 2005, the White Stripes released a popular cover of If It Was You\'s \"Walking with a Ghost.\" That same year saw the duo touring the U.S. with the Killers and landing seven songs in the popular medical TV drama Grey\'s Anatomy. In 2007, Tegan sang backup on a song on new Sire labelmate Against Me!\'s album New Wave, and the twins, who had by then moved far from the singer/songwriter mold and were more interested in exploring pop, punk, and indie rock, came out with The Con, produced by Christopher Walla of Death Cab for Cutie. Working with Walla went well, and Tegan and Sara also utilized his production skills on their next album, 2009\'s Sainthood. 2009 also found the duo collaborating with Tiësto on the song \"Feel It in My Bones\" for his album Kaleidoscope and with comedian Margaret Cho on the track \"Intervention\" from her Cho Dependent release. 2011\'s live CD/DVD Get Along was paired with three short behind-the-scenes films called States, India, and For the Most Part. On their seventh studio album, the duo turned to producer Greg Kurstin (Lily Allen, Kelly Clarkson, Ke$ha) for help in making an album that reflected the modern pop sound. The very slick, yet still emotionally powerful Heartthob was released in early 2013. ~ MacKenzie Wilson Indie-Rock Moody');
 INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (44, 10, 2, 'The National Britain Joins Forces Although formed during the post-punk revival of the late \'90s, the National took inspiration from a wider set of influences, including country-rock, Americana, indie rock, and Brit-pop. The lineup began taking shape in Ohio and officially cemented itself in New York, with baritone vocalist Matt Berninger joining forces with two ... Dark Indie-Rock Moody');
+INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (51, 19, 2, 'Phosphorescent In Dallas Gothenburg, Sweden-based indie rock outfit Junip was formed in late \'90s by singer/songwriter Jose Gonzalez. The trio, which consists of Gonzalez on guitar and vocals, drummer Elias Araya, and keyboard player Tobia Winterkorn, crafts dark, moody, indie folk in the vein of their founder. Junip released their debut 7\" in 2000 on their own Kakafoni imprint. Araya then spent nearly five years studying art in Norway and Finland, while Winterkorn worked as a teacher and Gonzalez launched a successful solo career. The trio regrouped for the Black Refuge EP in 2006 and began writing and recording in earnest after Gonzalez finished promoting his album In Our Nature in 2007. The full-length result, Fields, arrived in 2010 on Mute Records. For 2013\'s more polished and more experimental self-titled second album, the trio recorded in their practice space with help from co-producer Don Alsterberg. ~ James Christopher Monger Dark Indie-Folk Lo-Fi Moody');
 
 -- *** DATA:`tbl_search_index_entry_keywords` ***
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (9, 2065, 1);
@@ -1511,31 +1899,32 @@ INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequen
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (9, 12, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (9, 11, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (9, 7, 4);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1966, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1965, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1964, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1963, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1962, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1961, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1960, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1959, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1958, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1957, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1956, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1955, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1954, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1953, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1952, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1951, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1950, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1949, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1948, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1947, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1946, 2);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1945, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1944, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1943, 2);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 1942, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2733, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2732, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2731, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2730, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2729, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2728, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2727, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2726, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2725, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2724, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2723, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2722, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2721, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2720, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2719, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2718, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2717, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2716, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2715, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2714, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2713, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2712, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2711, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2710, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2709, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 2694, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 75, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 74, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 72, 1);
@@ -1551,7 +1940,6 @@ INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequen
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 48, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 47, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 46, 1);
-INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 43, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 42, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 41, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (8, 27, 2);
@@ -2008,6 +2396,108 @@ INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequen
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (10, 11, 1);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (10, 7, 5);
 INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (5, 7, 12);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2708, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2707, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2694, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2693, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2630, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2692, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2691, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2631, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2632, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2633, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2634, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 225, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2635, 4);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2636, 3);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2637, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2638, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2639, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2640, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2641, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2642, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2643, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2644, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2645, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2646, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2647, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2648, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2649, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2650, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2651, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2652, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2653, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2654, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2655, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2656, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2657, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2658, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2659, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2660, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2661, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2662, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2663, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2664, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2665, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 193, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2666, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 191, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2667, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2668, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2669, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2670, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2671, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 185, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 184, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 183, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2672, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2673, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2674, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2675, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2676, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2677, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2678, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2679, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2680, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2681, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2682, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2683, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 168, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2684, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2685, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2686, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 164, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 163, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 162, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2687, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2688, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2689, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 2690, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 140, 4);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 137, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 129, 3);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 125, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 122, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 119, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 118, 3);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 114, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 112, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 109, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 104, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 96, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 72, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 65, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 60, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 56, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 47, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 46, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 43, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 41, 2);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 35, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 27, 8);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 12, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 11, 1);
+INSERT INTO`tbl_search_index_entry_keywords` (`entry_id`, `keyword_id`, `frequency`) VALUES (19, 7, 12);
 
 -- *** DATA:`tbl_search_index_keywords` ***
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2065, 'each');
@@ -2053,43 +2543,43 @@ INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2037, 'departme
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (41, 'dark');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (42, 'indie-rock');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (43, 'moody');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1963, 'member');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1962, 'onetime');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2730, 'member');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2729, 'onetime');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (46, 'mute');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (47, 'records');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (48, 'turns');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1961, 'native');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1960, 'florida');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1959, 'where');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2728, 'native');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2727, 'florida');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2726, 'where');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (52, 'vocalist');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1958, 'group');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1957, 'musicians');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1956, 'festival');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2725, 'group');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2724, 'musicians');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2723, 'festival');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (56, 'experimental');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (57, 'pop');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (58, 'duo');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (59, 'that');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (60, 'began');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1955, 'cmj');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1954, 'performance');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2722, 'cmj');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2721, 'performance');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (63, 'first');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (65, 'after');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1953, 'breakout');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1952, 'fans');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2720, 'breakout');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2719, 'fans');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (68, 2009);
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1951, 'its');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1950, 'earning');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1949, 'comprise');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2718, 'its');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2717, 'earning');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2716, 'comprise');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (72, 'formed');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1948, 'krauss');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2715, 'krauss');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (74, 'new');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (75, 'york');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1947, 'alexis');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1946, 'miller');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1945, 'derek');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1944, 'songwriter/producer');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1943, 'bells');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1942, 'sleigh');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2714, 'alexis');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2713, 'miller');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2712, 'derek');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2711, 'songwriter/producer');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2710, 'bells');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2709, 'sleigh');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2704, 'indie-electric');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2703, 'grey');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2702, 'movements');
@@ -2383,9 +2873,9 @@ INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2498, 'itself')
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2625, 'heartthob');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2626, 'early');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2627, 2013);
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1964, 'hardcore');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2731, 'hardcore');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2691, 'james');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1965, 'act');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2732, 'act');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2692, 'monger');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2630, 'junip');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2499, 'baritone');
@@ -2394,9 +2884,11 @@ INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2628, 'mackenzi
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2501, 'berninger');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2629, 'wilson');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2502, 'joining');
-INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (1966, 'poison');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2733, 'poison');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2693, 'indie-folk');
 INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2694, 'lo-fi');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2707, 'phosphorescent');
+INSERT INTO`tbl_search_index_keywords` (`id`, `keyword`) VALUES (2708, 'dallas');
 
 -- *** DATA:`tbl_search_index_logs` ***
 INSERT INTO`tbl_search_index_logs` (`id`, `date`, `keywords`, `keywords_manipulated`, `sections`, `page`, `results`, `session_id`) VALUES (1, '2013-08-16 13:56:34', 'indie-electric', 'indie-electric', 'posts', 1, 1, 'sqpbs6i2jt9k2k35d2ocrin0v4');
@@ -2423,16 +2915,26 @@ INSERT INTO`tbl_search_index_logs` (`id`, `date`, `keywords`, `keywords_manipula
 -- *** DATA:`tbl_sections` ***
 INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (1, 'Profile', 'profile', 4, 'no', 1, 'Admin');
 INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (3, 'Images', 'images', 2, 'no', 0, 'MGMT');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (2, 'Posts', 'posts', 1, 'no', 0, 'Posts');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (2, 'Equip Stories', 'equip-stories', 1, 'no', 0, 'Equip');
 INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (4, 'People', 'people', 3, 'no', 0, 'MGMT');
 INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (5, 'Feature', 'feature', 5, 'no', 1, 'Posts');
 INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (6, 'Inquiries', 'inquiries', 6, 'no', 0, 'Forms');
 INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (7, 'Members', 'members', 7, 'no', 0, 'MGMT');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (8, 'Unleash Stories', 'unleash-stories', 1, 'no', 0, 'Unleash ');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (9, 'Feature Image', 'feature-image', 8, 'no', 1, 'Equip');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (10, 'Unleash Description', 'unleash-description', 9, 'no', 1, 'Unleash ');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (11, 'What If? Description', 'what-if-description', 9, 'no', 1, 'What If?');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (12, 'What If? Stories', 'what-if-stories', 10, 'no', 0, 'What If?');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (13, 'Who We Are', 'who-we-are', 11, 'no', 1, 'Who We Are');
 
 -- *** DATA:`tbl_sections_association` ***
-INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (30, 2, 35, 3, 35, 'yes');
-INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (31, 2, 36, 4, 36, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (47, 13, 81, 4, 81, 'yes');
 INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (13, 2, 22, 5, 41, 'no');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (45, 12, 77, 4, 77, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (43, 8, 69, 4, 69, 'yes');
 
 -- *** DATA:`tbl_tooltips` ***
 INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (1, 13, 'That string of letters/numbers before the \'.js\' in the first script tag.');
+INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (3, 69, 'Required Fields\n-------------\n    - Name\n    - Title/Position\n    - Profile Image  ');
+INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (4, 67, 'Dimensions\n----------\n1600px X 400px ');
+INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (5, 79, 'A brief description defining this section.');

@@ -1,3 +1,6 @@
 [submodule "extensions/field_metakeys"]
 	path = extensions/field_metakeys
 	url = git://github.com/brendo/field_metakeys.git
+[submodule "extensions/client_logo"]
+	path = extensions/client_logo
+	url = git://github.com/fawx/client_logo.git

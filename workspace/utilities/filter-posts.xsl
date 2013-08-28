@@ -10,7 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <xsl:if test="entry[substring(date/@iso,1,7) = $filter]">
                 <xsl:attribute name="class">active</xsl:attribute>
             </xsl:if>
-            <a href="{$root}/archive/{../@value}-{@value}">
+            <a href="{$root}/{$current-page}/{../@value}-{@value}">
 
                 <xsl:call-template name="format-month">
                     <xsl:with-param name="month" select="@value"/>
@@ -25,7 +25,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <!-- List of Years -->
     <xsl:template match="year" mode="year-list">
         <li>
-            <a href="{$root}/archive/{@value}">
+            <a href="{$root}/{$current-page}/{@value}">
                 <xsl:value-of select="@value"/>
             </a>
         </li>

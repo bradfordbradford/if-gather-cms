@@ -15,6 +15,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <link rel="icon" type="images/png" href="{$workspace}/{data/profile/entry/bookmark/@path}/{data/profile/entry/bookmark/filename}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{$workspace}/assets/css/foundation.css" />
 
+    <link rel="stylesheet" type="text/css" media="screen" href="{$workspace}/assets/css/pushy.css" />
+
+    <script rel='javascript' src='{$workspace}/assets/js/vendor/custom.modernizr.js'></script>
+
 	<!-- <script type="text/javascript" src="//use.typekit.net/{data/profile/entry/typekit-id}.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 

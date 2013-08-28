@@ -210,7 +210,7 @@ CREATE TABLE`tbl_fields_html_panel` (
   `url_expression` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
 
 -- *** STRUCTURE: `sym_fields_input` ***
 DROP TABLE IF EXISTS`tbl_fields_input`;
@@ -264,6 +264,33 @@ CREATE TABLE`tbl_fields_memberusername` (
   UNIQUE KEY `field_id` (`field_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+-- *** STRUCTURE: `sym_fields_metakeys` ***
+DROP TABLE IF EXISTS`tbl_fields_metakeys`;
+CREATE TABLE`tbl_fields_metakeys` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `field_id` int(11) unsigned NOT NULL,
+  `validator` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `default_keys` text COLLATE utf8_unicode_ci,
+  `delete_empty_keys` int(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `field_id` (`field_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** STRUCTURE: `sym_fields_oembed` ***
+DROP TABLE IF EXISTS`tbl_fields_oembed`;
+CREATE TABLE`tbl_fields_oembed` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `field_id` int(11) unsigned NOT NULL,
+  `refresh` int(11) unsigned DEFAULT NULL,
+  `driver` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `unique` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  `thumbs` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  `query_params` varchar(1024) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `force_ssl` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  KEY `field_id` (`field_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 -- *** STRUCTURE: `sym_fields_order_entries` ***
 DROP TABLE IF EXISTS`tbl_fields_order_entries`;
 CREATE TABLE`tbl_fields_order_entries` (
@@ -293,6 +320,16 @@ CREATE TABLE`tbl_fields_publishnotes` (
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** STRUCTURE: `sym_fields_repeating_date` ***
+DROP TABLE IF EXISTS`tbl_fields_repeating_date`;
+CREATE TABLE`tbl_fields_repeating_date` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `field_id` int(11) unsigned NOT NULL,
+  `pre_populate` enum('yes','no') NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  KEY `field_id` (`field_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- *** STRUCTURE: `sym_fields_search_index` ***
 DROP TABLE IF EXISTS`tbl_fields_search_index`;

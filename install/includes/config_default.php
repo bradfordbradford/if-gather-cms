@@ -51,7 +51,7 @@
 
 		###### GENERAL ######
 		'general' => array(
-			'sitename' => 'Seraph',
+			'sitename' => 'If: Gather',
 		),
 		########
 
@@ -150,6 +150,13 @@
 		###### DATETIME ######
 		'datetime' => array(
 			'english' => 'en, en_GB.UTF8, en_GB',
+		),
+		########
+
+
+		###### CLIENT_LOGO ######
+		'client_logo' => array(
+			'path' => 'images/icons/ifgather-logo-drk-large+@2x.png',
 		),
 		########
 	);

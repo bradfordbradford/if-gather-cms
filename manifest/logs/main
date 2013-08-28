@@ -1,29 +1,39 @@
 ============================================
-Log Created: 2013-08-20T14:01:55-05:00
+Log Created: 2013-08-28T16:15:20-05:00
 ============================================
 Symphony Log
-Opened:  2013-08-20T14:01:55-05:00
+Opened:  2013-08-28T16:15:20-05:00
 Version: 2.3.3
 Domain:  ifgather-cms.tc
 --------------------------------------------
-08/20/2013 2:08 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
-08/20/2013 2:15 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): error
-Line: 145 - XSLTProcessor::importStylesheet(): xsltCompileLocationPathPattern : Name expected
-Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/mgmt-post.xsl line 58 element template
-Line: 145 - XSLTProcessor::importStylesheet(): xsltCompilePattern : failed to compile '.'
+08/28/2013 4:15 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:25: parser error : Specification mandate value for attribute addthis
+Line: 145 - XSLTProcessor::importStylesheet():     <div addthis&#58;title='{comment}' class='addthis_toolbox addthis_default_st
+Line: 145 - XSLTProcessor::importStylesheet():                 ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:25: parser error : attributes construct error
+Line: 145 - XSLTProcessor::importStylesheet():     <div addthis&#58;title='{comment}' class='addthis_toolbox addthis_default_st
+Line: 145 - XSLTProcessor::importStylesheet():                 ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:25: parser error : Couldn't find end of Start Tag div line 25
+Line: 145 - XSLTProcessor::importStylesheet():     <div addthis&#58;title='{comment}' class='addthis_toolbox addthis_default_st
+Line: 145 - XSLTProcessor::importStylesheet():                 ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:27: parser error : Opening and ending tag mismatch: template line 21 and div
+Line: 145 - XSLTProcessor::importStylesheet():     </div>
+Line: 145 - XSLTProcessor::importStylesheet():           ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:28: parser error : Opening and ending tag mismatch: stylesheet line 2 and template
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:template>
+Line: 145 - XSLTProcessor::importStylesheet():                ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:30: parser error : Extra content at the end of the document
+Line: 145 - XSLTProcessor::importStylesheet(): <xsl:template match="error" mode="error">
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/what-if.xsl line 10 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl
 Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
-08/27/2013 2:14 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/content/avignon-521374a2d1c2c.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
-08/27/2013 2:14 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/content/avignon-521374a2d1c2c.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
-08/27/2013 2:15 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/content/avignon-521374a2d1c2c.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
-08/27/2013 2:16 pm > Warning: GenericErrorHandler 2: Missing argument 1 for FieldRepeating_Date::__construct(), called in /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.fieldmanager.php on line 534 and defined on line 14 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/repeating_date_field/fields/field.repeating_date.php
-08/27/2013 2:16 pm > UNKNOWN: ErrorException 0 - Missing argument 1 for FieldRepeating_Date::__construct(), called in /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.fieldmanager.php on line 534 and defined on line 14 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/repeating_date_field/fields/field.repeating_date.php
-08/27/2013 2:16 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/content/avignon-521374a2d1c2c.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
-08/27/2013 2:16 pm > Warning: GenericErrorHandler 2: Missing argument 1 for FieldRepeating_Date::__construct(), called in /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.fieldmanager.php on line 534 and defined on line 14 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/repeating_date_field/fields/field.repeating_date.php
-08/27/2013 2:16 pm > UNKNOWN: ErrorException 0 - Missing argument 1 for FieldRepeating_Date::__construct(), called in /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.fieldmanager.php on line 534 and defined on line 14 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/repeating_date_field/fields/field.repeating_date.php
-08/27/2013 2:16 pm > Warning: GenericErrorHandler 2: Missing argument 1 for FieldRepeating_Date::__construct(), called in /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.fieldmanager.php on line 534 and defined on line 14 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/repeating_date_field/fields/field.repeating_date.php
-08/27/2013 2:16 pm > UNKNOWN: ErrorException 0 - Missing argument 1 for FieldRepeating_Date::__construct(), called in /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.fieldmanager.php on line 534 and defined on line 14 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/repeating_date_field/fields/field.repeating_date.php
-08/27/2013 2:20 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/content/avignon-521374a2d1c2c.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
-08/27/2013 2:20 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/content/avignon-521374a2d1c2c.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
-08/27/2013 2:29 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
-08/27/2013 2:41 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
-08/27/2013 2:46 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/28/2013 4:15 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:25: namespace error : Namespace prefix addthis for title on div is not defined
+Line: 145 - XSLTProcessor::importStylesheet():     <div addthis:title='{comment}' class='addthis_toolbox addthis_default_style'
+Line: 145 - XSLTProcessor::importStylesheet():                                                                                ^ on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/28/2013 4:30 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:25: namespace error : Namespace prefix addthis for title on div is not defined
+Line: 145 - XSLTProcessor::importStylesheet():     <div addthis:title='{comment}' class='addthis_toolbox addthis_default_style'
+Line: 145 - XSLTProcessor::importStylesheet():                                                                                ^ on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/28/2013 4:30 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl:25: namespace error : Namespace prefix addthis for title on div is not defined
+Line: 145 - XSLTProcessor::importStylesheet():     <div addthis:title='{comment}' class='addthis_toolbox addthis_default_style'
+Line: 145 - XSLTProcessor::importStylesheet():                                                                                ^ on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/28/2013 4:34 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php

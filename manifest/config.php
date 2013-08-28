@@ -101,6 +101,10 @@
 		'sorting' => array(
 			'section_posts_sortby' => '37',
 			'section_posts_order' => 'asc',
+			'section_unleash-stories_sortby' => '70',
+			'section_unleash-stories_order' => 'desc',
+			'section_what-if-stories_sortby' => '99',
+			'section_what-if-stories_order' => 'asc',
 		),
 		########
 
@@ -143,6 +147,42 @@
 		'members' => array(
 			'cookie-prefix' => 'sym-members',
 			'section' => '7',
+		),
+		########
+
+
+		###### EMAIL ######
+		'email' => array(
+			'default_gateway' => 'sendmail',
+		),
+		########
+
+
+		###### EMAIL_SENDMAIL ######
+		'email_sendmail' => array(
+			'from_name' => null,
+			'from_address' => null,
+		),
+		########
+
+
+		###### EMAIL_SMTP ######
+		'email_smtp' => array(
+			'from_name' => null,
+			'from_address' => null,
+			'host' => '127.0.0.1',
+			'port' => '25',
+			'secure' => 'no',
+			'auth' => '0',
+			'username' => null,
+			'password' => null,
+		),
+		########
+
+
+		###### CLIENT_LOGO ######
+		'client_logo' => array(
+			'path' => 'assets/images/icons/ifgather-logo-drk-large+@2x.png',
 		),
 		########
 
