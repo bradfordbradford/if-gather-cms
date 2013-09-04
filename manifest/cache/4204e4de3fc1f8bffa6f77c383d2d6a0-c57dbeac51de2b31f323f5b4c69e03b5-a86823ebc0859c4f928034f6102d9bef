@@ -1,0 +1,23 @@
+<pre><line id="1"><marker></marker><content><span class="context-markup xml xsl"><span class="declaration open close"><span class="begin">&lt;?xml</span> <span class="attribute">version=</span><span class="value">"1.0"</span> <span class="attribute">encoding=</span><span class="value">"UTF-8"</span><span class="end">?&gt;</span></span><span class="text"></content></line></span></span>
+<line id="2"><marker></marker><content><span class="context-markup xml xsl"><span class="text"></content></line></span></span>
+<line id="3"><marker></marker><content><span class="context-markup xml xsl"><span class="text"></span><span class="tag open"><span class="begin">&lt;xsl:stylesheet</span> <span class="attribute">version=</span><span class="value">"1.0"</span></content></line></span></span>
+<line id="4"><marker></marker><content><span class="context-markup xml xsl"><span class="tag open">    <span class="attribute">xmlns:xsl=</span><span class="value">"http://www.w3.org/1999/XSL/Transform"</span></content></line></span></span>
+<line id="5"><marker></marker><content><span class="context-markup xml xsl"><span class="tag open">    <span class="attribute">xmlns:addthis=</span><span class="value">"url/here"</span></content></line></span></span>
+<line id="6"><marker></marker><content><span class="context-markup xml xsl"><span class="tag open">    <span class="end">&gt;</span></span><span class="text"></content></line></span></span>
+<line id="7"><marker></marker><content><span class="context-markup xml xsl"><span class="text"></content></line></span></span>
+<line id="8"><marker></marker><content><span class="context-markup xml xsl"><span class="text"></span><span class="tag open"><span class="begin">&lt;xsl:template</span> <span class="attribute">match=</span><span class="value xpath">"data"</span><span class="end">&gt;</span></span><span class="text"></content></line></span></span>
+<line id="9"><marker></marker><content><span class="context-markup xml xsl"><span class="text"></span><span class="comment"><span class="start">&lt;!--</span></content></line></span></span>
+<line id="10"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">    &lt;xsl:element name="div"&gt;</content></line></span></span>
+<line id="11"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">        &lt;xsl:attribute name="addthis:title"&gt;Title to Quote One...&lt;/xsl:attribute&gt;</content></line></span></span>
+<line id="12"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">        &lt;xsl:attribute name="addthis:url"&gt;www.site.com&lt;/xsl:attribute&gt;</content></line></span></span>
+<line id="13"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">        &lt;xsl:attribute name="class"&gt;addthis_toolbox addthis_default_style&lt;/xsl:attribute&gt;</content></line></span></span>
+<line id="14"><marker></marker><content><span class="context-markup xml xsl"><span class="comment"></content></line></span></span>
+<line id="15"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">        &lt;xsl:element name="a"&gt;</content></line></span></span>
+<line id="16"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">            &lt;xsl:attribute name="class"&gt;addthis_button_tweet&lt;/xsl:attribute&gt;</content></line></span></span>
+<line id="17"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">            &lt;xsl:attribute name="href"&gt;www.site.com&lt;/xsl:attribute&gt;</content></line></span></span>
+<line id="18"><marker></marker><content><span class="context-markup xml xsl"><span class="comment"></content></line></span></span>
+<line id="19"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">            &lt;xsl:text&gt;Link Value Here&lt;/xsl:text&gt;</content></line></span></span>
+<line id="20"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">        &lt;/xsl:element&gt;</content></line></span></span>
+<line id="21"><marker></marker><content><span class="context-markup xml xsl"><span class="comment"></content></line></span></span>
+<line id="22"><marker></marker><content><span class="context-markup xml xsl"><span class="comment">    &lt;/xsl:element&gt; <span class="stop">--&gt;</span></span><span class="text"></content></line></span></span>
+<line id="23"><marker></marker><content><span class="context-markup xml xsl"><span class="text"></span><span class="tag close">&lt;/xsl:template&gt;</span></span></content></line></pre>

@@ -14,14 +14,11 @@
 		public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 		
 
-		public $dsParamFILTERS = array(
-				'97' => 'yes',
-		);
 		
 
 		public $dsParamINCLUDEDELEMENTS = array(
-				'response',
-				'author'
+				'comment',
+				'name'
 		);
 		
 
@@ -38,7 +35,7 @@
 					'website' => 'http://ifgather-cms.tc',
 					'email' => 'lindseyb@wearetelegraph.com'),
 				'version' => 'Symphony 2.3.3',
-				'release-date' => '2013-08-28T20:10:09+00:00'
+				'release-date' => '2013-09-03T14:41:29+00:00'
 			);
 		}
 

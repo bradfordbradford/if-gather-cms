@@ -37,3 +37,435 @@ Line: 145 - XSLTProcessor::importStylesheet():                                  
 Line: 145 - XSLTProcessor::importStylesheet():     <div addthis:title='{comment}' class='addthis_toolbox addthis_default_style'
 Line: 145 - XSLTProcessor::importStylesheet():                                                                                ^ on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
 08/28/2013 4:34 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:08 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:21: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:09 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:6: parser error : Extra content at the end of the document
+Line: 145 - XSLTProcessor::importStylesheet(): <xsl:template match="/">
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:09 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:6: parser error : Extra content at the end of the document
+Line: 145 - XSLTProcessor::importStylesheet(): <xsl:template match="data">
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:11 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:5: parser error : Attribute xmlns:addthis redefined
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis="title">
+Line: 145 - XSLTProcessor::importStylesheet():                          ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:22: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:12 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:5: parser error : Attribute xmlns:addthis redefined
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis="title" />
+Line: 145 - XSLTProcessor::importStylesheet():                          ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:7: parser error : Extra content at the end of the document
+Line: 145 - XSLTProcessor::importStylesheet(): <xsl:template match="data">
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:12 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:5: parser error : Attribute xmlns:addthis redefined
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis="title" />
+Line: 145 - XSLTProcessor::importStylesheet():                          ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:7: parser error : Extra content at the end of the document
+Line: 145 - XSLTProcessor::importStylesheet(): <xsl:template match="data">
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:12 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:5: parser error : Attribute xmlns:addthis redefined
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis="title" >
+Line: 145 - XSLTProcessor::importStylesheet():                          ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:23: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:12 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:5: parser error : Attribute xmlns:addthis redefined
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis="title" >
+Line: 145 - XSLTProcessor::importStylesheet():                          ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:23: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:16 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 25 element text
+Line: 145 - XSLTProcessor::importStylesheet(): xsltParseTemplateContent: xslt:text content problem
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:34 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:34 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl:4: namespace error : Failed to parse QName 'xmlns:addthis:'
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis:title="url/here"
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:35 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl:4: namespace error : Failed to parse QName 'xmlns:addthis:'
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:addthis:title="url/here"
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:35 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 9:35 am > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 158 - XSLTProcessor::transformToXml(): xsl:attribute: Cannot add attributes to an element if children have been already added to the element.
+Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 158 - XSLTProcessor::transformToXml(): xsl:attribute: Cannot add attributes to an element if children have been already added to the element. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 10:28 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 11:14 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 43 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 4:55 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:23: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 4:55 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:24: parser error : Premature end of data in tag stylesheet line 3
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 4:55 pm > Warning: GenericErrorHandler 2: SimpleXMLElement::__construct(): Entity: line 24: parser error : Premature end of data in tag stylesheet line 3 on line 201 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/debugdevkit/content/content.debug.php
+08/29/2013 4:55 pm > Warning: GenericErrorHandler 2: SimpleXMLElement::__construct():  on line 201 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/debugdevkit/content/content.debug.php
+08/29/2013 4:55 pm > Warning: GenericErrorHandler 2: SimpleXMLElement::__construct(): ^ on line 201 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/debugdevkit/content/content.debug.php
+08/29/2013 4:55 pm > Warning: GenericErrorHandler 2: SimpleXMLElement::__construct(): Entity: line 24: parser error : Premature end of data in tag stylesheet line 3 on line 201 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/debugdevkit/content/content.debug.php
+08/29/2013 4:55 pm > Warning: GenericErrorHandler 2: SimpleXMLElement::__construct():  on line 201 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/debugdevkit/content/content.debug.php
+08/29/2013 4:55 pm > Warning: GenericErrorHandler 2: SimpleXMLElement::__construct(): ^ on line 201 of file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/extensions/debugdevkit/content/content.debug.php
+08/29/2013 4:55 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:24: parser error : Premature end of data in tag stylesheet line 3
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 4:55 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl:24: parser error : Premature end of data in tag stylesheet line 3
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:17 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl line 26 element value-of
+Line: 158 - XSLTProcessor::transformToXml(): Variable 'page-name' has not been declared.
+Line: 158 - XSLTProcessor::transformToXml(): xmlXPathCompiledEval: evaluation failed
+Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl line 26 element value-of
+Line: 158 - XSLTProcessor::transformToXml(): XPath evaluation returned no result. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:25 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/comments-test/www.site.com/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+08/29/2013 5:36 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): Invalid type
+Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl line 29 element value-of
+Line: 158 - XSLTProcessor::transformToXml(): XPath evaluation returned no result. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:41 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl line 27 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/comments-test.xsl line 33 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:42 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:43 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 29 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 35 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+08/29/2013 5:44 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 28 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:title' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-comments.xsl line 34 element attribute
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:attribute: The prefixed QName 'addthis:url' has no namespace binding in scope in the stylesheet; this is an error, since the namespace was not specified by the instruction itself.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 9:21 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 9:39 am > Error: Javascript - Uncaught TypeError: Cannot call method 'addClass' of undefined in file http://ifgather-cms.tc/extensions/subsectionmanager/assets/subsectionmanager.publish.js on line 342
+09/03/2013 9:40 am > Error: Javascript - Uncaught TypeError: Cannot call method 'addClass' of undefined in file http://ifgather-cms.tc/extensions/subsectionmanager/assets/subsectionmanager.publish.js on line 342
+09/03/2013 10:07 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/unleash.xsl line 19 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): The value '' of the attribute 'mode' is not a valid QName.
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/unleash.xsl line 21 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): The value '' of the attribute 'mode' is not a valid QName.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:02 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:02 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:21 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:16: parser error : Opening and ending tag mismatch: img line 14 and a
+Line: 145 - XSLTProcessor::importStylesheet(): 		</a>
+Line: 145 - XSLTProcessor::importStylesheet(): 		    ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:17: parser error : Opening and ending tag mismatch: a line 12 and div
+Line: 145 - XSLTProcessor::importStylesheet(): 	</div>
+Line: 145 - XSLTProcessor::importStylesheet(): 	      ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:54: parser error : Opening and ending tag mismatch: div line 11 and section
+Line: 145 - XSLTProcessor::importStylesheet(): </section>
+Line: 145 - XSLTProcessor::importStylesheet():           ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:56: parser error : Opening and ending tag mismatch: section line 10 and xsl:template
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:template>
+Line: 145 - XSLTProcessor::importStylesheet():                ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:116: parser error : Opening and ending tag mismatch: template line 4 and stylesheet
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:117: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl line 10 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:21 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:16: parser error : Opening and ending tag mismatch: img line 14 and a
+Line: 145 - XSLTProcessor::importStylesheet(): 		</a>
+Line: 145 - XSLTProcessor::importStylesheet(): 		    ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:17: parser error : Opening and ending tag mismatch: a line 12 and div
+Line: 145 - XSLTProcessor::importStylesheet(): 	</div>
+Line: 145 - XSLTProcessor::importStylesheet(): 	      ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:54: parser error : Opening and ending tag mismatch: div line 11 and section
+Line: 145 - XSLTProcessor::importStylesheet(): </section>
+Line: 145 - XSLTProcessor::importStylesheet():           ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:56: parser error : Opening and ending tag mismatch: section line 10 and xsl:template
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:template>
+Line: 145 - XSLTProcessor::importStylesheet():                ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:116: parser error : Opening and ending tag mismatch: template line 4 and stylesheet
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl:117: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl line 10 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/navigation.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:21 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/images/logos/ifgather-logo-white-shadow-large @2x.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 11:21 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/images/logos/ifgather-logo-white-shadow-large @2x.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 11:24 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:27 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:32 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/banners/pre-edits/banner-1.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 11:33 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/banners/pre-edits/banner-1.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 11:33 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/banners/pre-edits/banner-1.jpg/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 11:53 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 11:59 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/home.xsl line 6 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:02 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-page-header.xsl line 14 element attribute
+Line: 158 - XSLTProcessor::transformToXml(): xsl:attribute: Cannot add attributes to an element if children have been already added to the element. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:03 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-page-header.xsl line 17 element attribute
+Line: 158 - XSLTProcessor::transformToXml(): xsl:attribute: Cannot add attributes to an element if children have been already added to the element. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:03 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-page-header.xsl line 17 element attribute
+Line: 158 - XSLTProcessor::transformToXml(): xsl:attribute: Cannot add attributes to an element if children have been already added to the element. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:04 pm > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:22 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:24 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:25 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:25 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:25 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:25 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:25 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:31 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:31 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:31 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:32 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:33 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:33 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:34 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/200/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 12:38 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/equip.xsl line 9 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:54 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/equip-search-results.xsl line 9 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:54 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/equip-search-results.xsl line 9 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 12:54 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 158 - XSLTProcessor::transformToXml(): runtime error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/equip-search-results.xsl line 19 element call-template
+Line: 158 - XSLTProcessor::transformToXml(): The called template 'page-header' was not found. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 1:27 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/unleash.xsl line 8 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 1:28 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/unleash-story.xsl line 8 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 1:47 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 2:16 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 8 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/page-header.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:33 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 27 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): The value '' of the attribute 'mode' is not a valid QName.
+Line: 145 - XSLTProcessor::importStylesheet(): Invalid expression
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 27 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): XSLT-apply-templates: could not compile select expression 'who-we-are/entry/[people/item/leader = yes]'
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:34 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 27 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): The value '' of the attribute 'mode' is not a valid QName.
+Line: 145 - XSLTProcessor::importStylesheet(): Invalid expression
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 27 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): XSLT-apply-templates: could not compile select expression 'who-we-are/entry/people/item/[leader = yes]'
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:36 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): Invalid expression
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 28 element value-of
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:value-of : could not compile select expression 'who-we-are/entry/people/item/[leader = 'yes']'
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:36 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): Invalid expression
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 29 element for-each
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:for-each : could not compile select expression 'who-we-are/entry/people/item/[leader = 'yes']'
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:37 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): Invalid expression
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 29 element for-each
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:for-each : could not compile select expression 'who-we-are/entry/[people/item/leader = 'yes']'
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:39 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 29 element apply-templates
+Line: 145 - XSLTProcessor::importStylesheet(): The value '' of the attribute 'mode' is not a valid QName.
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:44 pm > UNKNOWN: SymphonyErrorPage 0 - The Section, <code>position</code>, could not be found. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:54 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:37: parser error : Opening and ending tag mismatch: hr line 36 and header
+Line: 145 - XSLTProcessor::importStylesheet():         </header>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:42: parser error : Opening and ending tag mismatch: header line 34 and div
+Line: 145 - XSLTProcessor::importStylesheet():     </div>
+Line: 145 - XSLTProcessor::importStylesheet():           ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:50: parser error : Opening and ending tag mismatch: hr line 49 and header
+Line: 145 - XSLTProcessor::importStylesheet():         </header>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:55: parser error : Opening and ending tag mismatch: header line 47 and div
+Line: 145 - XSLTProcessor::importStylesheet():     </div>
+Line: 145 - XSLTProcessor::importStylesheet():           ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:58: parser error : Opening and ending tag mismatch: div line 46 and xsl:template
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:template>
+Line: 145 - XSLTProcessor::importStylesheet():                ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:64: parser error : Opening and ending tag mismatch: div line 33 and xsl:stylesheet
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:64: parser error : Premature end of data in tag template line 17
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl:64: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/ line 3 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:55 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-people.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/who-we-are.xsl line 9 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-people.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 2:55 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 3:05 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 3:05 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 3:05 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 3:05 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 3:06 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 3:06 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/image/1/240/0/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 5:37 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/what-if.xsl:5: namespace error : xmlns:data-masonry-options: Empty XML namespace is not allowed
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:data-masonry-options=""
+Line: 145 - XSLTProcessor::importStylesheet():                                  ^ on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 5:39 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 5:40 pm > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/pages/what-if.xsl:5: namespace error : xmlns:data-masonry-options: Empty XML namespace is not allowed
+Line: 145 - XSLTProcessor::importStylesheet():     xmlns:data-masonry-options=""
+Line: 145 - XSLTProcessor::importStylesheet():                                  ^ on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/03/2013 5:45 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 5:47 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/03/2013 5:47 pm > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 7:19 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 7:19 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 7:20 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/04/2013 8:04 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/feature-img.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl line 12 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/feature-img.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/04/2013 8:05 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): I/O warning : failed to load external entity "/Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/feature-img.xsl"
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl line 12 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/feature-img.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/04/2013 8:06 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-feature-img.xsl:11: parser error : Opening and ending tag mismatch: img line 10 and div
+Line: 145 - XSLTProcessor::importStylesheet():         </div>
+Line: 145 - XSLTProcessor::importStylesheet():               ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-feature-img.xsl:12: parser error : Opening and ending tag mismatch: div line 9 and xsl:if
+Line: 145 - XSLTProcessor::importStylesheet():     </xsl:if>
+Line: 145 - XSLTProcessor::importStylesheet():              ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-feature-img.xsl:15: parser error : Opening and ending tag mismatch: if line 8 and template
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:template>
+Line: 145 - XSLTProcessor::importStylesheet():                ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-feature-img.xsl:17: parser error : Opening and ending tag mismatch: template line 5 and stylesheet
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-feature-img.xsl:18: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): 
+Line: 145 - XSLTProcessor::importStylesheet(): ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl line 12 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/get-feature-img.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/04/2013 8:06 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:20 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:28 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip-story/phantogram/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:29 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip-story/phantogram/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:30 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip-story/phantogram/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:32 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip-search-results/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:32 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip-search-results/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:32 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip/equip/equip-search-results/equip/equip-search-results/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:33 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/equip-search-results/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:36 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/search/equip-story/department-of-eagles/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:46 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:47 am > UNKNOWN: SymphonyErrorPage 0 - The page you requested does not exist. on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php
+09/04/2013 8:52 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/workspace/assets/images/icons/ifgather-logo-white-tiny-521d174d5e674.png/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 8:59 am > User Notice: FrontendPageNotFoundException 1024 - The page you requested, <code>/what-if/d/</code>, does not exist. on line 307 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/toolkit/class.frontendpage.php
+09/04/2013 9:11 am > UNKNOWN: SymphonyErrorPage 0 - Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/body-scripts.xsl:23: parser error : Opening and ending tag mismatch: script line 18 and xsl:if
+Line: 145 - XSLTProcessor::importStylesheet():     </xsl:if>
+Line: 145 - XSLTProcessor::importStylesheet():              ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/body-scripts.xsl:26: parser error : Opening and ending tag mismatch: if line 17 and template
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:template>
+Line: 145 - XSLTProcessor::importStylesheet():                ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/body-scripts.xsl:28: parser error : Opening and ending tag mismatch: template line 5 and stylesheet
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/body-scripts.xsl:28: parser error : Premature end of data in tag stylesheet line 2
+Line: 145 - XSLTProcessor::importStylesheet(): </xsl:stylesheet>
+Line: 145 - XSLTProcessor::importStylesheet():                  ^
+Line: 145 - XSLTProcessor::importStylesheet(): compilation error: file /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/base.xsl line 13 element import
+Line: 145 - XSLTProcessor::importStylesheet(): xsl:import : unable to load /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/workspace/utilities/body-scripts.xsl
+Line: 158 - XSLTProcessor::transformToXml(): No stylesheet associated to this object on line 650 of /Users/lindseybradford/Sites/Clients/FCO/If-Gather/seraph-ensemble/symphony/lib/core/class.symphony.php

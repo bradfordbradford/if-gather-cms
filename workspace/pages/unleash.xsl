@@ -5,7 +5,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:import href="../utilities/base.xsl"/>
 <xsl:import href="../utilities/mgmt-post.xsl"/>
 <xsl:import href="../utilities/pagination.xsl"/>
-<xsl:import href="../utilities/page-header.xsl"/>
+<xsl:import href="../utilities/get-page-header.xsl"/>
 
 <xsl:output method="xml"
 doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -16,7 +16,10 @@ indent="yes" />
 
 <xsl:template match="data">
 
-    <xsl:call-template name="page-header"/>
+    <div class="row">
+        <xsl:apply-templates select="unleash-header-and-description/entry" mode="get-page-header"/>
+    </div>
+
 
     <ul class="image-list three-across">
         <xsl:apply-templates select="unleash-stories/entry" mode="unleash-post-list-public"/>

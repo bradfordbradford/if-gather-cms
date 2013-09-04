@@ -3,11 +3,11 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="item" mode="tags-commas">
-    <span>
+    <li>
         <a href="{$root}/equip/{@handle}">
             <xsl:value-of select="."/>
         </a>
-    </span>
+    </li>
     <xsl:if test="position() != last()">
         <xsl:text>, </xsl:text>
     </xsl:if>
@@ -16,10 +16,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="option" mode="tags-list">
     <li>
         <a href="{$root}/equip/{@handle}">
-            <xsl:value-of select="."/> (<xsl:value-of select="@count"/>)
+            <xsl:value-of select="."/>
         </a>
     </li>
-
 </xsl:template>
 
 </xsl:stylesheet>

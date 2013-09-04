@@ -3,9 +3,26 @@
 // If/Gather Scripts
 // -----------------
 
-// Trigger jPlayer for Unleash Page
+
 $(document).ready(function(){
 
+
+    // Page Load, add Class -------------------------
+    $('body').addClass('go');
+    $("body").css("display", "none");
+    $("body").fadeIn(700);
+
+    $("nav ul li a").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(500, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+
+    // Trigger jPlayer for Unleash Page --------------
     // Local copy of jQuery selectors, for performance.
     var my_jPlayer = $("#jquery_jplayer"),
         my_trackName = $("#player-wrap .track-name"),
@@ -14,21 +31,21 @@ $(document).ready(function(){
 
     // Some options
     var opt_play_first = false, // If true, will attempt to auto-play the default track on page loads. No effect on mobile devices, like iOS.
-        opt_auto_play = true, // If true, when a track is selected, it will auto-play.
-        opt_text_playing = "Now playing", // Text when playing
-        opt_text_selected = "Track selected"; // Text when not playing
+    opt_auto_play = true, // If true, when a track is selected, it will auto-play.
+    opt_text_playing = "Now playing", // Text when playing
+    opt_text_selected = "Track selected"; // Text when not playing
 
     // A flag to capture the first track
     var first_track = true;
 
     // Change the time format
-    $.jPlayer.timeFormat.padMin = false;
-    $.jPlayer.timeFormat.padSec = false;
-    $.jPlayer.timeFormat.sepMin = " min ";
-    $.jPlayer.timeFormat.sepSec = " sec";
+    // $.jPlayer.timeFormat.padMin = false;
+    // $.jPlayer.timeFormat.padSec = false;
+    // $.jPlayer.timeFormat.sepMin = " min ";
+    // $.jPlayer.timeFormat.sepSec = " sec";
 
     // Initialize the play state text
-    my_playState.text(opt_text_selected);
+    // my_playState.text(opt_text_selected);
 
     // Instance jPlayer
     my_jPlayer.jPlayer({
@@ -108,3 +125,4 @@ var msnry = new Masonry( container, {
 
 // Start Foundation
 $(document).foundation();
+

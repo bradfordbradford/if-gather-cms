@@ -14,6 +14,8 @@
 <xsl:template match="data">
 	<h1>Thanks!</h1>
 
+    <h2>Your comment is pending approval</h2>
+
 
 </xsl:template>
 

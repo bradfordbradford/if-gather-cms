@@ -10,7 +10,7 @@
 <section class="site-header">
 	<div class="brand">
 		<a href="{$root}/home">
-			<img src="{$workspace}/assets/images/logos/ifgather-logo-drk-large+@2x.png" alt="IF:GATHERING"/>
+			<span class="logo"></span>
 			<h1>IF:GATHERING</h1>
 		</a>
 	</div>
@@ -20,16 +20,6 @@
 
 			<xsl:apply-templates select="page[not(types/type = 'hidden') and not(types/type = 'admin')]"/>
 
-			<!-- Admin -->
-			<xsl:if test="$author-logged-in">
-				<li><a href="{$root}/drafts/">Drafts</a></li>
-				<li><a href="{$root}/symphony/">Admin</a></li>
-
-				<xsl:if test="/data/logged-in-author/author[@user-type = 'developer']">
-					<li><a href="?debug">Debug</a></li>
-				</xsl:if>
-			</xsl:if>
-
 			<!-- Member Log In -->
 			<xsl:if test="$member-logged-in = 'yes'">
 				<form method="post" autocomplete='off'>
@@ -38,16 +28,9 @@
 				</form>
 			</xsl:if>
 
-			<!-- <xsl:if test="$member-logged-in = 'no'">
-				<li><a href="{$root}/sign-in">Sign In</a></li>
-			</xsl:if> -->
-
 		</ul>
 
-		<div class="menu-btn">
-			&#9776;
-			Menu
-		</div>
+		<div class="menu-btn">&#9776; Menu</div>
 
 	</nav>
 </section>
@@ -84,15 +67,11 @@
 				</form>
 			</xsl:if>
 
-			<!-- <xsl:if test="$member-logged-in = 'no'">
-				<li><a href="{$root}/sign-in">Sign In</a></li>
-			</xsl:if> -->
-
-
 		</ul>
 	</nav>
 
 </xsl:template>
+
 
 
 <xsl:template match="navigation" mode="footer-sitemap">

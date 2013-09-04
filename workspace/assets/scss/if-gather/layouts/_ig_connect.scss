@@ -1,0 +1,35 @@
+
+
+
+
+
+
+// ----------------------------
+// Layout: Connect
+// ----------------------------
+
+body.connect {
+
+    // Header & Navigation
+    // -------------------
+
+    // Site Header
+    .site-header {
+        background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
+        background-size: 100%;
+    }
+
+    // Navigation
+    nav.site-nav ul li a {
+        color: $white;
+    }
+
+    form {
+        margin-top: 24px;
+    }
+
+
+}
+
+
+
