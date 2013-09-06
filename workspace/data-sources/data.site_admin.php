@@ -11,14 +11,13 @@
 		
 
 		public $dsParamFILTERS = array(
-				'id' => '2',
+				'user_type' => 'Manager',
 		);
 		
 
 		public $dsParamINCLUDEDELEMENTS = array(
 				'username',
-				'name',
-				'email'
+				'name'
 		);
 		
 
@@ -35,7 +34,7 @@
 					'website' => 'http://ifgather-cms.tc',
 					'email' => 'lindseyb@wearetelegraph.com'),
 				'version' => 'Symphony 2.3.3',
-				'release-date' => '2013-08-28T20:51:53+00:00'
+				'release-date' => '2013-09-04T21:18:05+00:00'
 			);
 		}
 

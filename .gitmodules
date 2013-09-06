@@ -4,3 +4,6 @@
 [submodule "extensions/client_logo"]
 	path = extensions/client_logo
 	url = git://github.com/fawx/client_logo.git
+[submodule "extensions/markdown_live"]
+	path = extensions/markdown_live
+	url = git://github.com/g-wilson/markdown_live.git

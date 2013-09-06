@@ -153,29 +153,29 @@
 
 		###### EMAIL ######
 		'email' => array(
-			'default_gateway' => 'sendmail',
+			'default_gateway' => 'smtp',
 		),
 		########
 
 
 		###### EMAIL_SENDMAIL ######
 		'email_sendmail' => array(
-			'from_name' => null,
-			'from_address' => null,
+			'from_name' => 'IF:GATHERING',
+			'from_address' => 'lindseyb@wearetelegraph.com',
 		),
 		########
 
 
 		###### EMAIL_SMTP ######
 		'email_smtp' => array(
-			'from_name' => null,
-			'from_address' => null,
-			'host' => '127.0.0.1',
-			'port' => '25',
-			'secure' => 'no',
-			'auth' => '0',
-			'username' => null,
-			'password' => null,
+			'from_name' => 'IF:GATHERING',
+			'from_address' => 'lindseyb@wearetelegraph.com',
+			'host' => 'smtp.gmail.com',
+			'port' => '465',
+			'secure' => 'ssl',
+			'auth' => '1',
+			'username' => 'lindseyb@wearetelegraph.com',
+			'password' => 'Telegraph1989',
 		),
 		########
 

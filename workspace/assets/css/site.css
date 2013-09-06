@@ -501,6 +501,8 @@ html { height: 100%; }
 
 body { overflow-x: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+#site-wrap { position: relative; }
+
 .site-header { background: url(../images/patterns/cream.png) repeat; }
 .site-header .brand { text-align: center; padding: 94px 0 104px; -webkit-transition: all 0.5s ease-in; -moz-transition: all 0.5s ease-in; transition: all 0.5s ease-in; }
 .site-header .brand a { display: block; }
@@ -651,6 +653,7 @@ ul.profile-list.expansive li:before, ul.profile-list.expansive li:after { conten
 ul.profile-list.expansive li:after { clear: both; }
 ul.profile-list.expansive li .profile-img-wrap { margin-top: 6px; }
 ul.profile-list.expansive li .profile-img-wrap a { display: inline-block; }
+@media (max-width: 480px) { ul.profile-list.expansive li .profile-img-wrap { width: 32%; } }
 ul.profile-list.expansive li .name { text-align: left; font-size: 1.125em; margin-bottom: 0px; font-family: "Sackers-Gothic"; }
 ul.profile-list.expansive li .occupation { font-style: italic; color: #858485; font-weight: 600; font-size: 1em; display: block; margin-bottom: 0; }
 @media (max-width: 768px) { ul.profile-list.expansive li .name, ul.profile-list.expansive li .occupation { text-align: center; }
@@ -659,6 +662,7 @@ ul.profile-list.headshots li { margin-bottom: 24px; }
 ul.profile-list.headshots li .profile-img-wrap a { display: block; width: 50%; margin: 0 auto; }
 ul.profile-list.headshots li .name { font-size: 0.875em; margin: 18px 0 4px; font-family: "Sackers-Gothic"; }
 @media (max-width: 768px) { ul.profile-list.headshots li .profile-img-wrap a { width: 20%; } }
+@media (max-width: 480px) { ul.profile-list.headshots li .profile-img-wrap a { width: 32%; } }
 
 ul.comments-list { list-style: none; }
 ul.comments-list li { margin: 40px auto; max-height: 400px; }
@@ -702,7 +706,7 @@ ul.image-list li .info p { font-size: 1em; letter-spacing: .12em; padding: 0 24p
 
 body.home .site-header { background: url("../images/banners/banner-1.jpg") 0 -30px; }
 body.home .site-header .brand { padding: 156px 0; }
-body.home .site-header .brand .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x") no-repeat; }
+body.home .site-header .brand .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat; }
 @media (max-width: 979px) { body.home .site-header .brand { padding: 120px 0; } }
 @media (max-width: 480px) { body.home .site-header .brand { padding: 80px 0 32px; } }
 body.home nav.site-nav ul li a { color: white; }
@@ -713,6 +717,7 @@ body.home section.welcome .what-if-wrap a header { float: right; width: 260px; }
 body.home section.welcome .what-if-wrap a header h2 { font-size: 1.625em; text-align: center; margin: 0; }
 body.home section.welcome .what-if-wrap .what-if-clg { background: url(../images/collages/what-if-clg.png) no-repeat; height: 229px; width: 100%; position: absolute; top: 12px; }
 @media (max-width: 979px) { body.home section.welcome .what-if-wrap a { padding: 54px 32px; }
+  body.home section.welcome .what-if-wrap a header { float: none; margin: 0 auto; }
   body.home section.welcome .what-if-wrap a header h2 { font-size: 1.125em; letter-spacing: 0.25em; }
   body.home section.welcome .what-if-wrap .what-if-clg { left: -32px; } }
 @media (max-width: 768px) { body.home section.welcome .what-if-wrap a { margin: 0; }
@@ -721,7 +726,7 @@ body.home section.welcome .what-if-wrap .what-if-clg { background: url(../images
 body.home section.register { background: url(../images/banners/banner-2.jpg) no-repeat; margin-top: -52px; height: 100%; }
 @media (min-width: 1250px) { body.home section.register { background-size: 100%; } }
 body.home section.register .quote { float: left; margin: 92px 0 0 54px; }
-body.home section.register .quote h3 { width: 150px; }
+body.home section.register .quote h3 { width: 150px; margin: 0 auto; }
 body.home section.register .register-now-wrap { width: 40%; clear: both; float: right; }
 body.home section.register .register-now-wrap a { font-family: "Sackers-Gothic"; text-transform: uppercase; color: white; padding: 18px; text-align: center; letter-spacing: .4em; font-size: 0.875em; margin-top: -64px; }
 body.home section.register .register-now-wrap .dart-wht-right { position: relative; top: 2px; }
@@ -749,7 +754,7 @@ body.home .quote, body.home .question { padding: 30px 52px 28px; width: auto; }
 body.home .quote h3, body.home .question h3 { margin: 0; font-size: 1.25em; line-height: 36px; }
 
 body.gathering .site-header { background: url("../images/banners/pre-edits/banner-1.jpg") repeat-y 0 -120px; }
-body.gathering .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x") no-repeat !important; }
+body.gathering .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.gathering nav.site-nav ul li a { color: white; }
 body.gathering .gathering-dates .cream-pattern { padding: 72px 0 60px; position: relative; }
 body.gathering .gathering-dates .cream-pattern:after, body.gathering .gathering-dates .cream-pattern:before { content: ''; position: absolute; top: 0; height: 0; border-top: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
@@ -770,7 +775,7 @@ body.gathering .more-info-wrap header h3 { font-size: 0.875em; }
 .prompt-down:before { left: 0; width: 50%; border-right: 30px solid rgba(0, 0, 0, 0); }
 
 body.what-if .site-header { background: url("../images/banners/pre-edits/banner-2.jpg") 0 0; }
-body.what-if .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x") no-repeat !important; }
+body.what-if .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.what-if nav.site-nav ul li a { color: white; }
 body.what-if header.page-header { margin-bottom: 60px; }
 body.what-if header.page-header .brackets.med:before, body.what-if header.page-header .brackets.med:after { top: 50px; margin: 0 -24px; }
@@ -788,10 +793,10 @@ body.what-if .form-wrap.sage-pattern .question h4 { font-weight: 600; font-size:
 body.what-if .form-wrap.sage-pattern form { padding: 0 60px; margin: 32px 0 16px; }
 body.what-if .form-wrap.sage-pattern form textarea.what-if-textarea { border: 0; line-height: 56px; font-size: 1.0625em; margin: -18px 0 0; padding-top: 8px; background: url("../images/ornaments/lines.png") repeat 0 19px; height: 200px; }
 body.what-if .form-wrap.sage-pattern form textarea.what-if-textarea:focus { background: url("../images/ornaments/lines.png") repeat 0 19px; }
-body.what-if .form-wrap.sage-pattern form input.what-if-input { line-height: 12px; font-size: 1.0625em; background: transparent; margin: 40px 0 54px; border: 0; border-bottom: 1px solid #5f5e5f; }
+body.what-if .form-wrap.sage-pattern form input.what-if-input { line-height: 20px; font-size: 1.0625em; background: transparent; margin: 40px 0 54px; border: 0; border-bottom: 1px solid #5f5e5f; }
 body.what-if .form-wrap.sage-pattern form .characters { float: left; font-style: italic; font-weight: 600; font-family: "Georgia", "Times New Roman", Georgia, serif; color: #5f5e5f; }
-body.what-if .form-wrap.sage-pattern form a { display: block; float: right; font-style: italic; font-weight: 600; }
-body.what-if .form-wrap.sage-pattern form .dart-right:after { top: -16px; right: 60px; }
+body.what-if .form-wrap.sage-pattern form input#submit { border: 0; display: block; font-family: inherit; font-style: italic; font-size: 16px; text-align: right; font-weight: 600; }
+body.what-if .form-wrap.sage-pattern form .dart-right:after { top: -22px; right: 64px; }
 body.what-if .form-wrap.sage-pattern form textarea:focus { background: none; }
 @media (max-width: 480px) { body.what-if .form-wrap.sage-pattern form { padding: 0; margin: 10px 0 24px; }
   body.what-if .form-wrap.sage-pattern .question { margin-top: 32px; }
@@ -830,7 +835,7 @@ body.equip .tags li a, body.story .tags li a, body.search .tags li a { color: #d
 
 body.unleash .site-header { background: url("../images/banners/edits/banner-3.jpg") repeat-y 0 0; }
 body.unleash nav.site-nav ul li a { color: white; }
-body.unleash .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x") no-repeat !important; }
+body.unleash .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.unleash header.page-header { margin-bottom: 60px; }
 body.unleash header.page-header .brackets.med:before, body.unleash header.page-header .brackets.med:after { top: 50px; margin: 0 -24px; }
 
@@ -865,8 +870,8 @@ body.connect .site-header { background: url("../images/banners/banner-1.jpg") re
 body.connect nav.site-nav ul li a { color: white; }
 body.connect form { margin-top: 24px; }
 
-body.who-we-are .site-header { background: url("../images/banners/banner-5.jpg") repeat-y 0 0; background-size: 100%; }
-body.who-we-are .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x") no-repeat !important; }
+body.who-we-are .site-header { background: url("../images/banners/pre-edits/banner-1.jpg") repeat-y 0 -120px; }
+body.who-we-are .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.who-we-are nav.site-nav ul li a { color: white; }
 body.who-we-are header.page-section-header { margin: 24px auto 60px; }
 body.who-we-are .panel { margin: 60px 0 0; padding: 24px 0 142px; background: url(../images/patterns/cream.png) repeat; }

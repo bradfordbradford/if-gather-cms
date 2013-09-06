@@ -11,10 +11,10 @@ CREATE TABLE`tbl_fields_addresslocation` (
   `country_label` varchar(80) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_fields_addresslocation` ***
-INSERT INTO`tbl_fields_addresslocation` (`id`, `field_id`, `street_label`, `city_label`, `region_label`, `postal_code_label`, `country_label`) VALUES (6, 18, 'Street', 'City', 'State', 'Zip Code', 'Country');
+INSERT INTO`tbl_fields_addresslocation` (`id`, `field_id`, `street_label`, `city_label`, `region_label`, `postal_code_label`, `country_label`) VALUES (8, 18, 'Street', 'City', 'State', 'Zip Code', 'Country');
 
 -- *** STRUCTURE:`tbl_fields_author` ***
 DROP TABLE IF EXISTS`tbl_fields_author`;
@@ -39,15 +39,13 @@ CREATE TABLE`tbl_fields_checkbox` (
   `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_checkbox` ***
-INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (30, 37, 'on', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (38, 37, 'on', NULL);
 INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (9, 47, 'off', NULL);
-INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (18, 58, 'off', NULL);
-INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (19, 59, 'off', NULL);
-INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (20, 60, 'off', NULL);
-INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (29, 72, 'on', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (44, 72, 'on', NULL);
+INSERT INTO`tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (37, 97, 'off', NULL);
 
 -- *** STRUCTURE:`tbl_fields_date` ***
 DROP TABLE IF EXISTS`tbl_fields_date`;
@@ -57,9 +55,10 @@ CREATE TABLE`tbl_fields_date` (
   `pre_populate` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_date` ***
+INSERT INTO`tbl_fields_date` (`id`, `field_id`, `pre_populate`) VALUES (3, 100, 'yes');
 
 -- *** STRUCTURE:`tbl_fields_datetime` ***
 DROP TABLE IF EXISTS`tbl_fields_datetime`;
@@ -72,11 +71,11 @@ CREATE TABLE`tbl_fields_datetime` (
   `range` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_datetime` ***
-INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (22, 38, 1, 0, 0, 0);
-INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (21, 70, 1, 0, 0, 0);
+INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (25, 38, 1, 0, 0, 0);
+INSERT INTO`tbl_fields_datetime` (`id`, `field_id`, `prepopulate`, `time`, `multiple`, `range`) VALUES (28, 70, 1, 0, 0, 0);
 
 -- *** STRUCTURE:`tbl_fields_html_panel` ***
 DROP TABLE IF EXISTS`tbl_fields_html_panel`;
@@ -98,40 +97,46 @@ CREATE TABLE`tbl_fields_input` (
   `validator` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=251 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=348 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_input` ***
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (132, 1, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (131, 2, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (133, 3, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (130, 6, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (136, 8, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (138, 9, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (137, 11, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (140, 13, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (141, 14, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (127, 15, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (128, 16, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (129, 17, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (134, 20, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (135, 21, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (244, 22, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (245, 26, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (338, 1, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (337, 2, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (339, 3, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (336, 6, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (342, 8, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (344, 9, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (343, 11, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (346, 13, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (347, 14, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (333, 15, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (334, 16, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (335, 17, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (340, 20, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (341, 21, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (306, 22, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (210, 28, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (217, 30, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (218, 31, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (219, 32, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (139, 40, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (323, 30, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (324, 31, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (325, 32, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (345, 40, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (150, 43, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (151, 44, NULL);
 INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (152, 45, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (220, 62, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (238, 63, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (239, 64, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (243, 75, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (247, 76, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (249, 79, NULL);
-INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (250, 84, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (326, 62, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (331, 63, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (332, 64, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (317, 75, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (262, 79, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (280, 86, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (328, 89, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (316, 91, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (293, 96, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (309, 101, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (310, 103, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (311, 104, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (304, 106, NULL);
+INSERT INTO`tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (318, 110, NULL);
 
 -- *** STRUCTURE:`tbl_fields_memberemail` ***
 DROP TABLE IF EXISTS`tbl_fields_memberemail`;
@@ -140,10 +145,10 @@ CREATE TABLE`tbl_fields_memberemail` (
   `field_id` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_memberemail` ***
-INSERT INTO`tbl_fields_memberemail` (`id`, `field_id`) VALUES (3, 53);
+INSERT INTO`tbl_fields_memberemail` (`id`, `field_id`) VALUES (4, 53);
 
 -- *** STRUCTURE:`tbl_fields_memberpassword` ***
 DROP TABLE IF EXISTS`tbl_fields_memberpassword`;
@@ -156,10 +161,10 @@ CREATE TABLE`tbl_fields_memberpassword` (
   `code_expiry` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_memberpassword` ***
-INSERT INTO`tbl_fields_memberpassword` (`id`, `field_id`, `length`, `strength`, `salt`, `code_expiry`) VALUES (3, 55, 6, 'good', 'salt', '24 hours');
+INSERT INTO`tbl_fields_memberpassword` (`id`, `field_id`, `length`, `strength`, `salt`, `code_expiry`) VALUES (4, 55, 6, 'good', 'salt', '24 hours');
 
 -- *** STRUCTURE:`tbl_fields_memberrole` ***
 DROP TABLE IF EXISTS`tbl_fields_memberrole`;
@@ -169,10 +174,10 @@ CREATE TABLE`tbl_fields_memberrole` (
   `default_role` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_memberrole` ***
-INSERT INTO`tbl_fields_memberrole` (`id`, `field_id`, `default_role`) VALUES (3, 52, 1);
+INSERT INTO`tbl_fields_memberrole` (`id`, `field_id`, `default_role`) VALUES (4, 52, 1);
 
 -- *** STRUCTURE:`tbl_fields_memberusername` ***
 DROP TABLE IF EXISTS`tbl_fields_memberusername`;
@@ -182,10 +187,10 @@ CREATE TABLE`tbl_fields_memberusername` (
   `validator` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_memberusername` ***
-INSERT INTO`tbl_fields_memberusername` (`id`, `field_id`, `validator`) VALUES (3, 54, NULL);
+INSERT INTO`tbl_fields_memberusername` (`id`, `field_id`, `validator`) VALUES (4, 54, NULL);
 
 -- *** STRUCTURE:`tbl_fields_metakeys` ***
 DROP TABLE IF EXISTS`tbl_fields_metakeys`;
@@ -197,7 +202,7 @@ CREATE TABLE`tbl_fields_metakeys` (
   `delete_empty_keys` int(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_metakeys` ***
 
@@ -227,9 +232,10 @@ CREATE TABLE`tbl_fields_order_entries` (
   `hide` enum('yes','no') DEFAULT 'no',
   PRIMARY KEY (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_fields_order_entries` ***
+INSERT INTO`tbl_fields_order_entries` (`id`, `field_id`, `force_sort`, `hide`) VALUES (27, 99, NULL, 'yes');
 
 -- *** STRUCTURE:`tbl_fields_publish_tabs` ***
 DROP TABLE IF EXISTS`tbl_fields_publish_tabs`;
@@ -237,15 +243,15 @@ CREATE TABLE`tbl_fields_publish_tabs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `field_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_fields_publish_tabs` ***
-INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (30, 4);
-INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (31, 19);
-INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (32, 7);
-INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (33, 12);
-INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (36, 80);
-INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (37, 82);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (46, 80);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (47, 82);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (52, 4);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (53, 19);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (54, 7);
+INSERT INTO`tbl_fields_publish_tabs` (`id`, `field_id`) VALUES (55, 12);
 
 -- *** STRUCTURE:`tbl_fields_publishnotes` ***
 DROP TABLE IF EXISTS`tbl_fields_publishnotes`;
@@ -279,11 +285,10 @@ CREATE TABLE`tbl_fields_search_index` (
   `field_id` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 -- *** DATA:`tbl_fields_search_index` ***
-INSERT INTO`tbl_fields_search_index` (`id`, `field_id`) VALUES (17, 42);
-INSERT INTO`tbl_fields_search_index` (`id`, `field_id`) VALUES (16, 73);
+INSERT INTO`tbl_fields_search_index` (`id`, `field_id`) VALUES (19, 42);
 
 -- *** STRUCTURE:`tbl_fields_select` ***
 DROP TABLE IF EXISTS`tbl_fields_select`;
@@ -297,9 +302,10 @@ CREATE TABLE`tbl_fields_select` (
   `dynamic_options` int(11) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_select` ***
+INSERT INTO`tbl_fields_select` (`id`, `field_id`, `allow_multiple_selection`, `show_association`, `sort_options`, `static_options`, `dynamic_options`) VALUES (2, 111, 'no', 'no', 'no', NULL, 110);
 
 -- *** STRUCTURE:`tbl_fields_selectbox_link` ***
 DROP TABLE IF EXISTS`tbl_fields_selectbox_link`;
@@ -313,10 +319,10 @@ CREATE TABLE`tbl_fields_selectbox_link` (
   `limit` int(4) unsigned NOT NULL DEFAULT '20',
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_selectbox_link` ***
-INSERT INTO`tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `show_association`, `hide_when_prepopulated`, `related_field_id`, `limit`) VALUES (1, 41, 'no', 'yes', 'no', 22, 20);
+INSERT INTO`tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `show_association`, `hide_when_prepopulated`, `related_field_id`, `limit`) VALUES (2, 41, 'no', 'yes', 'no', 22, 20);
 
 -- *** STRUCTURE:`tbl_fields_subsectionmanager` ***
 DROP TABLE IF EXISTS`tbl_fields_subsectionmanager`;
@@ -338,12 +344,15 @@ CREATE TABLE`tbl_fields_subsectionmanager` (
   `recursion_levels` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=73 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_subsectionmanager` ***
-INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (44, 77, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 0, 1, 0, 0, 1, 1, 0);
-INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (42, 69, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
-INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (46, 81, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (63, 77, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 0, 1, 0, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (53, 81, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 1, 1, 1, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (72, 69, 4, NULL, '{$name}<br /> <em>{$profile-image}</em>', NULL, 1, 1, 0, 1, 0, 0, 1, 1, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (54, 88, 14, NULL, '{$value}', NULL, 1, 1, 1, 1, 1, 0, 0, 0, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (70, 94, 14, NULL, '{$value}', NULL, 1, 1, 1, 1, 1, 0, 0, 0, 0);
+INSERT INTO`tbl_fields_subsectionmanager` (`id`, `field_id`, `subsection_id`, `filter_tags`, `caption`, `droptext`, `create`, `remove`, `allow_multiple`, `edit`, `sort`, `drop`, `show_search`, `show_preview`, `recursion_levels`) VALUES (67, 108, 18, NULL, '{$quote}', NULL, 1, 1, 1, 1, 1, 0, 1, 0, 0);
 
 -- *** STRUCTURE:`tbl_fields_taglist` ***
 DROP TABLE IF EXISTS`tbl_fields_taglist`;
@@ -355,11 +364,10 @@ CREATE TABLE`tbl_fields_taglist` (
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`),
   KEY `pre_populate_source` (`pre_populate_source`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_taglist` ***
-INSERT INTO`tbl_fields_taglist` (`id`, `field_id`, `validator`, `pre_populate_source`) VALUES (29, 25, NULL, 'existing');
-INSERT INTO`tbl_fields_taglist` (`id`, `field_id`, `validator`, `pre_populate_source`) VALUES (28, 66, NULL, 'existing');
+INSERT INTO`tbl_fields_taglist` (`id`, `field_id`, `validator`, `pre_populate_source`) VALUES (32, 25, NULL, 'existing');
 
 -- *** STRUCTURE:`tbl_fields_textarea` ***
 DROP TABLE IF EXISTS`tbl_fields_textarea`;
@@ -370,14 +378,23 @@ CREATE TABLE`tbl_fields_textarea` (
   `size` int(3) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_textarea` ***
-INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (27, 5, 'markdown_extra_with_smartypants', 15);
-INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (49, 23, 'markdown_extra_with_smartypants', 15);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (95, 92, NULL, 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (83, 23, 'markdown_extra_with_smartypants', 15);
 INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (32, 46, 'markdown_extra_with_smartypants', 15);
-INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (39, 61, 'markdown_extra_with_smartypants', 5);
-INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (48, 65, 'markdown_extra_with_smartypants', 15);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (100, 61, 'markdown_extra_with_smartypants', 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (104, 65, 'markdown_extra_with_smartypants', 15);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (56, 87, 'markdown_with_purifier', 10);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (102, 90, NULL, 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (96, 93, 'markdown_extra_with_smartypants', 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (70, 95, NULL, 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (98, 98, NULL, 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (85, 102, NULL, 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (86, 105, NULL, 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (79, 107, 'markdown_extra_with_smartypants', 5);
+INSERT INTO`tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (97, 109, 'markdown_extra_with_smartypants', 5);
 
 -- *** STRUCTURE:`tbl_fields_uniqueupload` ***
 DROP TABLE IF EXISTS`tbl_fields_uniqueupload`;
@@ -388,15 +405,15 @@ CREATE TABLE`tbl_fields_uniqueupload` (
   `validator` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_fields_uniqueupload` ***
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (32, 74, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (48, 74, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
 INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (24, 57, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (27, 34, '/workspace/assets/images/content', '/\\.(?:bmp|gif|jpe?g|png)$/i');
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (13, 39, '/workspace/assets/images/icons', '/\\.(?:bmp|gif|jpe?g|png)$/i');
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (36, 67, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
-INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (38, 78, '/workspace/assets/uploads', NULL);
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (46, 34, '/workspace/assets/images/content', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (51, 39, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (50, 67, '/workspace/assets/uploads/images', '/\\.(?:bmp|gif|jpe?g|png)$/i');
+INSERT INTO`tbl_fields_uniqueupload` (`id`, `field_id`, `destination`, `validator`) VALUES (43, 78, '/workspace/assets/uploads', NULL);
 
 -- *** STRUCTURE:`tbl_fields_upload` ***
 DROP TABLE IF EXISTS`tbl_fields_upload`;
@@ -422,9 +439,172 @@ CREATE TABLE`tbl_entries_data_1` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_1` ***
+INSERT INTO`tbl_entries_data_1` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 4, 'http-twittercom-ifgathering', 'http://twitter.com/ifgathering');
+
+-- *** STRUCTURE:`tbl_entries_data_100` ***
+DROP TABLE IF EXISTS`tbl_entries_data_100`;
+CREATE TABLE`tbl_entries_data_100` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`),
+  KEY `date` (`date`)
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_100` ***
+INSERT INTO`tbl_entries_data_100` (`id`, `entry_id`, `value`, `date`) VALUES (29, 71, '2013-09-04T16:23:00-05:00', '2013-09-04 21:23:00');
+INSERT INTO`tbl_entries_data_100` (`id`, `entry_id`, `value`, `date`) VALUES (28, 69, '2013-09-03T20:05:08-05:00', '2013-09-04 01:05:08');
+INSERT INTO`tbl_entries_data_100` (`id`, `entry_id`, `value`, `date`) VALUES (26, 57, '2013-08-28T15:28:00-05:00', '2013-08-28 20:28:00');
+INSERT INTO`tbl_entries_data_100` (`id`, `entry_id`, `value`, `date`) VALUES (25, 58, '2013-08-28T15:29:00-05:00', '2013-08-28 20:29:00');
+INSERT INTO`tbl_entries_data_100` (`id`, `entry_id`, `value`, `date`) VALUES (27, 68, '2013-09-03T17:55:08-05:00', '2013-09-03 22:55:08');
+INSERT INTO`tbl_entries_data_100` (`id`, `entry_id`, `value`, `date`) VALUES (30, 72, '2013-09-04T16:26:11-05:00', '2013-09-04 21:26:11');
+
+-- *** STRUCTURE:`tbl_entries_data_101` ***
+DROP TABLE IF EXISTS`tbl_entries_data_101`;
+CREATE TABLE`tbl_entries_data_101` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_101` ***
+INSERT INTO`tbl_entries_data_101` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 62, 'we-exist-to-gather-equip-and-unleash-the-next-generation-of-women-to-live-out-their-purpose', 'We exist to gather, equip and unleash the next generation of women to live out their purpose.');
+
+-- *** STRUCTURE:`tbl_entries_data_102` ***
+DROP TABLE IF EXISTS`tbl_entries_data_102`;
+CREATE TABLE`tbl_entries_data_102` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_102` ***
+INSERT INTO`tbl_entries_data_102` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 62, 'Pop-up officia asymmetrical veniam reprehenderit, hella dolor mlkshk selvage tote bag High Life. Small batch american apparel synth, occaecat trust fund intelligentsia polaroid sustainable twee selfies culpa hoodie. Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade single-origin coffee tofu Godard Vice skateboard.Odd Future Neutra organic tumblr DIY ea. Fugiat aute direct trade esse occaecat gentrify craft beer.', NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_103` ***
+DROP TABLE IF EXISTS`tbl_entries_data_103`;
+CREATE TABLE`tbl_entries_data_103` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_103` ***
+INSERT INTO`tbl_entries_data_103` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 62, 'a-letter-from-jennie-allen-on-the-the-topic-of-thus-and-such', 'A letter from Jennie Allen on the the topic of thus & such');
+
+-- *** STRUCTURE:`tbl_entries_data_104` ***
+DROP TABLE IF EXISTS`tbl_entries_data_104`;
+CREATE TABLE`tbl_entries_data_104` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_104` ***
+INSERT INTO`tbl_entries_data_104` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 62, 'stories-of-women-championing-their-mission', 'Stories of women championing their mission.');
+
+-- *** STRUCTURE:`tbl_entries_data_105` ***
+DROP TABLE IF EXISTS`tbl_entries_data_105`;
+CREATE TABLE`tbl_entries_data_105` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_105` ***
+INSERT INTO`tbl_entries_data_105` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 62, 'Pop-up officia asymmetrical veniam reprehenderit, hella dolor mlkshk selvage tote bag High Life. Small batch american apparel synth, occaecat trust fund intelligentsia polaroid sustainable twee selfies culpa hoodie. Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade single-origin coffee tofu Godard Vice skateboard.Odd Future Neutra organic tumblr DIY ea. Fugiat aute direct trade esse occaecat gentrify craft beer.', NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_106` ***
+DROP TABLE IF EXISTS`tbl_entries_data_106`;
+CREATE TABLE`tbl_entries_data_106` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_106` ***
+INSERT INTO`tbl_entries_data_106` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 63, 'eleanor-roosevelt', 'Eleanor Roosevelt');
+INSERT INTO`tbl_entries_data_106` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 64, 'eleanor-roosevelt', 'Eleanor Roosevelt');
+
+-- *** STRUCTURE:`tbl_entries_data_107` ***
+DROP TABLE IF EXISTS`tbl_entries_data_107`;
+CREATE TABLE`tbl_entries_data_107` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_107` ***
+INSERT INTO`tbl_entries_data_107` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 63, 'Do one thing every day that scares you.', '<p>Do one thing every day that scares you.</p>\n');
+INSERT INTO`tbl_entries_data_107` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 64, 'Do what you feel in your heart to be right – for you’ll be criticized anyway.', '<p>Do what you feel in your heart to be right – for you’ll be criticized anyway.</p>\n');
+
+-- *** STRUCTURE:`tbl_entries_data_108` ***
+DROP TABLE IF EXISTS`tbl_entries_data_108`;
+CREATE TABLE`tbl_entries_data_108` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `relation_id` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `relation_id` (`relation_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_108` ***
+INSERT INTO`tbl_entries_data_108` (`id`, `entry_id`, `relation_id`) VALUES (4, 62, 64);
+INSERT INTO`tbl_entries_data_108` (`id`, `entry_id`, `relation_id`) VALUES (3, 62, 63);
+
+-- *** STRUCTURE:`tbl_entries_data_109` ***
+DROP TABLE IF EXISTS`tbl_entries_data_109`;
+CREATE TABLE`tbl_entries_data_109` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_109` ***
+INSERT INTO`tbl_entries_data_109` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (5, 34, 'Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. Helvetica placeat irony forage aliqua yr irure', '<p>Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. Helvetica placeat irony forage aliqua yr irure</p>\n');
 
 -- *** STRUCTURE:`tbl_entries_data_11` ***
 DROP TABLE IF EXISTS`tbl_entries_data_11`;
@@ -437,10 +617,46 @@ CREATE TABLE`tbl_entries_data_11` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_11` ***
-INSERT INTO`tbl_entries_data_11` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 4, 'telegraph-creative', 'Telegraph Creative');
+INSERT INTO`tbl_entries_data_11` (`id`, `entry_id`, `handle`, `value`) VALUES (9, 4, 'if-gathering', 'IF:GATHERING');
+
+-- *** STRUCTURE:`tbl_entries_data_110` ***
+DROP TABLE IF EXISTS`tbl_entries_data_110`;
+CREATE TABLE`tbl_entries_data_110` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_110` ***
+INSERT INTO`tbl_entries_data_110` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 65, 'advisor', 'Advisor');
+INSERT INTO`tbl_entries_data_110` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 67, 'leader', 'Leader');
+INSERT INTO`tbl_entries_data_110` (`id`, `entry_id`, `handle`, `value`) VALUES (7, 66, 'core-member', 'Core Member');
+
+-- *** STRUCTURE:`tbl_entries_data_111` ***
+DROP TABLE IF EXISTS`tbl_entries_data_111`;
+CREATE TABLE`tbl_entries_data_111` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_111` ***
+INSERT INTO`tbl_entries_data_111` (`id`, `entry_id`, `handle`, `value`) VALUES (11, 21, 'advisor', 'Advisor');
+INSERT INTO`tbl_entries_data_111` (`id`, `entry_id`, `handle`, `value`) VALUES (7, 2, 'core-member', 'Core Member');
+INSERT INTO`tbl_entries_data_111` (`id`, `entry_id`, `handle`, `value`) VALUES (9, 20, 'advisor', 'Advisor');
 
 -- *** STRUCTURE:`tbl_entries_data_12` ***
 DROP TABLE IF EXISTS`tbl_entries_data_12`;
@@ -451,10 +667,10 @@ CREATE TABLE`tbl_entries_data_12` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_12` ***
-INSERT INTO`tbl_entries_data_12` (`id`, `entry_id`, `value`) VALUES (5, 4, NULL);
+INSERT INTO`tbl_entries_data_12` (`id`, `entry_id`, `value`) VALUES (11, 4, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_13` ***
 DROP TABLE IF EXISTS`tbl_entries_data_13`;
@@ -467,10 +683,9 @@ CREATE TABLE`tbl_entries_data_13` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_13` ***
-INSERT INTO`tbl_entries_data_13` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 4, 'ahk2bse', 'ahk2bse');
 
 -- *** STRUCTURE:`tbl_entries_data_14` ***
 DROP TABLE IF EXISTS`tbl_entries_data_14`;
@@ -498,10 +713,10 @@ CREATE TABLE`tbl_entries_data_15` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_15` ***
-INSERT INTO`tbl_entries_data_15` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 4, 'hello-wearetelegraphcom', 'hello@wearetelegraph.com');
+INSERT INTO`tbl_entries_data_15` (`id`, `entry_id`, `handle`, `value`) VALUES (7, 4, 'connect-ifgatheringcom', 'connect@ifgathering.com ');
 
 -- *** STRUCTURE:`tbl_entries_data_16` ***
 DROP TABLE IF EXISTS`tbl_entries_data_16`;
@@ -564,10 +779,10 @@ CREATE TABLE`tbl_entries_data_18` (
   KEY `postal_code_handle` (`postal_code_handle`),
   KEY `country` (`country`),
   KEY `country_handle` (`country_handle`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_18` ***
-INSERT INTO`tbl_entries_data_18` (`id`, `entry_id`, `street`, `street_handle`, `city`, `city_handle`, `region`, `region_handle`, `postal_code`, `postal_code_handle`, `country`, `country_handle`, `latitude`, `longitude`) VALUES (5, 4, '2723 W. 12th St.', '2723-w-12th-st', 'Dallas', 'dallas', 'Texas', 'texas', 75211, 75211, 'United States', 'united-states', 32.741526, -96.8645);
+INSERT INTO`tbl_entries_data_18` (`id`, `entry_id`, `street`, `street_handle`, `city`, `city_handle`, `region`, `region_handle`, `postal_code`, `postal_code_handle`, `country`, `country_handle`, `latitude`, `longitude`) VALUES (11, 4, '2723 W. 12th St.', '2723-w-12th-st', 'Dallas', 'dallas', 'Texas', 'texas', 75211, 75211, 'United States', 'united-states', 32.741526, -96.8645);
 
 -- *** STRUCTURE:`tbl_entries_data_19` ***
 DROP TABLE IF EXISTS`tbl_entries_data_19`;
@@ -578,10 +793,10 @@ CREATE TABLE`tbl_entries_data_19` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_19` ***
-INSERT INTO`tbl_entries_data_19` (`id`, `entry_id`, `value`) VALUES (5, 4, NULL);
+INSERT INTO`tbl_entries_data_19` (`id`, `entry_id`, `value`) VALUES (11, 4, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_2` ***
 DROP TABLE IF EXISTS`tbl_entries_data_2`;
@@ -594,9 +809,10 @@ CREATE TABLE`tbl_entries_data_2` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_2` ***
+INSERT INTO`tbl_entries_data_2` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 4, 'http-facebookcom-ifgathering', 'http://facebook.com/ifgathering');
 
 -- *** STRUCTURE:`tbl_entries_data_20` ***
 DROP TABLE IF EXISTS`tbl_entries_data_20`;
@@ -609,9 +825,10 @@ CREATE TABLE`tbl_entries_data_20` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_20` ***
+INSERT INTO`tbl_entries_data_20` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 4, 'http-pinterestcom-ifgathering', 'http://pinterest.com/ifgathering');
 
 -- *** STRUCTURE:`tbl_entries_data_21` ***
 DROP TABLE IF EXISTS`tbl_entries_data_21`;
@@ -706,28 +923,6 @@ INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (1
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (157, 19, 'indie-folk', 'Indie-Folk');
 INSERT INTO`tbl_entries_data_25` (`id`, `entry_id`, `handle`, `value`) VALUES (156, 19, 'dark', 'Dark');
 
--- *** STRUCTURE:`tbl_entries_data_26` ***
-DROP TABLE IF EXISTS`tbl_entries_data_26`;
-CREATE TABLE`tbl_entries_data_26` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `handle` (`handle`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_26` ***
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 1, 'canadians-do-it-better', '\"Canadians Do It Better\"');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 5, 'mute-records-turns-it-up', 'Mute Records Turns It Up');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 7, 'eyelid-movements', 'Eyelid Movements');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 8, 'mute-records-turns-it-up', 'Mute Records Turns It Up');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (51, 9, 'high-places', 'High Places');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 10, 'britain-joins-forces', 'Britain Joins Forces');
-INSERT INTO`tbl_entries_data_26` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 19, 'in-dallas', 'In Dallas');
-
 -- *** STRUCTURE:`tbl_entries_data_28` ***
 DROP TABLE IF EXISTS`tbl_entries_data_28`;
 CREATE TABLE`tbl_entries_data_28` (
@@ -776,12 +971,12 @@ CREATE TABLE`tbl_entries_data_30` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_30` ***
-INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 2, 'jennie-allen', 'JENNIE ALLEN');
-INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 20, 'lauren-chandler', 'lauren chandler');
-INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 21, 'christine-caine', 'christine caine');
+INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (17, 2, 'jennie-allen', 'JENNIE ALLEN');
+INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (19, 20, 'lauren-chandler', 'lauren chandler');
+INSERT INTO`tbl_entries_data_30` (`id`, `entry_id`, `handle`, `value`) VALUES (21, 21, 'christine-caine', 'christine caine');
 
 -- *** STRUCTURE:`tbl_entries_data_31` ***
 DROP TABLE IF EXISTS`tbl_entries_data_31`;
@@ -794,10 +989,11 @@ CREATE TABLE`tbl_entries_data_31` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_31` ***
-INSERT INTO`tbl_entries_data_31` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 2, 'founder-and-visionary', 'Founder & Visionary');
+INSERT INTO`tbl_entries_data_31` (`id`, `entry_id`, `handle`, `value`) VALUES (13, 2, 'founder-and-visionary', 'Founder & Visionary');
+INSERT INTO`tbl_entries_data_31` (`id`, `entry_id`, `handle`, `value`) VALUES (16, 21, 'position-extraordinaire', 'Position Extraordinaire');
 
 -- *** STRUCTURE:`tbl_entries_data_32` ***
 DROP TABLE IF EXISTS`tbl_entries_data_32`;
@@ -810,12 +1006,12 @@ CREATE TABLE`tbl_entries_data_32` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_32` ***
-INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 2, 'http-jennieallencom-blog-its-time-a-new-movement-for-our-generation', 'http://jennieallen.com/blog/its-time-a-new-movement-for-our-generation/');
-INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 20, 'http-laurenchandlercom-2013-06-ifgathering', 'http://laurenchandler.com/2013/06/ifgathering/');
-INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 21, 'http-christinecainecom', 'http://christinecaine.com/');
+INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (17, 2, 'http-jennieallencom-blog-its-time-a-new-movement-for-our-generation', 'http://jennieallen.com/blog/its-time-a-new-movement-for-our-generation/');
+INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (19, 20, 'http-laurenchandlercom-2013-06-ifgathering', 'http://laurenchandler.com/2013/06/ifgathering/');
+INSERT INTO`tbl_entries_data_32` (`id`, `entry_id`, `handle`, `value`) VALUES (21, 21, 'http-christinecainecom', 'http://christinecaine.com/');
 
 -- *** STRUCTURE:`tbl_entries_data_34` ***
 DROP TABLE IF EXISTS`tbl_entries_data_34`;
@@ -830,12 +1026,12 @@ CREATE TABLE`tbl_entries_data_34` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `file` (`file`),
   KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_34` ***
-INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (3, 2, 'bio_jennie-521cfc63f0c83.jpg', 11962, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-27T14:22:11-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
-INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (4, 20, 'bio_lauren-521cfc939e157.jpg', 10816, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-27T14:22:59-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
-INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (5, 21, 'bio_christine-521cfccb4f3f9.jpg', 10481, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-27T14:23:55-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
+INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (16, 2, 'bio_jennie-52261e494f06f.jpg', 11962, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-09-03T12:37:13-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
+INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (18, 20, 'bio_lauren-52261e51ea9cb.jpg', 10816, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-09-03T12:37:21-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
+INSERT INTO`tbl_entries_data_34` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (20, 21, 'bio_christine-52273af055182.jpg', 10481, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-09-04T08:51:44-05:00\";s:5:\"width\";i:130;s:6:\"height\";i:130;}');
 
 -- *** STRUCTURE:`tbl_entries_data_37` ***
 DROP TABLE IF EXISTS`tbl_entries_data_37`;
@@ -890,10 +1086,10 @@ CREATE TABLE`tbl_entries_data_39` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `file` (`file`),
   KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_39` ***
-INSERT INTO`tbl_entries_data_39` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (3, 4, 'telegraphcreative-gold-asteris-520d70d3c0e2c.png', 9070, 'image/png', 'a:3:{s:8:\"creation\";s:25:\"2013-08-15T19:22:43-05:00\";s:5:\"width\";i:150;s:6:\"height\";i:138;}');
+INSERT INTO`tbl_entries_data_39` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (9, 4, 'ifgather-logo-white-sm-52273b73579ac.png', 3341, 'image/png', 'a:3:{s:8:\"creation\";s:25:\"2013-09-04T08:53:55-05:00\";s:5:\"width\";i:62;s:6:\"height\";i:42;}');
 
 -- *** STRUCTURE:`tbl_entries_data_4` ***
 DROP TABLE IF EXISTS`tbl_entries_data_4`;
@@ -904,10 +1100,10 @@ CREATE TABLE`tbl_entries_data_4` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_4` ***
-INSERT INTO`tbl_entries_data_4` (`id`, `entry_id`, `value`) VALUES (5, 4, NULL);
+INSERT INTO`tbl_entries_data_4` (`id`, `entry_id`, `value`) VALUES (11, 4, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_40` ***
 DROP TABLE IF EXISTS`tbl_entries_data_40`;
@@ -920,10 +1116,10 @@ CREATE TABLE`tbl_entries_data_40` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_40` ***
-INSERT INTO`tbl_entries_data_40` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 4, 'telegraph-is-a-small-creative-shop-based-in-dallas-tx-with-a-passion-for-building-gorgeous-websites-and-memorable-brands', 'Telegraph is a small creative shop based in Dallas, TX with a passion for building gorgeous websites and memorable brands.');
+INSERT INTO`tbl_entries_data_40` (`id`, `entry_id`, `handle`, `value`) VALUES (8, 4, 'we-exist-to-gather-equip-and-unleash-the-next-generation-of-women-to-live-out-their-purpose', 'We exist to gather, equip and unleash the next generation of women to live out their purpose.');
 
 -- *** STRUCTURE:`tbl_entries_data_41` ***
 DROP TABLE IF EXISTS`tbl_entries_data_41`;
@@ -1031,21 +1227,6 @@ CREATE TABLE`tbl_entries_data_47` (
 
 -- *** DATA:`tbl_entries_data_47` ***
 
--- *** STRUCTURE:`tbl_entries_data_5` ***
-DROP TABLE IF EXISTS`tbl_entries_data_5`;
-CREATE TABLE`tbl_entries_data_5` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `value` mediumtext COLLATE utf8_unicode_ci,
-  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_5` ***
-INSERT INTO`tbl_entries_data_5` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (5, 4, 'Telegraph is a small creative shop based in Dallas, TX with a passion for building gorgeous websites and memorable brands. We seek out starters, dreamers, and nonprofits because we want to be a part of your success story.\r\n\r\nWe join collective exploration, deliberate planning, elegant design, and industrious code to make your mark indelible.\r\n\r\nAdd a dash of curiosity and stir well.', '<p>Telegraph is a small creative shop based in Dallas, TX with a passion for building gorgeous websites and memorable brands. We seek out starters, dreamers, and nonprofits because we want to be a part of your success story.</p>\n\n<p>We join collective exploration, deliberate planning, elegant design, and industrious code to make your mark indelible.</p>\n\n<p>Add a dash of curiosity and stir well.</p>\n');
-
 -- *** STRUCTURE:`tbl_entries_data_52` ***
 DROP TABLE IF EXISTS`tbl_entries_data_52`;
 CREATE TABLE`tbl_entries_data_52` (
@@ -1135,38 +1316,6 @@ INSERT INTO`tbl_entries_data_57` (`id`, `entry_id`, `file`, `size`, `mimetype`, 
 INSERT INTO`tbl_entries_data_57` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 18, 'square-600-4-5212eb226e928.jpg', 167806, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-19T23:05:54-05:00\";s:5:\"width\";i:600;s:6:\"height\";i:600;}');
 INSERT INTO`tbl_entries_data_57` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (3, 14, 'square-600-1-5212ec0874a3c.jpg', 109982, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-08-19T23:09:44-05:00\";s:5:\"width\";i:600;s:6:\"height\";i:600;}');
 
--- *** STRUCTURE:`tbl_entries_data_58` ***
-DROP TABLE IF EXISTS`tbl_entries_data_58`;
-CREATE TABLE`tbl_entries_data_58` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_58` ***
-INSERT INTO`tbl_entries_data_58` (`id`, `entry_id`, `value`) VALUES (2, 2, 'no');
-INSERT INTO`tbl_entries_data_58` (`id`, `entry_id`, `value`) VALUES (3, 20, 'yes');
-INSERT INTO`tbl_entries_data_58` (`id`, `entry_id`, `value`) VALUES (4, 21, 'no');
-
--- *** STRUCTURE:`tbl_entries_data_59` ***
-DROP TABLE IF EXISTS`tbl_entries_data_59`;
-CREATE TABLE`tbl_entries_data_59` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_59` ***
-INSERT INTO`tbl_entries_data_59` (`id`, `entry_id`, `value`) VALUES (2, 2, 'no');
-INSERT INTO`tbl_entries_data_59` (`id`, `entry_id`, `value`) VALUES (3, 20, 'no');
-INSERT INTO`tbl_entries_data_59` (`id`, `entry_id`, `value`) VALUES (4, 21, 'yes');
-
 -- *** STRUCTURE:`tbl_entries_data_6` ***
 DROP TABLE IF EXISTS`tbl_entries_data_6`;
 CREATE TABLE`tbl_entries_data_6` (
@@ -1178,25 +1327,10 @@ CREATE TABLE`tbl_entries_data_6` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_6` ***
-
--- *** STRUCTURE:`tbl_entries_data_60` ***
-DROP TABLE IF EXISTS`tbl_entries_data_60`;
-CREATE TABLE`tbl_entries_data_60` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_60` ***
-INSERT INTO`tbl_entries_data_60` (`id`, `entry_id`, `value`) VALUES (2, 2, 'yes');
-INSERT INTO`tbl_entries_data_60` (`id`, `entry_id`, `value`) VALUES (3, 20, 'no');
-INSERT INTO`tbl_entries_data_60` (`id`, `entry_id`, `value`) VALUES (4, 21, 'no');
+INSERT INTO`tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 4, 'http-instagramcom-ifgathering', 'http://instagram.com/ifgathering');
 
 -- *** STRUCTURE:`tbl_entries_data_61` ***
 DROP TABLE IF EXISTS`tbl_entries_data_61`;
@@ -1208,12 +1342,12 @@ CREATE TABLE`tbl_entries_data_61` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_61` ***
-INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 2, 'Jennie is a passionate leader following God’s call on her life to catalyze a generation of women to live what they believe. She currently has two studies, one book in publication and speaks nationally. Jennie is married to her best friend, Zac, and they have been blessed with 4 children, the youngest of whom was adopted from Rwanda.', '<p>Jennie is a passionate leader following God’s call on her life to catalyze a generation of women to live what they believe. She currently has two studies, one book in publication and speaks nationally. Jennie is married to her best friend, Zac, and they have been blessed with 4 children, the youngest of whom was adopted from Rwanda.</p>\n');
-INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 20, NULL, NULL);
-INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 21, NULL, NULL);
+INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (15, 2, 'Jennie is a passionate leader following God’s call on her life to catalyze a generation of women to live what they believe. She currently has two studies, one book in publication and speaks nationally. Jennie is married to her best friend, Zac, and they have been blessed with 4 children, the youngest of whom was adopted from Rwanda.', '<p>Jennie is a passionate leader following God’s call on her life to catalyze a generation of women to live what they believe. She currently has two studies, one book in publication and speaks nationally. Jennie is married to her best friend, Zac, and they have been blessed with 4 children, the youngest of whom was adopted from Rwanda.</p>\n');
+INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (17, 20, NULL, NULL);
+INSERT INTO`tbl_entries_data_61` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (19, 21, NULL, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_62` ***
 DROP TABLE IF EXISTS`tbl_entries_data_62`;
@@ -1241,10 +1375,12 @@ CREATE TABLE`tbl_entries_data_63` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_63` ***
-INSERT INTO`tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 22, 'a-particularly-long-title-that-needs-a-lot-of-room', 'A PARTICULARLY LONG TITLE THAT NEEDS A LOT OF ROOM');
+INSERT INTO`tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (21, 40, 'a-particularly-long-title-that-needs-a-lot-of-room', 'A particularly long title that needs a lot of room');
+INSERT INTO`tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (9, 38, 'three-wolf-moon-magna-cardigans', 'three wolf moon magna cardigans');
+INSERT INTO`tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (22, 39, 'wayfarers-chillwave-pickled-high-life', 'wayfarers chillwave pickled high life ');
 
 -- *** STRUCTURE:`tbl_entries_data_64` ***
 DROP TABLE IF EXISTS`tbl_entries_data_64`;
@@ -1257,10 +1393,12 @@ CREATE TABLE`tbl_entries_data_64` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_64` ***
-INSERT INTO`tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 22, 'jennie-allen', 'Jennie Allen');
+INSERT INTO`tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (9, 38, 'author', 'author');
+INSERT INTO`tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (22, 39, 'author', 'author');
+INSERT INTO`tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (21, 40, 'jennie-allen', 'Jennie Allen');
 
 -- *** STRUCTURE:`tbl_entries_data_65` ***
 DROP TABLE IF EXISTS`tbl_entries_data_65`;
@@ -1272,27 +1410,12 @@ CREATE TABLE`tbl_entries_data_65` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_65` ***
-INSERT INTO`tbl_entries_data_65` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 22, 'Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.\r\n\r\nEsse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.\r\n\r\nFlannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.\r\n\r\nRaw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.\r\n\r\nBushwick you probably haven\'t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven\'t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven\'t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.', '<p>Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.</p>\n\n<p>Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.</p>\n\n<p>Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.</p>\n\n<p>Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.</p>\n\n<p>Bushwick you probably haven&#8217;t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven&#8217;t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven&#8217;t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.</p>\n');
-
--- *** STRUCTURE:`tbl_entries_data_66` ***
-DROP TABLE IF EXISTS`tbl_entries_data_66`;
-CREATE TABLE`tbl_entries_data_66` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `entry_id` (`entry_id`),
-  KEY `handle` (`handle`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_66` ***
-INSERT INTO`tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 22, 'leadership', 'Leadership');
-INSERT INTO`tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 22, 'bespoke', 'Bespoke');
+INSERT INTO`tbl_entries_data_65` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (9, 38, 'Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.\r\n\r\nEsse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.\r\n\r\nFlannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.\r\n\r\nRaw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.\r\n\r\nBushwick you probably haven\'t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven\'t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven\'t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.', '<p>Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.</p>\n\n<p>Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.</p>\n\n<p>Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.</p>\n\n<p>Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.</p>\n\n<p>Bushwick you probably haven&#8217;t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven&#8217;t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven&#8217;t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.</p>\n');
+INSERT INTO`tbl_entries_data_65` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (22, 39, 'Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.\r\n\r\nEsse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.\r\n\r\nFlannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.\r\n\r\nRaw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.\r\n\r\nBushwick you probably haven\'t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven\'t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven\'t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.', '<p>Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.</p>\n\n<p>Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.</p>\n\n<p>Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.</p>\n\n<p>Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.</p>\n\n<p>Bushwick you probably haven&#8217;t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven&#8217;t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven&#8217;t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.</p>\n');
+INSERT INTO`tbl_entries_data_65` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (21, 40, 'Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.\r\n\r\nEsse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.\r\n\r\nFlannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.\r\n\r\nRaw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.\r\n\r\nBushwick you probably haven\'t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven\'t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven\'t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.', '<p>Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.</p>\n\n<p>Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.</p>\n\n<p>Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.</p>\n\n<p>Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.</p>\n\n<p>Bushwick you probably haven&#8217;t heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven&#8217;t heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven&#8217;t heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.</p>\n');
 
 -- *** STRUCTURE:`tbl_entries_data_67` ***
 DROP TABLE IF EXISTS`tbl_entries_data_67`;
@@ -1307,9 +1430,10 @@ CREATE TABLE`tbl_entries_data_67` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `file` (`file`),
   KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_67` ***
+INSERT INTO`tbl_entries_data_67` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (4, 40, 'banner-4-52262e92dca21.jpg', 635270, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-09-03T13:46:42-05:00\";s:5:\"width\";i:1260;s:6:\"height\";i:443;}');
 
 -- *** STRUCTURE:`tbl_entries_data_69` ***
 DROP TABLE IF EXISTS`tbl_entries_data_69`;
@@ -1320,10 +1444,12 @@ CREATE TABLE`tbl_entries_data_69` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_69` ***
-INSERT INTO`tbl_entries_data_69` (`id`, `entry_id`, `relation_id`) VALUES (2, 22, 21);
+INSERT INTO`tbl_entries_data_69` (`id`, `entry_id`, `relation_id`) VALUES (9, 38, 21);
+INSERT INTO`tbl_entries_data_69` (`id`, `entry_id`, `relation_id`) VALUES (22, 39, 2);
+INSERT INTO`tbl_entries_data_69` (`id`, `entry_id`, `relation_id`) VALUES (21, 40, 20);
 
 -- *** STRUCTURE:`tbl_entries_data_7` ***
 DROP TABLE IF EXISTS`tbl_entries_data_7`;
@@ -1334,10 +1460,10 @@ CREATE TABLE`tbl_entries_data_7` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_7` ***
-INSERT INTO`tbl_entries_data_7` (`id`, `entry_id`, `value`) VALUES (5, 4, NULL);
+INSERT INTO`tbl_entries_data_7` (`id`, `entry_id`, `value`) VALUES (11, 4, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_70` ***
 DROP TABLE IF EXISTS`tbl_entries_data_70`;
@@ -1348,10 +1474,12 @@ CREATE TABLE`tbl_entries_data_70` (
   `end` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_70` ***
-INSERT INTO`tbl_entries_data_70` (`id`, `entry_id`, `start`, `end`) VALUES (2, 22, '2013-09-14 14:35:41', '2013-09-14 14:35:41');
+INSERT INTO`tbl_entries_data_70` (`id`, `entry_id`, `start`, `end`) VALUES (9, 38, '2013-09-25 09:29:02', '2013-09-25 09:29:02');
+INSERT INTO`tbl_entries_data_70` (`id`, `entry_id`, `start`, `end`) VALUES (22, 39, '2013-10-04 08:55:28', '2013-10-04 08:55:28');
+INSERT INTO`tbl_entries_data_70` (`id`, `entry_id`, `start`, `end`) VALUES (21, 40, '2013-11-30 08:52:49', '2013-11-30 08:52:49');
 
 -- *** STRUCTURE:`tbl_entries_data_72` ***
 DROP TABLE IF EXISTS`tbl_entries_data_72`;
@@ -1362,24 +1490,12 @@ CREATE TABLE`tbl_entries_data_72` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_72` ***
-INSERT INTO`tbl_entries_data_72` (`id`, `entry_id`, `value`) VALUES (2, 22, 'yes');
-
--- *** STRUCTURE:`tbl_entries_data_73` ***
-DROP TABLE IF EXISTS`tbl_entries_data_73`;
-CREATE TABLE`tbl_entries_data_73` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `value` double DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `entry_id` (`entry_id`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
--- *** DATA:`tbl_entries_data_73` ***
-INSERT INTO`tbl_entries_data_73` (`id`, `entry_id`, `value`) VALUES (2, 22, NULL);
+INSERT INTO`tbl_entries_data_72` (`id`, `entry_id`, `value`) VALUES (9, 38, 'yes');
+INSERT INTO`tbl_entries_data_72` (`id`, `entry_id`, `value`) VALUES (22, 39, 'yes');
+INSERT INTO`tbl_entries_data_72` (`id`, `entry_id`, `value`) VALUES (21, 40, 'yes');
 
 -- *** STRUCTURE:`tbl_entries_data_74` ***
 DROP TABLE IF EXISTS`tbl_entries_data_74`;
@@ -1394,9 +1510,10 @@ CREATE TABLE`tbl_entries_data_74` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `file` (`file`),
   KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_74` ***
+INSERT INTO`tbl_entries_data_74` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (1, 70, 'if-gathering-equip-feature-5227324be01cf.jpg', 111045, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2013-09-04T08:14:51-05:00\";s:5:\"width\";i:833;s:6:\"height\";i:661;}');
 
 -- *** STRUCTURE:`tbl_entries_data_75` ***
 DROP TABLE IF EXISTS`tbl_entries_data_75`;
@@ -1409,24 +1526,10 @@ CREATE TABLE`tbl_entries_data_75` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_75` ***
-
--- *** STRUCTURE:`tbl_entries_data_76` ***
-DROP TABLE IF EXISTS`tbl_entries_data_76`;
-CREATE TABLE`tbl_entries_data_76` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `entry_id` int(11) unsigned NOT NULL,
-  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `entry_id` (`entry_id`),
-  KEY `handle` (`handle`),
-  KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- *** DATA:`tbl_entries_data_76` ***
+INSERT INTO`tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 37, 'unleash', 'UNLEASH');
 
 -- *** STRUCTURE:`tbl_entries_data_77` ***
 DROP TABLE IF EXISTS`tbl_entries_data_77`;
@@ -1437,10 +1540,11 @@ CREATE TABLE`tbl_entries_data_77` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_77` ***
 INSERT INTO`tbl_entries_data_77` (`id`, `entry_id`, `relation_id`) VALUES (1, 23, 21);
+INSERT INTO`tbl_entries_data_77` (`id`, `entry_id`, `relation_id`) VALUES (4, 41, 2);
 
 -- *** STRUCTURE:`tbl_entries_data_78` ***
 DROP TABLE IF EXISTS`tbl_entries_data_78`;
@@ -1455,9 +1559,10 @@ CREATE TABLE`tbl_entries_data_78` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `file` (`file`),
   KEY `mimetype` (`mimetype`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_78` ***
+INSERT INTO`tbl_entries_data_78` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (1, 41, 'sound-clip-52273c98e50a0.m4a', 286444, 'audio/mp4', 'a:1:{s:8:\"creation\";s:25:\"2013-09-04T08:58:48-05:00\";}');
 
 -- *** STRUCTURE:`tbl_entries_data_79` ***
 DROP TABLE IF EXISTS`tbl_entries_data_79`;
@@ -1470,9 +1575,10 @@ CREATE TABLE`tbl_entries_data_79` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_79` ***
+INSERT INTO`tbl_entries_data_79` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 24, 'we-exist-to-gather-equip-and-unleash-the-next-generation-of-women-to-live-out-their-purpose', 'We exist to gather, equip and unleash the next generation of women to live out their purpose.');
 
 -- *** STRUCTURE:`tbl_entries_data_8` ***
 DROP TABLE IF EXISTS`tbl_entries_data_8`;
@@ -1485,10 +1591,10 @@ CREATE TABLE`tbl_entries_data_8` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_8` ***
-INSERT INTO`tbl_entries_data_8` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 4, 'ua-0000000-xx', 'UA-0000000-XX');
+INSERT INTO`tbl_entries_data_8` (`id`, `entry_id`, `handle`, `value`) VALUES (11, 4, 'ua-0000000-xx', 'UA-0000000-XX');
 
 -- *** STRUCTURE:`tbl_entries_data_80` ***
 DROP TABLE IF EXISTS`tbl_entries_data_80`;
@@ -1499,10 +1605,10 @@ CREATE TABLE`tbl_entries_data_80` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_80` ***
-INSERT INTO`tbl_entries_data_80` (`id`, `entry_id`, `value`) VALUES (1, 24, NULL);
+INSERT INTO`tbl_entries_data_80` (`id`, `entry_id`, `value`) VALUES (4, 24, NULL);
 
 -- *** STRUCTURE:`tbl_entries_data_81` ***
 DROP TABLE IF EXISTS`tbl_entries_data_81`;
@@ -1513,12 +1619,12 @@ CREATE TABLE`tbl_entries_data_81` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_81` ***
-INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (1, 24, 21);
-INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (2, 24, 2);
-INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (3, 24, 20);
+INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (12, 24, 20);
+INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (11, 24, 2);
+INSERT INTO`tbl_entries_data_81` (`id`, `entry_id`, `relation_id`) VALUES (10, 24, 21);
 
 -- *** STRUCTURE:`tbl_entries_data_82` ***
 DROP TABLE IF EXISTS`tbl_entries_data_82`;
@@ -1529,14 +1635,14 @@ CREATE TABLE`tbl_entries_data_82` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- *** DATA:`tbl_entries_data_82` ***
-INSERT INTO`tbl_entries_data_82` (`id`, `entry_id`, `value`) VALUES (1, 24, NULL);
+INSERT INTO`tbl_entries_data_82` (`id`, `entry_id`, `value`) VALUES (4, 24, NULL);
 
--- *** STRUCTURE:`tbl_entries_data_84` ***
-DROP TABLE IF EXISTS`tbl_entries_data_84`;
-CREATE TABLE`tbl_entries_data_84` (
+-- *** STRUCTURE:`tbl_entries_data_86` ***
+DROP TABLE IF EXISTS`tbl_entries_data_86`;
+CREATE TABLE`tbl_entries_data_86` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `entry_id` int(11) unsigned NOT NULL,
   `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -1545,9 +1651,73 @@ CREATE TABLE`tbl_entries_data_84` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- *** DATA:`tbl_entries_data_84` ***
+-- *** DATA:`tbl_entries_data_86` ***
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 25, 'authenticity', 'authenticity');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 26, 'participatory', 'participatory');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 27, 'humble', 'humble');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 28, 'christ-centered', 'christ-centered');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 29, 'honoring', 'honoring');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (10, 31, 'content', 'Content');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (7, 32, 'schedule', 'schedule');
+INSERT INTO`tbl_entries_data_86` (`id`, `entry_id`, `handle`, `value`) VALUES (9, 33, 'culture', 'culture');
+
+-- *** STRUCTURE:`tbl_entries_data_87` ***
+DROP TABLE IF EXISTS`tbl_entries_data_87`;
+CREATE TABLE`tbl_entries_data_87` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_87` ***
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 25, 'We want to create a safe environment where women can bring their wrestling, their doubts, and their confessions.', '<p>We want to create a safe environment where women can bring their wrestling, their doubts, and their confessions.</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 26, 'We believe that together, by unleashing our God-given gifts, we can be tools God uses to bring about His restoration.\r\n', '<p>We believe that together, by unleashing our God-given gifts, we can be tools God uses to bring about His restoration.</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 27, 'We will humbly come together with our unique gifts, resources, and perspectives, believing that unified under the name of Christ, we can be more effective at reaching the next generation than divided.', '<p>We will humbly come together with our unique gifts, resources, and perspectives, believing that unified under the name of Christ, we can be more effective at reaching the next generation than divided.</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 28, 'We believe in one God. Everything we do is grounded in the truth of Christ’s life, death and resurrection. What we do exists for the glory of God.', '<p>We believe in one God. Everything we do is grounded in the truth of Christ’s life, death and resurrection. What we do exists for the glory of God.</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (5, 29, 'We honor each person and their values. We respect the values and traditions of each individual, while coming together for the sake of unity and to carry God to the next generation of women.', '<p>We honor each person and their values. We respect the values and traditions of each individual, while coming together for the sake of unity and to carry God to the next generation of women.</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (10, 31, 'This 2-day conference brings women together and wrestles out how to live out the calling God has placed on our lives. We are gathering the next generation of women to give them God. We are engaging in conversation around the tensions of the next generation. Blending elements from different traditions and bring a valuable range of music, worship and prayer to expand everyone’s experience of God.', '<p>This 2-day conference brings women together and wrestles out how to live out the calling God has placed on our lives. We are gathering the next generation of women to give them God. We are engaging in conversation around the tensions of the next generation. Blending elements from different traditions and bring a valuable range of music, worship and prayer to expand everyone’s experience of God.</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (7, 32, 'Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund', '<p>Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund</p>\n');
+INSERT INTO`tbl_entries_data_87` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (9, 33, 'We are starting a raw authentic and community-driven movement. We are a generation who craves the uncomfortable – we will wrestle with hard questions and not know all the answers. We will invest in one another and represent the Church to a generation that needs God.', '<p>We are starting a raw authentic and community-driven movement. We are a generation who craves the uncomfortable – we will wrestle with hard questions and not know all the answers. We will invest in one another and represent the Church to a generation that needs God.</p>\n');
+
+-- *** STRUCTURE:`tbl_entries_data_88` ***
+DROP TABLE IF EXISTS`tbl_entries_data_88`;
+CREATE TABLE`tbl_entries_data_88` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `relation_id` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `relation_id` (`relation_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_88` ***
+INSERT INTO`tbl_entries_data_88` (`id`, `entry_id`, `relation_id`) VALUES (15, 24, 29);
+INSERT INTO`tbl_entries_data_88` (`id`, `entry_id`, `relation_id`) VALUES (14, 24, 28);
+INSERT INTO`tbl_entries_data_88` (`id`, `entry_id`, `relation_id`) VALUES (13, 24, 27);
+INSERT INTO`tbl_entries_data_88` (`id`, `entry_id`, `relation_id`) VALUES (12, 24, 26);
+INSERT INTO`tbl_entries_data_88` (`id`, `entry_id`, `relation_id`) VALUES (11, 24, 25);
+
+-- *** STRUCTURE:`tbl_entries_data_89` ***
+DROP TABLE IF EXISTS`tbl_entries_data_89`;
+CREATE TABLE`tbl_entries_data_89` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_89` ***
+INSERT INTO`tbl_entries_data_89` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 30, 'what-if-we-feared-nothing', 'WHAT IF: WE FEARED NOTHING?');
 
 -- *** STRUCTURE:`tbl_entries_data_9` ***
 DROP TABLE IF EXISTS`tbl_entries_data_9`;
@@ -1560,33 +1730,227 @@ CREATE TABLE`tbl_entries_data_9` (
   UNIQUE KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA:`tbl_entries_data_9` ***
-INSERT INTO`tbl_entries_data_9` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 4, 'hand-coded-bad-a', 'hand-coded, bad-a');
+INSERT INTO`tbl_entries_data_9` (`id`, `entry_id`, `handle`, `value`) VALUES (9, 4, 'unite-participate', 'unite, participate');
+
+-- *** STRUCTURE:`tbl_entries_data_90` ***
+DROP TABLE IF EXISTS`tbl_entries_data_90`;
+CREATE TABLE`tbl_entries_data_90` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_90` ***
+INSERT INTO`tbl_entries_data_90` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 30, 'Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz.', NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_91` ***
+DROP TABLE IF EXISTS`tbl_entries_data_91`;
+CREATE TABLE`tbl_entries_data_91` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_91` ***
+INSERT INTO`tbl_entries_data_91` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 34, 'if-gathering', 'IF: GATHERING');
+
+-- *** STRUCTURE:`tbl_entries_data_92` ***
+DROP TABLE IF EXISTS`tbl_entries_data_92`;
+CREATE TABLE`tbl_entries_data_92` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_92` ***
+INSERT INTO`tbl_entries_data_92` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (6, 34, 'A fresh, deep, honest space for the next generation of women to wrestle with essential questions that plague their generation. \r\nQuestions like: If God is real, then what?', NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_93` ***
+DROP TABLE IF EXISTS`tbl_entries_data_93`;
+CREATE TABLE`tbl_entries_data_93` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_93` ***
+INSERT INTO`tbl_entries_data_93` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (6, 34, 'Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. **Helvetica placeat irony forage aliqua yr irure.**', '<p>Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. <strong>Helvetica placeat irony forage aliqua yr irure.</strong></p>\n');
+
+-- *** STRUCTURE:`tbl_entries_data_94` ***
+DROP TABLE IF EXISTS`tbl_entries_data_94`;
+CREATE TABLE`tbl_entries_data_94` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `relation_id` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `relation_id` (`relation_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_94` ***
+INSERT INTO`tbl_entries_data_94` (`id`, `entry_id`, `relation_id`) VALUES (18, 34, 32);
+INSERT INTO`tbl_entries_data_94` (`id`, `entry_id`, `relation_id`) VALUES (17, 34, 31);
+INSERT INTO`tbl_entries_data_94` (`id`, `entry_id`, `relation_id`) VALUES (16, 34, 33);
+
+-- *** STRUCTURE:`tbl_entries_data_95` ***
+DROP TABLE IF EXISTS`tbl_entries_data_95`;
+CREATE TABLE`tbl_entries_data_95` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_95` ***
+INSERT INTO`tbl_entries_data_95` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (44, 58, 'Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi.', NULL);
+INSERT INTO`tbl_entries_data_95` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (45, 57, 'Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. ', NULL);
+INSERT INTO`tbl_entries_data_95` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (49, 72, 'site-admin', NULL);
+INSERT INTO`tbl_entries_data_95` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (46, 68, 'The future belongs to those who believe in the beauty of their dreams.', NULL);
+INSERT INTO`tbl_entries_data_95` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (47, 69, '“We are afraid to care too much, for fear that the other person does not care at all.”', NULL);
+INSERT INTO`tbl_entries_data_95` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (48, 71, 'The future belongs to those who believe in the beauty of their dreams.', NULL);
+
+-- *** STRUCTURE:`tbl_entries_data_96` ***
+DROP TABLE IF EXISTS`tbl_entries_data_96`;
+CREATE TABLE`tbl_entries_data_96` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `handle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `handle` (`handle`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_96` ***
+INSERT INTO`tbl_entries_data_96` (`id`, `entry_id`, `handle`, `value`) VALUES (35, 68, 'eleanor-roosevelt', 'Eleanor Roosevelt');
+INSERT INTO`tbl_entries_data_96` (`id`, `entry_id`, `handle`, `value`) VALUES (34, 57, 't-e-bulleit', 'T. E. Bulleit');
+INSERT INTO`tbl_entries_data_96` (`id`, `entry_id`, `handle`, `value`) VALUES (33, 58, 'amelia-b', 'Amelia B.');
+INSERT INTO`tbl_entries_data_96` (`id`, `entry_id`, `handle`, `value`) VALUES (36, 69, 'er', 'E.R.');
+INSERT INTO`tbl_entries_data_96` (`id`, `entry_id`, `handle`, `value`) VALUES (37, 71, 'er', 'ER');
+INSERT INTO`tbl_entries_data_96` (`id`, `entry_id`, `handle`, `value`) VALUES (38, 72, 'site-admin', 'site-admin');
+
+-- *** STRUCTURE:`tbl_entries_data_97` ***
+DROP TABLE IF EXISTS`tbl_entries_data_97`;
+CREATE TABLE`tbl_entries_data_97` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` enum('yes','no') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_97` ***
+INSERT INTO`tbl_entries_data_97` (`id`, `entry_id`, `value`) VALUES (47, 69, 'no');
+INSERT INTO`tbl_entries_data_97` (`id`, `entry_id`, `value`) VALUES (46, 68, 'no');
+INSERT INTO`tbl_entries_data_97` (`id`, `entry_id`, `value`) VALUES (49, 72, 'no');
+INSERT INTO`tbl_entries_data_97` (`id`, `entry_id`, `value`) VALUES (48, 71, 'no');
+INSERT INTO`tbl_entries_data_97` (`id`, `entry_id`, `value`) VALUES (44, 58, 'yes');
+INSERT INTO`tbl_entries_data_97` (`id`, `entry_id`, `value`) VALUES (45, 57, 'yes');
+
+-- *** STRUCTURE:`tbl_entries_data_98` ***
+DROP TABLE IF EXISTS`tbl_entries_data_98`;
+CREATE TABLE`tbl_entries_data_98` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `value_formatted` mediumtext COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `entry_id` (`entry_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- *** DATA:`tbl_entries_data_98` ***
+INSERT INTO`tbl_entries_data_98` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 37, 'Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus.', '<p>Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus.</p>\n');
+
+-- *** STRUCTURE:`tbl_entries_data_99` ***
+DROP TABLE IF EXISTS`tbl_entries_data_99`;
+CREATE TABLE`tbl_entries_data_99` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `entry_id` int(11) unsigned NOT NULL,
+  `value` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `entry_id` (`entry_id`),
+  KEY `value` (`value`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- *** DATA:`tbl_entries_data_99` ***
+INSERT INTO`tbl_entries_data_99` (`id`, `entry_id`, `value`) VALUES (4, 41, 1);
+INSERT INTO`tbl_entries_data_99` (`id`, `entry_id`, `value`) VALUES (3, 23, 2);
 
 -- *** DATA:`tbl_author_roles` ***
-INSERT INTO`tbl_author_roles` (`id`, `name`, `custom_elements`) VALUES (2, 'Post Manager', '/extension/members/roles/\r\n/system/authors/');
+INSERT INTO`tbl_author_roles` (`id`, `name`, `custom_elements`) VALUES (2, 'Stories Manager', '/extension/members/roles/\r\n/extension/author_roles/');
+INSERT INTO`tbl_author_roles` (`id`, `name`, `custom_elements`) VALUES (3, 'If Gathering Admin', '/extension/members/roles/');
 
 -- *** DATA:`tbl_author_roles_authors` ***
-INSERT INTO`tbl_author_roles_authors` (`id`, `id_role`, `id_author`) VALUES (1, 2, 2);
+INSERT INTO`tbl_author_roles_authors` (`id`, `id_role`, `id_author`) VALUES (4, 2, 3);
+INSERT INTO`tbl_author_roles_authors` (`id`, `id_role`, `id_author`) VALUES (6, 3, 2);
 
 -- *** DATA:`tbl_author_roles_fields` ***
 
 -- *** DATA:`tbl_author_roles_sections` ***
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (92, 2, 5, 0, 0, 0, 0, 0, 0, 'show:');
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (93, 2, 3, 0, 0, 0, 0, 0, 0, 'show:');
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (94, 2, 6, 0, 0, 0, 0, 0, 0, 'show:');
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (95, 2, 7, 0, 0, 0, 0, 0, 0, 'show:');
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (96, 2, 4, 0, 0, 0, 0, 0, 0, 'show:');
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (97, 2, 2, 1, 1, 1, 1, 0, 0, 'show:');
-INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (98, 2, 1, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (179, 3, 14, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (180, 3, 2, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (181, 3, 5, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (182, 3, 9, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (183, 3, 15, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (184, 3, 3, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (185, 3, 6, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (186, 3, 7, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (187, 3, 4, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (188, 3, 1, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (189, 3, 10, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (190, 3, 8, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (191, 3, 11, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (192, 3, 16, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (193, 3, 12, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (194, 3, 13, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (195, 2, 14, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (196, 2, 2, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (197, 2, 5, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (198, 2, 9, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (199, 2, 15, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (200, 2, 3, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (201, 2, 6, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (202, 2, 7, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (203, 2, 4, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (204, 2, 1, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (205, 2, 10, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (206, 2, 8, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (207, 2, 11, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (208, 2, 16, 0, 0, 0, 0, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (209, 2, 12, 1, 1, 1, 1, 0, 0, 'show:');
+INSERT INTO`tbl_author_roles_sections` (`id`, `id_role`, `id_section`, `visible`, `create`, `edit`, `delete`, `own_entries`, `use_filter`, `filter_rule`) VALUES (210, 2, 13, 0, 0, 0, 0, 0, 0, 'show:');
 
 -- *** DATA:`tbl_entries` ***
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (1, 2, 1, '2013-08-15 18:43:54', '2013-08-15 23:43:54', '2013-08-19 22:14:46', '2013-08-20 03:14:46');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (2, 4, 1, '2013-08-15 18:51:25', '2013-08-15 23:51:25', '2013-08-27 14:22:12', '2013-08-27 19:22:12');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (2, 4, 1, '2013-08-15 18:51:25', '2013-08-15 23:51:25', '2013-09-03 17:27:06', '2013-09-03 22:27:06');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (3, 3, 1, '2013-08-15 18:51:57', '2013-08-15 23:51:57', '2013-08-19 22:58:43', '2013-08-20 03:58:43');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (4, 1, 1, '2013-08-15 19:12:54', '2013-08-16 00:12:54', '2013-08-15 22:17:27', '2013-08-16 03:17:27');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (4, 1, 1, '2013-08-15 19:12:54', '2013-08-16 00:12:54', '2013-09-04 08:54:00', '2013-09-04 13:54:00');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (5, 2, 1, '2013-08-15 19:31:56', '2013-08-16 00:31:56', '2013-08-19 22:14:46', '2013-08-20 03:14:46');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (6, 5, 1, '2013-08-15 19:33:28', '2013-08-16 00:33:28', '2013-08-15 19:33:28', '2013-08-16 00:33:28');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (7, 2, 1, '2013-08-16 11:06:13', '2013-08-16 16:06:13', '2013-08-19 22:35:33', '2013-08-20 03:35:33');
@@ -1602,11 +1966,38 @@ INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `cre
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (17, 3, 1, '2013-08-19 22:10:34', '2013-08-20 03:10:34', '2013-08-19 22:10:34', '2013-08-20 03:10:34');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (18, 3, 1, '2013-08-19 22:11:32', '2013-08-20 03:11:32', '2013-08-19 23:05:54', '2013-08-20 04:05:54');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (19, 2, 1, '2013-08-20 14:08:45', '2013-08-20 19:08:45', '2013-08-20 14:09:02', '2013-08-20 19:09:02');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (20, 4, 1, '2013-08-27 14:22:59', '2013-08-27 19:22:59', '2013-08-27 14:22:59', '2013-08-27 19:22:59');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (21, 4, 1, '2013-08-27 14:23:55', '2013-08-27 19:23:55', '2013-08-27 14:23:55', '2013-08-27 19:23:55');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (22, 8, 1, '2013-08-27 14:33:30', '2013-08-27 19:33:30', '2013-08-27 14:35:41', '2013-08-27 19:35:41');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (20, 4, 1, '2013-08-27 14:22:59', '2013-08-27 19:22:59', '2013-09-03 17:27:43', '2013-09-03 22:27:43');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (21, 4, 1, '2013-08-27 14:23:55', '2013-08-27 19:23:55', '2013-09-04 08:51:44', '2013-09-04 13:51:44');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (71, 16, 1, '2013-09-04 16:23:00', '2013-09-04 21:23:00', '2013-09-04 16:23:00', '2013-09-04 21:23:00');
 INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (23, 12, 1, '2013-08-27 14:41:48', '2013-08-27 19:41:48', '2013-08-27 14:41:48', '2013-08-27 19:41:48');
-INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (24, 13, 1, '2013-08-27 14:48:20', '2013-08-27 19:48:20', '2013-08-27 14:48:20', '2013-08-27 19:48:20');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (24, 13, 1, '2013-08-27 14:48:20', '2013-08-27 19:48:20', '2013-09-03 09:37:17', '2013-09-03 14:37:17');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (25, 14, 1, '2013-08-27 16:07:33', '2013-08-27 21:07:33', '2013-08-27 16:07:33', '2013-08-27 21:07:33');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (26, 14, 1, '2013-08-27 16:07:50', '2013-08-27 21:07:50', '2013-08-27 16:07:50', '2013-08-27 21:07:50');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (27, 14, 1, '2013-08-27 16:08:04', '2013-08-27 21:08:04', '2013-08-27 16:08:04', '2013-08-27 21:08:04');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (28, 14, 1, '2013-08-27 16:08:19', '2013-08-27 21:08:19', '2013-08-27 16:08:19', '2013-08-27 21:08:19');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (29, 14, 1, '2013-08-27 16:08:34', '2013-08-27 21:08:34', '2013-08-27 16:08:34', '2013-08-27 21:08:34');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (30, 11, 1, '2013-08-27 16:12:09', '2013-08-27 21:12:09', '2013-09-04 07:23:36', '2013-09-04 12:23:36');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (31, 14, 1, '2013-08-27 16:25:50', '2013-08-27 21:25:50', '2013-09-03 09:40:08', '2013-09-03 14:40:08');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (32, 14, 1, '2013-08-27 16:25:52', '2013-08-27 21:25:52', '2013-08-27 16:25:52', '2013-08-27 21:25:52');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (33, 14, 1, '2013-08-27 16:25:54', '2013-08-27 21:25:54', '2013-09-03 09:39:46', '2013-09-03 14:39:46');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (34, 15, 1, '2013-08-27 16:25:57', '2013-08-27 21:25:57', '2013-09-04 07:21:10', '2013-09-04 12:21:10');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (68, 16, 1, '2013-09-03 17:55:08', '2013-09-03 22:55:08', '2013-09-03 17:55:08', '2013-09-03 22:55:08');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (67, 19, 1, '2013-09-03 14:44:35', '2013-09-03 19:44:35', '2013-09-03 14:44:35', '2013-09-03 19:44:35');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (37, 10, 1, '2013-08-27 16:29:23', '2013-08-27 21:29:23', '2013-08-27 16:29:53', '2013-08-27 21:29:53');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (38, 8, 1, '2013-08-28 07:55:26', '2013-08-28 12:55:26', '2013-08-28 09:29:02', '2013-08-28 14:29:02');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (39, 8, 1, '2013-08-28 07:56:06', '2013-08-28 12:56:06', '2013-09-04 08:55:28', '2013-09-04 13:55:28');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (40, 8, 1, '2013-08-28 09:31:52', '2013-08-28 14:31:52', '2013-09-04 08:52:49', '2013-09-04 13:52:49');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (41, 12, 1, '2013-08-28 13:44:31', '2013-08-28 18:44:31', '2013-09-04 08:58:48', '2013-09-04 13:58:48');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (66, 19, 1, '2013-09-03 14:44:31', '2013-09-03 19:44:31', '2013-09-03 17:26:43', '2013-09-03 22:26:43');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (65, 19, 1, '2013-09-03 14:44:26', '2013-09-03 19:44:26', '2013-09-03 14:45:23', '2013-09-03 19:45:23');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (64, 18, 1, '2013-09-03 09:27:31', '2013-09-03 14:27:31', '2013-09-03 09:27:31', '2013-09-03 14:27:31');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (62, 17, 1, '2013-09-03 09:23:31', '2013-09-03 14:23:31', '2013-09-03 11:27:03', '2013-09-03 16:27:03');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (58, 16, 1, '2013-08-28 15:29:54', '2013-08-28 20:29:54', '2013-08-29 17:35:42', '2013-08-29 22:35:42');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (57, 16, 1, '2013-08-28 15:28:16', '2013-08-28 20:28:16', '2013-08-29 17:35:51', '2013-08-29 22:35:51');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (63, 18, 1, '2013-09-03 09:27:11', '2013-09-03 14:27:11', '2013-09-03 11:26:50', '2013-09-03 16:26:50');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (69, 16, 1, '2013-09-03 20:05:08', '2013-09-04 01:05:08', '2013-09-03 20:05:08', '2013-09-04 01:05:08');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (70, 9, 1, '2013-09-04 08:14:51', '2013-09-04 13:14:51', '2013-09-04 08:14:51', '2013-09-04 13:14:51');
+INSERT INTO`tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`, `modification_date`, `modification_date_gmt`) VALUES (72, 16, 1, '2013-09-04 16:26:11', '2013-09-04 21:26:11', '2013-09-04 16:26:11', '2013-09-04 21:26:11');
 
 -- *** DATA:`tbl_extensions` ***
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'admin_css_override', 'enabled', 1.4);
@@ -1639,12 +2030,13 @@ INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (27, 'sea
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (28, 'section_schemas', 'enabled', 2.0);
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (29, 'members', 'enabled', 1.2);
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (30, 'author_roles', 'enabled', 1.2);
-INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (31, 'html_panel', 'enabled', '1.4.1');
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (31, 'html_panel', 'disabled', '1.4.1');
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (33, 'unpublishedfilter', 'enabled', 1.4);
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (35, 'oembed_field', 'enabled', 1.6);
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (36, 'repeating_date_field', 'disabled', 1.1);
-INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (37, 'client_logo', 'enabled', 1.2);
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (37, 'client_logo', 'disabled', 1.2);
 INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (38, 'field_metakeys', 'enabled', 1.2);
+INSERT INTO`tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (39, 'markdown_live', 'enabled', '1.0.1');
 
 -- *** DATA:`tbl_extensions_delegates` ***
 INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (86, 1, '/backend/', 'InitaliseAdminPageHead', 'appendAssets');
@@ -1722,48 +2114,45 @@ INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`,
 INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (150, 27, '/backend/', 'DashboardPanelTypes', 'dashboardPanelTypes');
 INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (155, 17, '/frontend/', 'DataSourceEntriesBuilt', '__prepareSubsection');
 INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (160, 2, '/frontend/', 'EventPreSaveFilter', 'eventPreSaveFilter');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (161, 37, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (162, 37, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (163, 37, '/system/preferences/', 'Save', 'savePreferences');
+INSERT INTO`tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (164, 39, '/backend/', 'InitaliseAdminPageHead', 'initializeAdmin');
 
 -- *** DATA:`tbl_fields` ***
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (1, 'Twitter', 'twitter', 'input', 1, 'no', 9, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (2, 'Facebook', 'facebook', 'input', 1, 'no', 8, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (3, 'Google +', 'google', 'input', 1, 'no', 10, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (4, 'About', 'about', 'publish_tabs', 1, 'no', 0, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (5, 'About', 'about-site', 'textarea', 1, 'no', 1, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (6, 'Instagram', 'instagram', 'input', 1, 'no', 7, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (7, 'Meta &amp; Analytics', 'meta-and-analytics', 'publish_tabs', 1, 'no', 13, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (8, 'Google Analytics ID', 'google-analytics-id', 'input', 1, 'no', 14, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (9, 'Meta Keywords', 'meta-keywords', 'input', 1, 'no', 16, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (40, 'Meta Description', 'meta-description', 'input', 1, 'no', 17, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (11, 'Meta Author', 'meta-author', 'input', 1, 'no', 15, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (12, 'APIs', 'apis', 'publish_tabs', 1, 'no', 19, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (13, 'Typekit ID', 'typekit-id', 'input', 1, 'no', 20, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (14, 'MapBox ID', 'mapbox-id', 'input', 1, 'no', 21, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (15, 'Email (main)', 'email-main', 'input', 1, 'no', 2, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (16, 'Phone (main)', 'phone-main', 'input', 1, 'no', 3, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (17, 'Fax (main)', 'fax-main', 'input', 1, 'no', 4, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (18, 'Location', 'location', 'addresslocation', 1, 'no', 5, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (19, 'Social', 'social', 'publish_tabs', 1, 'no', 6, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (20, 'Pinterest', 'pinterest', 'input', 1, 'no', 11, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (21, 'Flickr', 'flickr', 'input', 1, 'no', 12, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (1, 'Twitter', 'twitter', 'input', 1, 'no', 8, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (2, 'Facebook', 'facebook', 'input', 1, 'no', 7, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (3, 'Google +', 'google', 'input', 1, 'no', 9, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (4, 'Contact', 'about', 'publish_tabs', 1, 'no', 0, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (6, 'Instagram', 'instagram', 'input', 1, 'no', 6, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (7, 'Meta &amp; Analytics', 'meta-and-analytics', 'publish_tabs', 1, 'no', 12, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (8, 'Google Analytics ID', 'google-analytics-id', 'input', 1, 'no', 13, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (9, 'Meta Keywords', 'meta-keywords', 'input', 1, 'no', 15, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (40, 'Meta Description', 'meta-description', 'input', 1, 'no', 16, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (11, 'Meta Author', 'meta-author', 'input', 1, 'no', 14, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (12, 'APIs', 'apis', 'publish_tabs', 1, 'no', 18, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (13, 'Typekit ID', 'typekit-id', 'input', 1, 'no', 19, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (14, 'MapBox ID', 'mapbox-id', 'input', 1, 'no', 20, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (15, 'Email (main)', 'email-main', 'input', 1, 'no', 1, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (16, 'Phone (main)', 'phone-main', 'input', 1, 'no', 2, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (17, 'Fax (main)', 'fax-main', 'input', 1, 'no', 3, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (18, 'Location', 'location', 'addresslocation', 1, 'no', 4, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (19, 'Social', 'social', 'publish_tabs', 1, 'no', 5, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (20, 'Pinterest', 'pinterest', 'input', 1, 'no', 10, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (21, 'Flickr', 'flickr', 'input', 1, 'no', 11, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (22, 'Header', 'header', 'input', 2, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (23, 'Article', 'article', 'textarea', 2, 'no', 2, 'main', 'no');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (77, 'People', 'people', 'subsectionmanager', 12, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (25, 'Tags', 'tags', 'taglist', 2, 'no', 3, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (26, 'Sub-Header', 'sub-header', 'input', 2, 'no', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (110, 'Position', 'position', 'input', 19, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (90, 'What If? Description', 'description', 'textarea', 11, 'no', 1, 'main', 'no');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (28, 'Title/Caption', 'title-caption', 'input', 3, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (57, 'Image', 'image', 'uniqueupload', 3, 'no', 1, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (30, 'Name', 'name', 'input', 4, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (31, 'Title/Position', 'title-position', 'input', 4, 'no', 1, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (32, 'Website', 'email-website', 'input', 4, 'no', 2, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (34, 'Profile Image', 'profile-image', 'uniqueupload', 4, 'no', 4, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (76, 'What If? Description', 'what-if-description', 'input', 11, 'no', 0, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (74, 'Feature Image', 'feature-image', 'uniqueupload', 9, 'no', 0, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (74, 'Feature Image', 'feature-image', 'uniqueupload', 9, 'no', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (37, 'Published', 'publish', 'checkbox', 2, 'no', 5, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (38, 'Date ', 'date', 'datetime', 2, 'yes', 4, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (39, 'Bookmark/Favicon', 'bookmark', 'uniqueupload', 1, 'no', 18, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (39, 'Bookmark/Favicon', 'bookmark', 'uniqueupload', 1, 'no', 17, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (41, 'Feature Article', 'feature-article', 'selectbox_link', 5, 'yes', 0, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (42, 'Search Posts', 'search-posts', 'search_index', 2, 'no', 6, 'main', 'no');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (43, 'First Name', 'first-name', 'input', 6, 'no', 0, 'main', 'yes');
@@ -1775,27 +2164,45 @@ INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (54, 'Username', 'username', 'memberusername', 7, 'yes', 2, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (53, 'Email', 'email', 'memberemail', 7, 'yes', 1, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (52, 'Role', 'role', 'memberrole', 7, 'yes', 0, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (58, 'Leader', 'leader', 'checkbox', 4, 'no', 5, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (59, 'Advisor', 'advisor', 'checkbox', 4, 'no', 6, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (60, 'Core Member', 'core-member', 'checkbox', 4, 'no', 7, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (61, 'About', 'about', 'textarea', 4, 'no', 8, 'main', 'no');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (62, 'Email', 'email', 'input', 4, 'no', 3, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (63, 'Header', 'header', 'input', 8, 'no', 0, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (64, 'Author', 'Author', 'input', 8, 'no', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (64, 'Author', 'author', 'input', 8, 'no', 1, 'main', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (65, 'Article', 'article', 'textarea', 8, 'no', 2, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (66, 'Tags', 'tags', 'taglist', 8, 'no', 3, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (67, 'Banner Image', 'banner-image', 'uniqueupload', 8, 'no', 4, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (69, 'People', 'people', 'subsectionmanager', 8, 'no', 5, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (70, 'Date ', 'date', 'datetime', 8, 'yes', 6, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (75, 'Unleash Description', 'unleash-description', 'input', 10, 'no', 0, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (72, 'Published', 'publish', 'checkbox', 8, 'no', 7, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (73, 'Search Posts', 'search-posts', 'search_index', 8, 'no', 8, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (67, 'Banner Image', 'banner-image', 'uniqueupload', 8, 'no', 3, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (98, 'Description', 'description', 'textarea', 10, 'no', 1, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (69, 'People', 'people', 'subsectionmanager', 8, 'yes', 4, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (70, 'Date ', 'date', 'datetime', 8, 'yes', 5, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (75, 'Header', 'header', 'input', 10, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (72, 'Published', 'publish', 'checkbox', 8, 'no', 6, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (99, 'Entry Order', 'entry-order', 'order_entries', 12, 'no', 2, 'sidebar', 'yes');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (78, 'Audio ', 'audio', 'uniqueupload', 12, 'no', 1, 'sidebar', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (79, 'Description', 'description', 'input', 13, 'no', 0, 'main', 'yes');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (80, 'Who We Are', 'who-we-are', 'publish_tabs', 13, 'no', 1, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (79, 'About', 'about', 'input', 13, 'no', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (80, 'Who We Are', 'who-we-are', 'publish_tabs', 13, 'no', 0, 'main', 'no');
 INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (81, 'People', 'people', 'subsectionmanager', 13, 'no', 2, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (82, 'Values', 'values', 'publish_tabs', 13, 'no', 3, 'main', 'no');
-INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (84, 'Value', 'value', 'input', 13, 'no', 4, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (82, 'Our Values', 'our-values', 'publish_tabs', 13, 'no', 3, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (88, 'Values', 'values', 'subsectionmanager', 13, 'no', 4, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (86, 'Header', 'value', 'input', 14, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (87, 'Description', 'description', 'textarea', 14, 'no', 1, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (89, 'What If? Question', 'header', 'input', 11, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (91, 'Header', 'header', 'input', 15, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (92, 'About', 'description', 'textarea', 15, 'no', 1, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (93, 'More About ', 'more-about', 'textarea', 15, 'no', 2, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (94, 'Call Outs', 'call-outs', 'subsectionmanager', 15, 'no', 3, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (95, 'Comment', 'comment', 'textarea', 16, 'yes', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (96, 'Name', 'name', 'input', 16, 'yes', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (97, 'Published', 'published', 'checkbox', 16, 'no', 2, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (100, 'Date Submitted', 'date', 'date', 16, 'no', 3, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (101, 'Header', 'header', 'input', 17, 'no', 0, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (102, 'Equip Description', 'equip-description', 'textarea', 17, 'no', 2, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (103, 'Equip Header', 'equip-header', 'input', 17, 'no', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (104, 'Unleash Header', 'unleash-header', 'input', 17, 'no', 3, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (105, 'Unleash Description', 'unleash-description', 'textarea', 17, 'no', 4, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (106, 'Cite', 'cite', 'input', 18, 'no', 1, 'main', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (107, 'Quote', 'quote', 'textarea', 18, 'no', 0, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (108, 'Quotes', 'quotes', 'subsectionmanager', 17, 'no', 5, 'sidebar', 'yes');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (109, 'Food &amp; Lodging', 'food-and-lodging', 'textarea', 15, 'no', 4, 'main', 'no');
+INSERT INTO`tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (111, 'Position', 'position', 'select', 4, 'yes', 9, 'sidebar', 'yes');
 
 -- *** DATA:`tbl_members_roles` ***
 INSERT INTO`tbl_members_roles` (`id`, `name`, `handle`) VALUES (1, 'Public', 'public');
@@ -1823,28 +2230,41 @@ INSERT INTO`tbl_members_roles_forbidden_pages` (`id`, `role_id`, `page_id`) VALU
 INSERT INTO`tbl_members_roles_forbidden_pages` (`id`, `role_id`, `page_id`) VALUES (10, 1, 9);
 
 -- *** DATA:`tbl_pages` ***
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (1, NULL, 'Post', 'post', NULL, 'header', 'logged_in_author,navigation,posts,profile', NULL, 2);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (2, NULL, 'Archive', 'archive', NULL, 'filter', 'filter_posts_by_date,logged_in_author,navigation,post_tags,posts_no_pagination,profile', NULL, 3);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (4, NULL, 'Posts', 'posts', NULL, 'url-p', 'logged_in_author,navigation,posts,profile', NULL, 4);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (5, NULL, 'Drafts', 'drafts', NULL, 'url-p', 'drafts,logged_in_author,navigation,profile', NULL, 5);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (6, NULL, 'Search', 'search', NULL, 'url-keywords', 'logged_in_author,navigation,profile,search,search_suggestions,search_post_results', NULL, 6);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (7, NULL, 'Draft', 'draft', NULL, 'header', 'drafts,logged_in_author,navigation,profile', NULL, 7);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (8, NULL, 'Sign In', 'sign-in', NULL, NULL, 'logged_in_author,members,navigation,profile', 'members_activate_account,members_generate_recovery_code,members_regenerate_activation_code,members_reset_password', 8);
-INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (9, NULL, 'Private Portfolio', 'private-portfolio', NULL, NULL, 'drafts,logged_in_author,members,navigation,posts,profile', NULL, 9);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (1, 4, 'Equip Story', 'story', 'equip', 'header', 'equip_feature_img,equip_stories,logged_in_author,navigation,profile,site_admin', NULL, 6);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (2, NULL, 'Archive', 'archive', NULL, 'filter', 'filter_posts_by_date,logged_in_author,navigation,post_tags,posts_no_pagination,profile,site_admin', NULL, 12);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (4, NULL, 'Equip', 'equip', NULL, 'filter/url-keywords', 'equip_stories,logged_in_author,navigation,post_tags,profile,search,search_post_results,site_admin,equip_feature_img', NULL, 5);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (5, NULL, 'Drafts', 'drafts', NULL, 'url-p', 'drafts,logged_in_author,navigation,profile,site_admin', NULL, 13);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (6, 4, 'Search', 'search', 'equip', 'url-keywords', 'equip_feature_img,logged_in_author,navigation,post_tags,profile,search,search_suggestions,search_post_results,site_admin', NULL, 14);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (7, NULL, 'Draft', 'draft', NULL, 'header', 'drafts,logged_in_author,navigation,profile,site_admin', NULL, 14);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (8, NULL, 'Sign In', 'sign-in', NULL, NULL, 'logged_in_author,members,navigation,profile,site_admin', 'members_activate_account,members_generate_recovery_code,members_regenerate_activation_code,members_reset_password', 15);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (9, NULL, 'Private Portfolio', 'private-portfolio', NULL, NULL, 'drafts,logged_in_author,members,navigation,equip_stories,profile,site_admin', NULL, 16);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (10, NULL, 'Unleash', 'unleash', NULL, 'url-p', 'logged_in_author,navigation,post_tags,profile,unleash_stories,site_admin,unleash_header_and_description', NULL, 7);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (11, NULL, 'Unleash Story', 'unleash-story', NULL, 'header', 'logged_in_author,navigation,profile,unleash_stories,unleash_story_mainentry,unleash_story_nextentry,unleash_story_preventry,site_admin', NULL, 8);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (12, NULL, 'What If', 'what-if', NULL, NULL, 'logged_in_author,navigation,profile,site_admin,what_if_comments,what_if_header_and_question,what_if_stories', 'save_what_if_comments', 4);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (13, NULL, 'Thanks', 'thanks', NULL, NULL, 'logged_in_author,navigation,site_admin', NULL, 11);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (15, NULL, 'Home', 'home', NULL, NULL, 'home,logged_in_author,navigation,profile,what_if_header_and_question', NULL, 2);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (16, NULL, 'Gathering', 'gathering', NULL, NULL, 'gathering,logged_in_author,navigation,profile', NULL, 3);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (17, NULL, 'Who We Are', 'who-we-are', NULL, NULL, 'logged_in_author,navigation,profile,who_we_are', NULL, 10);
+INSERT INTO`tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (18, NULL, 'Connect', 'connect', NULL, NULL, 'logged_in_author,navigation,profile', NULL, 9);
 
 -- *** DATA:`tbl_pages_types` ***
-INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (5, 1, 'hidden');
-INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (28, 5, 'admin');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (58, 1, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (45, 5, 'hidden');
 INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (26, 7, 'hidden');
-INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (13, 4, 'index');
 INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (21, 8, 'hidden');
 INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (22, 9, 'hidden');
-INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (29, 5, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (44, 5, 'admin');
 INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (27, 7, 'admin');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (33, 11, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (57, 6, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (35, 2, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (41, 13, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (46, 15, 'hidden');
+INSERT INTO`tbl_pages_types` (`id`, `page_id`, `type`) VALUES (47, 15, 'index');
 
 -- *** DATA:`tbl_publish_shortcuts` ***
-INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (11, 'View Drafts', '{$root}/drafts', 2, 0);
-INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (12, 'View Posts', '{$root}/posts', 2, 1);
+INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (15, 'View Drafts', '{$root}/drafts', 2, 0);
+INSERT INTO`tbl_publish_shortcuts` (`id`, `label`, `link`, `section_id`, `sort_order`) VALUES (16, 'View Posts', '{$root}/posts', 2, 1);
 
 -- *** DATA:`tbl_search_index` ***
 INSERT INTO`tbl_search_index` (`id`, `entry_id`, `section_id`, `data`) VALUES (39, 9, 2, 'Department of Eagles High Places Originally known as the Whitey on the Moon UK, Department of Eagles blossomed from the recording project of two college roommates into purveyors of ambitious yet intimate music inspired by Van Dyke Parks and Paul McCartney. Fred Nicolaus and Daniel Rossen met in 2000, when they were assigned as each ... Dark Indie-Rock Moody');
@@ -2913,28 +3333,41 @@ INSERT INTO`tbl_search_index_logs` (`id`, `date`, `keywords`, `keywords_manipula
 INSERT INTO`tbl_search_index_logs` (`id`, `date`, `keywords`, `keywords_manipulated`, `sections`, `page`, `results`, `session_id`) VALUES (20, '2013-08-16 15:59:27', 'land', 'land', 'posts', 1, 3, 'sqpbs6i2jt9k2k35d2ocrin0v4');
 
 -- *** DATA:`tbl_sections` ***
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (1, 'Profile', 'profile', 4, 'no', 1, 'Admin');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (3, 'Images', 'images', 2, 'no', 0, 'MGMT');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (2, 'Equip Stories', 'equip-stories', 1, 'no', 0, 'Equip');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (4, 'People', 'people', 3, 'no', 0, 'MGMT');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (5, 'Feature', 'feature', 5, 'no', 1, 'Posts');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (6, 'Inquiries', 'inquiries', 6, 'no', 0, 'Forms');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (7, 'Members', 'members', 7, 'no', 0, 'MGMT');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (8, 'Unleash Stories', 'unleash-stories', 1, 'no', 0, 'Unleash ');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (9, 'Feature Image', 'feature-image', 8, 'no', 1, 'Equip');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (10, 'Unleash Description', 'unleash-description', 9, 'no', 1, 'Unleash ');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (11, 'What If? Description', 'what-if-description', 9, 'no', 1, 'What If?');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (12, 'What If? Stories', 'what-if-stories', 10, 'no', 0, 'What If?');
-INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (13, 'Who We Are', 'who-we-are', 11, 'no', 1, 'Who We Are');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (1, 'Profile', 'profile', 16, 'no', 1, 'Admin');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (3, 'Images', 'images', 14, 'no', 0, 'MGMT');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (2, 'Equip Stories', 'equip-stories', 5, 'no', 0, 'Equip');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (4, 'People', 'people', 13, 'no', 0, 'MGMT');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (5, 'Feature', 'feature', 8, 'yes', 1, 'Posts');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (6, 'Inquiries', 'inquiries', 12, 'no', 0, 'Forms');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (7, 'Members', 'members', 15, 'yes', 0, 'MGMT');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (8, 'Unleash Stories', 'unleash-stories', 7, 'no', 0, 'Unleash ');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (9, 'Feature Image', 'feature-image', 9, 'no', 1, 'Equip');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (10, 'Unleash Header & Description', 'unleash-header-and-description', 6, 'no', 1, 'Unleash ');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (11, 'What If? Header & Question', 'what-if-header-and-question', 3, 'no', 1, 'What If?');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (12, 'What If? Stories', 'what-if-stories', 4, 'no', 0, 'What If?');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (13, 'Who We Are', 'who-we-are', 10, 'no', 1, 'Who We Are');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (14, 'Call Outs', 'call-outs', 11, 'yes', 0, 'Meta');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (15, 'Gathering', 'gathering', 2, 'no', 1, 'Gathering');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (16, 'What If? Responses', 'what-if-responses', 17, 'no', 0, 'What If?');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (17, 'Home', 'home', 1, 'no', 1, 'Home ');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (18, 'Quotes', 'quotes', 11, 'yes', 0, 'Meta');
+INSERT INTO`tbl_sections` (`id`, `name`, `handle`, `sortorder`, `hidden`, `max_entries`, `navigation_group`) VALUES (19, 'Positions', 'positions', 18, 'yes', 0, 'Meta');
 
 -- *** DATA:`tbl_sections_association` ***
-INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (47, 13, 81, 4, 81, 'yes');
-INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (13, 2, 22, 5, 41, 'no');
-INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (45, 12, 77, 4, 77, 'yes');
-INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (43, 8, 69, 4, 69, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (56, 13, 88, 14, 88, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (55, 13, 81, 4, 81, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (52, 2, 22, 5, 41, 'no');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (65, 12, 77, 4, 77, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (76, 8, 69, 4, 69, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (72, 15, 94, 14, 94, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (69, 17, 108, 18, 108, 'yes');
+INSERT INTO`tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `hide_association`) VALUES (74, 19, 110, 4, 111, 'yes');
 
 -- *** DATA:`tbl_tooltips` ***
 INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (1, 13, 'That string of letters/numbers before the \'.js\' in the first script tag.');
 INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (3, 69, 'Required Fields\n-------------\n    - Name\n    - Title/Position\n    - Profile Image  ');
 INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (4, 67, 'Dimensions\n----------\n1600px X 400px ');
 INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (5, 79, 'A brief description defining this section.');
+INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (6, 108, 'Only 2 quotes will be displayed on the home page. Drag &amp; drop to edit the order of appearance.');
+INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (11, 94, 'For layout consistency, there should ideally be 3 Call Outs.');
+INSERT INTO`tbl_tooltips` (`id`, `field_id`, `tooltip`) VALUES (12, 34, 'Dimensions: 284px x 284px ');

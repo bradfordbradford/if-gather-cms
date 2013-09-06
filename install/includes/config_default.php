@@ -101,6 +101,10 @@
 		'sorting' => array(
 			'section_posts_sortby' => '37',
 			'section_posts_order' => 'asc',
+			'section_unleash-stories_sortby' => '70',
+			'section_unleash-stories_order' => 'desc',
+			'section_what-if-stories_sortby' => '99',
+			'section_what-if-stories_order' => 'asc',
 		),
 		########
 
@@ -147,16 +151,16 @@
 		########
 
 
-		###### DATETIME ######
-		'datetime' => array(
-			'english' => 'en, en_GB.UTF8, en_GB',
+		###### CLIENT_LOGO ######
+		'client_logo' => array(
+			'path' => 'assets/images/icons/ifgather-logo-drk-large+@2x.png',
 		),
 		########
 
 
-		###### CLIENT_LOGO ######
-		'client_logo' => array(
-			'path' => 'images/icons/ifgather-logo-drk-large+@2x.png',
+		###### DATETIME ######
+		'datetime' => array(
+			'english' => 'en, en_GB.UTF8, en_GB',
 		),
 		########
 	);
